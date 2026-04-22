@@ -30,7 +30,7 @@ const Contact = () => (
             <MapPin size={20} className="mt-1 shrink-0 text-primary" />
             <div>
               <p className="font-semibold text-accent">Location</p>
-              <p className="text-muted-foreground">Nairobi, Kenya</p>
+              <p className="text-muted-foreground">Nakuru & Nairobi, Kenya</p>
             </div>
           </div>
         </div>

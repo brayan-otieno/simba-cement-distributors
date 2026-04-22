@@ -24,7 +24,7 @@ const Products = () => (
               <span className="mb-2 inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{p.tag}</span>
               <h3 className="mb-2 font-heading text-xl font-bold uppercase text-accent">{p.name}</h3>
               <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
-              <a href="#contact" className="text-sm font-semibold text-primary transition-colors hover:text-primary/80">
+              <a href="https://wa.me/254731030404?text=I%20would%20like%20to%20order%20${encodeURIComponent(p.name)}" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold text-primary transition-colors hover:text-primary/80">
                 Order Now →
               </a>
             </div>
