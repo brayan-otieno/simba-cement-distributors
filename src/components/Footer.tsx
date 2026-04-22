@@ -1,0 +1,47 @@
+import { Mail, Phone } from "lucide-react";
+
+const Footer = () => (
+  <footer className="bg-accent py-16 text-accent-foreground">
+    <div className="container">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h3 className="mb-4 font-heading text-xl font-bold uppercase">
+            Simba<span className="text-primary"> Cement</span>
+          </h3>
+          <p className="text-sm leading-relaxed text-accent-foreground/70">
+            Premium cement distribution and logistics. Building Kenya's future one foundation at a time.
+          </p>
+        </div>
+        <div>
+          <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">Quick Links</h4>
+          <ul className="space-y-2 text-sm text-accent-foreground/70">
+            {["Home", "About", "Products", "Services", "Contact"].map((l) => (
+              <li key={l}><a href={`#${l.toLowerCase()}`} className="transition-colors hover:text-primary">{l}</a></li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">Products</h4>
+          <ul className="space-y-2 text-sm text-accent-foreground/70">
+            <li>OPC 42.5N</li>
+            <li>PPC 32.5R</li>
+            <li>Cement 52.5N</li>
+            <li>Bulk Cement</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">Contact</h4>
+          <div className="space-y-3 text-sm text-accent-foreground/70">
+            <p className="flex items-center gap-2"><Mail size={14} className="text-primary" /> simbacement@test.com</p>
+            <p className="flex items-center gap-2"><Phone size={14} className="text-primary" /> 0731030404 (WhatsApp)</p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 border-t border-accent-foreground/10 pt-8 text-center text-xs text-accent-foreground/50">
+        © {new Date().getFullYear()} Simba Cement. All rights reserved.
+      </div>
+    </div>
+  </footer>
+);
+
+export default Footer;

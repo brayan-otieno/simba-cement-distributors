@@ -1,0 +1,28 @@
+import cementBags from "@/assets/cement-bags.jpg";
+
+const About = () => (
+  <section id="about" className="bg-concrete py-20">
+    <div className="container grid items-center gap-12 lg:grid-cols-2">
+      <div className="overflow-hidden rounded-lg">
+        <img src={cementBags} alt="Cement bags in warehouse" className="h-full w-full object-cover" loading="lazy" width={800} height={600} />
+      </div>
+      <div>
+        <p className="mb-2 font-heading text-sm uppercase tracking-[0.2em] text-primary">About Simba Cement</p>
+        <h2 className="mb-6 font-heading text-3xl font-bold uppercase text-accent md:text-4xl">
+          Building Kenya's Future<br />Since 2005
+        </h2>
+        <p className="mb-4 leading-relaxed text-muted-foreground">
+          Simba Cement is a leading cement distributor committed to providing premium-quality construction materials. We serve contractors, developers, and homebuilders with reliable products and unmatched logistics.
+        </p>
+        <p className="mb-8 leading-relaxed text-muted-foreground">
+          With a vast distribution network and dedicated fleet, we ensure your cement arrives on time, every time — powering the infrastructure that drives progress.
+        </p>
+        <a href="#contact" className="inline-block rounded bg-primary px-8 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+);
+
+export default About;
