@@ -1,5 +1,6 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo.jpg";
 
 const navLinks = ["Home", "About", "Products", "Services", "Contact"];
 
@@ -9,8 +10,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-background shadow-sm">
       <div className="container flex items-center justify-between py-4">
-        <a href="#" className="font-heading text-2xl font-bold uppercase tracking-wider text-accent">
-          Simba<span className="text-primary"> Cement</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="Simba Cement" className="h-12 w-auto" />
         </a>
         <ul className="hidden gap-8 md:flex">
           {navLinks.map((l) => (
@@ -21,7 +22,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <a href="#contact" className="hidden rounded bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/85 md:inline-block">
+        <a href="https://wa.me/254731030404" target="_blank" rel="noopener noreferrer" className="hidden rounded bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/85 md:inline-block">
           Get a Quote
         </a>
         <button className="md:hidden" onClick={() => setOpen(!open)}>

@@ -16,11 +16,11 @@ const Hero = () => (
         Trusted by contractors and builders across the country. Superior quality cement for every project — from foundations to finishing.
       </p>
       <div className="flex flex-wrap gap-4">
-        <a href="#products" className="glow-cyan rounded bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">
-          Explore Products
+        <a href="https://wa.me/254731030404" target="_blank" rel="noopener noreferrer" className="glow-cyan rounded bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">
+          Get a Quote
         </a>
-        <a href="#contact" className="rounded border border-primary/40 bg-primary/10 px-8 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary/20">
-          Contact Us
+        <a href="https://wa.me/254731030404?text=I%20would%20like%20to%20place%20an%20order" target="_blank" rel="noopener noreferrer" className="rounded border border-primary/40 bg-primary/10 px-8 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary/20">
+          Order Now
         </a>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Footer = () => (
             Simba<span className="text-primary"> Cement</span>
           </h3>
           <p className="text-sm leading-relaxed text-accent-foreground/70">
-            Premium cement distribution and logistics. Building Kenya's future one foundation at a time.
+            Premium cement distribution and logistics across Nakuru & Nairobi. Building Kenya's future one foundation at a time.
           </p>
         </div>
         <div>
