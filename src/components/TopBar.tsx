@@ -1,8 +1,8 @@
 import { Truck, ShieldCheck, Headphones } from "lucide-react";
 
 const items = [
-  { icon: Truck, text: "Nationwide Delivery" },
-  { icon: ShieldCheck, text: "Quality Assured" },
+  { icon: Truck, text: "Fast Delivery — Nakuru & Nairobi" },
+  { icon: ShieldCheck, text: "Genuine Products" },
   { icon: Headphones, text: "24/7 Support" },
 ];
 

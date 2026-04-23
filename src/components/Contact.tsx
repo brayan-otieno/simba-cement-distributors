@@ -10,7 +10,7 @@ const Contact = () => (
       <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
         <div className="space-y-6">
           <p className="leading-relaxed text-muted-foreground">
-            Ready to place an order or need a custom quote? Reach out to our team and we'll get back to you promptly.
+            Need building materials or a custom quote? Reach out and our team will help you find the right products at the best prices.
           </p>
           <div className="flex items-start gap-4">
             <Mail size={20} className="mt-1 shrink-0 text-primary" />

@@ -9,7 +9,7 @@ const Footer = () => (
             Simba<span className="text-primary"> Cement</span>
           </h3>
           <p className="text-sm leading-relaxed text-accent-foreground/70">
-            Premium cement distribution and logistics across Nakuru & Nairobi. Building Kenya's future one foundation at a time.
+            Authorised distributor of premium cement, blocks, tiles & building materials across Nakuru & Nairobi.
           </p>
         </div>
         <div>
@@ -21,12 +21,12 @@ const Footer = () => (
           </ul>
         </div>
         <div>
-          <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">Products</h4>
+          <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">We Distribute</h4>
           <ul className="space-y-2 text-sm text-accent-foreground/70">
-            <li>OPC 42.5N</li>
-            <li>PPC 32.5R</li>
-            <li>Cement 52.5N</li>
-            <li>Bulk Cement</li>
+            <li>Cement (various brands)</li>
+            <li>Blocks & Building Materials</li>
+            <li>Tiles & Ceramics</li>
+            <li>Interlocking Pavers</li>
           </ul>
         </div>
         <div>
@@ -38,7 +38,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-12 border-t border-accent-foreground/10 pt-8 text-center text-xs text-accent-foreground/50">
-        © {new Date().getFullYear()} Simba Cement. All rights reserved.
+        © {new Date().getFullYear()} Simba Cement — Authorised Building Materials Distributor. All rights reserved.
       </div>
     </div>
   </footer>

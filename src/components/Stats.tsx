@@ -2,10 +2,10 @@ import { Truck, Building2, Users, MapPin } from "lucide-react";
 import cementTruck from "@/assets/cement-truck.jpg";
 
 const stats = [
-  { icon: Truck, value: "15,000+", label: "Deliveries Made" },
+  { icon: Truck, value: "15,000+", label: "Deliveries Completed" },
   { icon: Building2, value: "2,500+", label: "Projects Supplied" },
   { icon: Users, value: "1,200+", label: "Happy Clients" },
-  { icon: MapPin, value: "47", label: "Counties Covered" },
+  { icon: MapPin, value: "2", label: "Service Regions" },
 ];
 
 const Stats = () => (
@@ -14,8 +14,8 @@ const Stats = () => (
     <div className="hero-overlay absolute inset-0" />
     <div className="container relative z-10">
       <div className="mb-12 text-center">
-        <p className="mb-2 font-heading text-sm uppercase tracking-[0.2em] text-primary">Our Impact</p>
-        <h2 className="font-heading text-3xl font-bold uppercase text-accent-foreground md:text-4xl">Trusted Across The Nation</h2>
+        <p className="mb-2 font-heading text-sm uppercase tracking-[0.2em] text-primary">Our Track Record</p>
+        <h2 className="font-heading text-3xl font-bold uppercase text-accent-foreground md:text-4xl">Trusted Distribution Partner</h2>
       </div>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((s) => (
