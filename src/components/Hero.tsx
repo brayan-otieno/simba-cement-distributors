@@ -6,14 +6,14 @@ const Hero = () => (
     <div className="hero-overlay absolute inset-0" />
     <div className="container relative z-10 py-20">
       <p className="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-primary">
-        Building Strong Foundations
+        Your Trusted Construction Supplier
       </p>
       <h1 className="mb-6 max-w-3xl font-heading text-5xl font-bold uppercase leading-tight text-accent-foreground md:text-7xl">
-        Premium Cement<br />
-        <span className="text-primary">Delivered Nationwide</span>
+        Quality Building<br />
+        <span className="text-primary">Materials Delivered</span>
       </h1>
       <p className="mb-8 max-w-xl text-lg text-accent-foreground/80">
-        Trusted by contractors and builders across the country. Superior quality cement for every project — from foundations to finishing.
+        Authorised distributor of premium cement, blocks, tiles & building materials in Nakuru and Nairobi. Fast delivery, competitive prices, trusted by contractors.
       </p>
       <div className="flex flex-wrap gap-4">
         <a href="https://wa.me/254731030404" target="_blank" rel="noopener noreferrer" className="glow-cyan rounded bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">

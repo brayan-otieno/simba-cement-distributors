@@ -17,32 +17,32 @@ import decorativeTile from "@/assets/product-decorative-tile.jpg";
 import pavingDriveway from "@/assets/product-paving-driveway.jpg";
 
 const cementProducts = [
-  { name: "Simba Cement 32.5R", desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing applications. 50kg bags.", tag: "Best Seller", img: productBag },
-  { name: "Simba Cement & Simba Power", desc: "Cementing customer trust with our full range of quality cement products for every project.", tag: "Popular", img: productTrust },
-  { name: "PPC 32.5R", desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. 50kg bags.", tag: "Premium", img: product325r },
-  { name: "Bulk Cement", desc: "Factory-direct loose cement supply for large-scale commercial and industrial construction projects.", tag: "Industrial", img: productFactory },
+  { name: "Cement 32.5R (50kg)", desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.", tag: "Best Seller", img: productBag },
+  { name: "Cement & Power Range", desc: "Full range of quality cement products available — we distribute multiple trusted brands.", tag: "Popular", img: productTrust },
+  { name: "PPC 32.5R (50kg)", desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.", tag: "Premium", img: product325r },
+  { name: "Bulk Cement Supply", desc: "Large-quantity cement supply for commercial and industrial projects. Competitive distributor pricing.", tag: "Industrial", img: productFactory },
 ];
 
 const blockProducts = [
-  { name: "Concrete Blocks (6-inch)", desc: "Heavy-duty hollow concrete blocks for load-bearing walls and structural applications. Bundled and ready for delivery.", tag: "Best Seller", img: blocksStack },
-  { name: "Concrete Blocks (Bulk)", desc: "Large stock of quality concrete blocks for commercial and residential construction projects.", tag: "Bulk", img: blocksYard },
-  { name: "Building Blocks (Solid)", desc: "Solid concrete building blocks ideal for foundations, retaining walls, and heavy construction.", tag: "Heavy Duty", img: buildingBlocks },
-  { name: "Roofing Tiles & Accessories", desc: "Durable roofing tiles in multiple colors and styles. Complete roofing solutions available.", tag: "Roofing", img: roofTiles },
+  { name: "Concrete Blocks (6-inch)", desc: "Heavy-duty hollow concrete blocks for load-bearing walls. Bundled and ready for delivery.", tag: "Best Seller", img: blocksStack },
+  { name: "Concrete Blocks (Bulk)", desc: "Large stock of quality concrete blocks for commercial and residential projects.", tag: "Bulk", img: blocksYard },
+  { name: "Building Blocks (Solid)", desc: "Solid concrete blocks ideal for foundations, retaining walls, and heavy construction.", tag: "Heavy Duty", img: buildingBlocks },
+  { name: "Roofing Tiles & Accessories", desc: "Durable roofing tiles in multiple colours and styles. We supply complete roofing solutions.", tag: "Roofing", img: roofTiles },
 ];
 
 const pavingProducts = [
-  { name: "Interlocking Pavers - Compound", desc: "Professional interlocking paver installation for compounds, parking areas, and driveways.", tag: "Popular", img: pavingCompound },
+  { name: "Interlocking Pavers - Compound", desc: "Professional interlocking pavers for compounds, parking areas, and driveways.", tag: "Popular", img: pavingCompound },
   { name: "Interlocking Pavers - Driveway", desc: "Elegant paving solutions for driveways and walkways with durable interlocking blocks.", tag: "Premium", img: pavingDriveway },
 ];
 
 const tileProducts = [
-  { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium Sheltech Ceramics finish.", tag: "Premium", img: tileBlueMarble },
+  { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
   { name: "Gold Accent Tile", desc: "Stunning white tile with gold and black marble accents. Modern luxury finish.", tag: "Luxury", img: tileGoldMarble },
   { name: "Geometric Floor Tile", desc: "Classic geometric pattern floor tile. Durable and elegant for living spaces.", tag: "Classic", img: tileGeometric },
   { name: "Botanical Tile", desc: "Delicate botanical floral pattern wall tile. Ideal for bathrooms and kitchens.", tag: "New", img: tileFloral2 },
-  { name: "Decorative Medallion Tile", desc: "Ornate baroque-style decorative floor tile with gold and marble detailing. Statement centrepiece.", tag: "Luxury", img: decorativeTile },
+  { name: "Decorative Medallion Tile", desc: "Ornate baroque-style decorative floor tile with gold and marble detailing.", tag: "Luxury", img: decorativeTile },
 ];
 
 type Product = { name: string; desc: string; tag: string; img: string };
@@ -73,25 +73,21 @@ const SectionHeader = ({ subtitle, title }: { subtitle: string; title: string })
 const Products = () => (
   <section id="products" className="bg-background py-20">
     <div className="container">
-      {/* Cement Products */}
-      <SectionHeader subtitle="Our Range" title="Cement Products" />
+      <SectionHeader subtitle="We Distribute" title="Cement Products" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {cementProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
-      {/* Blocks & Building Materials */}
       <SectionHeader subtitle="Structural Materials" title="Blocks & Building Materials" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {blockProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
-      {/* Paving */}
       <SectionHeader subtitle="Outdoor Solutions" title="Interlocking Pavers" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
         {pavingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
-      {/* Tiles */}
       <SectionHeader subtitle="Building Finishes" title="Tiles & Ceramics" />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {tileProducts.map((p) => <ProductCard key={p.name} p={p} />)}

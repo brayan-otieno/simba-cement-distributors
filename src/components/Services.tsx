@@ -1,10 +1,10 @@
-import { Truck, Factory, ShieldCheck, Clock } from "lucide-react";
+import { Truck, PackageCheck, ShieldCheck, Clock } from "lucide-react";
 
 const services = [
-  { icon: Truck, title: "Fast Delivery", desc: "Same-day and next-day delivery to any construction site nationwide." },
-  { icon: Factory, title: "Bulk Supply", desc: "Large-scale orders for commercial and infrastructure projects." },
-  { icon: ShieldCheck, title: "Quality Certified", desc: "All products meet international construction standards." },
-  { icon: Clock, title: "24/7 Ordering", desc: "Place orders around the clock through our dedicated support line." },
+  { icon: Truck, title: "Fast Delivery", desc: "Same-day and next-day delivery across Nakuru, Nairobi, and surrounding areas." },
+  { icon: PackageCheck, title: "Wide Product Range", desc: "Cement, blocks, tiles, pavers, and roofing — all from one trusted distributor." },
+  { icon: ShieldCheck, title: "Genuine Products", desc: "Only authentic, quality-certified materials from top manufacturers." },
+  { icon: Clock, title: "24/7 Ordering", desc: "Place orders anytime via WhatsApp or phone — we're always available." },
 ];
 
 const Services = () => (
