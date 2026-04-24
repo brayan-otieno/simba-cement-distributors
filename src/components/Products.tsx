@@ -259,6 +259,11 @@ const Products = () => (
         {pavingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
+      <SectionHeader subtitle="Site Storage" title="Water Tanks & Storage Drums" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {waterStorageProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
       <SectionHeader subtitle="Building Finishes" title="Tiles & Ceramics" />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {tileProducts.map((p) => <ProductCard key={p.name} p={p} />)}
