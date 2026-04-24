@@ -37,6 +37,12 @@ import productBlueRoofTiles from "@/assets/product-blue-roof-tiles.jpg";
 import productBrownRoofTiles from "@/assets/product-brown-roof-tiles.jpg";
 import productGreenRoofTiles from "@/assets/product-green-roof-tiles.jpg";
 import productCharcoalRoofTiles from "@/assets/product-charcoal-roof-tiles.jpg";
+import productGalvanizedSheets from "@/assets/product-galvanized-sheets.jpg";
+import productMachineStonesTipping from "@/assets/product-machine-stones-tipping.jpg";
+import productMachineStonesField from "@/assets/product-machine-stones-field.jpg";
+import productMachineStonesPallet from "@/assets/product-machine-stones-pallet.jpg";
+import productMachineStonesUnloading from "@/assets/product-machine-stones-unloading.jpg";
+import productDeliveryTrucks from "@/assets/product-delivery-trucks.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -128,7 +134,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Iron Sheets (Gauge 30)",
     desc: "Premium corrugated iron sheets for roofing, sheds, and construction. Strong, durable, and rust-resistant.",
     tag: "Roofing",
-    img: productIronSheets,
+    img: productGalvanizedSheets,
     prices: [
       { label: "Per metre", price: "Ksh 350" },
       { label: "Over 2 metres", price: "Ksh 700" },
@@ -209,10 +215,8 @@ const tileProducts: Product[] = [
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
   { name: "Gold Accent Tile", desc: "Stunning white tile with gold and black marble accents. Modern luxury finish.", tag: "Luxury", img: tileGoldMarble },
   { name: "Geometric Floor Tile", desc: "Classic geometric pattern floor tile. Durable and elegant for living spaces.", tag: "Classic", img: tileGeometric },
-  { name: "Botanical Tile", desc: "Delicate botanical floral pattern wall tile. Ideal for bathrooms and kitchens.", tag: "New", img: tileFloral2 },
   { name: "Decorative Medallion Tile", desc: "Ornate baroque-style decorative floor tile with gold and marble detailing.", tag: "Luxury", img: decorativeTile },
   { name: "Magnolia Floral Tile", desc: "Stunning 3D-effect magnolia floral wall tile with gold accents. Perfect statement piece.", tag: "Designer", img: tileMagnolia },
-  { name: "Gold Veined Marble Tile", desc: "Premium polished porcelain tile with dramatic gold and black veining on white marble.", tag: "Premium", img: tileGoldMarble2 },
   { name: "Installed Medallion Showcase", desc: "Luxury baroque medallion floor tile installation — true craftsmanship for elegant interiors.", tag: "Showcase", img: tileMedallionInstalled },
 ];
 
