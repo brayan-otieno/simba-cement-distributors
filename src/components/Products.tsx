@@ -27,6 +27,16 @@ import productWaterDrumsBlue from "@/assets/product-water-drums-blue.jpg";
 import productWaterTanksIbc from "@/assets/product-water-tanks-ibc.jpg";
 import productWaterDrumsWarehouse from "@/assets/product-water-drums-warehouse.jpg";
 import productWaterDrumsJerrycans from "@/assets/product-water-drums-jerrycans.jpg";
+import productIbcTote from "@/assets/product-ibc-tote.jpg";
+import productSimbaTanks from "@/assets/product-simba-tanks.jpg";
+import productWaterTanksYard from "@/assets/product-water-tanks-yard.jpg";
+import productSepticTanks from "@/assets/product-septic-tanks.jpg";
+import productRoofRidges from "@/assets/product-roof-ridges.jpg";
+import productStoneCoatedTiles from "@/assets/product-stone-coated-tiles.jpg";
+import productBlueRoofTiles from "@/assets/product-blue-roof-tiles.jpg";
+import productBrownRoofTiles from "@/assets/product-brown-roof-tiles.jpg";
+import productGreenRoofTiles from "@/assets/product-green-roof-tiles.jpg";
+import productCharcoalRoofTiles from "@/assets/product-charcoal-roof-tiles.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -174,10 +184,23 @@ const accessoriesProducts: Product[] = [
 ];
 
 const waterStorageProducts: Product[] = [
+  { name: "Simba Plastic Water Tanks", desc: "Premium Simba plastic water tanks in 1000L, 3000L, 5000L and 10,000L capacities. Durable, UV-resistant, and ideal for homes and projects.", tag: "Best Seller", img: productSimbaTanks },
+  { name: "Bulk Water Tank Stock", desc: "Wide range of black and green water storage tanks available in multiple sizes. Direct distributor pricing on bulk orders.", tag: "Wholesale", img: productWaterTanksYard },
+  { name: "Septic & Underground Tanks", desc: "Heavy-duty septic and underground storage tanks in green, orange, and black. Engineered for long-lasting underground installation.", tag: "Septic", img: productSepticTanks },
+  { name: "IBC Tote Tank (1000L)", desc: "Caged IBC tote tank for water, chemicals, and bulk liquid storage. Robust steel cage with reliable outlet valve.", tag: "Industrial", img: productIbcTote },
   { name: "Plastic Storage Drums (Blue)", desc: "Heavy-duty blue plastic drums for water, chemicals, and bulk storage on construction sites.", tag: "Storage", img: productWaterDrumsBlue },
-  { name: "IBC Tanks & Drums", desc: "1000L IBC water tanks and assorted colour drums for large-volume site water and liquid storage.", tag: "Bulk", img: productWaterTanksIbc },
+  { name: "Mixed IBC & Drums", desc: "Assorted IBC tanks and coloured drums for large-volume site water and liquid storage.", tag: "Bulk", img: productWaterTanksIbc },
   { name: "Industrial Storage Drums", desc: "Wide stock of industrial-grade plastic drums supplied in bulk for contractors and projects.", tag: "Wholesale", img: productWaterDrumsWarehouse },
   { name: "Drums & Jerrycans", desc: "Plastic drums and jerrycans in multiple sizes — ideal for water storage, transport, and site use.", tag: "Versatile", img: productWaterDrumsJerrycans },
+];
+
+const roofingProducts: Product[] = [
+  { name: "Stone-Coated Roof Tiles", desc: "Premium stone-coated metal roofing tiles. Stylish, durable, and weather-resistant — perfect for modern homes.", tag: "Premium", img: productStoneCoatedTiles },
+  { name: "Charcoal Roof Tiles", desc: "Elegant charcoal-finish profiled roofing sheets. Long-lasting and modern aesthetic.", tag: "Modern", img: productCharcoalRoofTiles },
+  { name: "Brown Tile-Profile Sheets", desc: "Tile-profile metal roofing sheets in rich brown finish. Durable and easy to install.", tag: "Popular", img: productBrownRoofTiles },
+  { name: "Green Tile-Profile Sheets", desc: "Tile-profile roofing sheets in green finish. Strong, lightweight, and corrosion-resistant.", tag: "Colour", img: productGreenRoofTiles },
+  { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
+  { name: "Roof Ridges & Accessories", desc: "Matching roof ridges in multiple colours to complete your roofing installation.", tag: "Accessories", img: productRoofRidges },
 ];
 
 const tileProducts: Product[] = [
@@ -242,6 +265,11 @@ const Products = () => (
       <SectionHeader subtitle="Structural Materials" title="Blocks & Building Materials" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {blockProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
+      <SectionHeader subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {roofingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
       <SectionHeader subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" />
