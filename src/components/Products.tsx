@@ -7,9 +7,7 @@ import tileWhiteMarble from "@/assets/tile-white-marble.jpg";
 import tileFloral from "@/assets/tile-floral.jpg";
 import tileGoldMarble from "@/assets/tile-gold-marble.jpg";
 import tileGeometric from "@/assets/tile-geometric.jpg";
-import tileFloral2 from "@/assets/tile-floral-2.jpg";
 import tileMagnolia from "@/assets/tile-magnolia.jpg";
-import tileGoldMarble2 from "@/assets/tile-gold-marble-2.jpg";
 import tileMedallionInstalled from "@/assets/tile-medallion-installed.jpg";
 import blocksStack from "@/assets/product-blocks-stack.jpg";
 import blocksYard from "@/assets/product-blocks-yard.jpg";
@@ -37,6 +35,12 @@ import productBlueRoofTiles from "@/assets/product-blue-roof-tiles.jpg";
 import productBrownRoofTiles from "@/assets/product-brown-roof-tiles.jpg";
 import productGreenRoofTiles from "@/assets/product-green-roof-tiles.jpg";
 import productCharcoalRoofTiles from "@/assets/product-charcoal-roof-tiles.jpg";
+import productGalvanizedSheets from "@/assets/product-galvanized-sheets.jpg";
+import productMachineStonesTipping from "@/assets/product-machine-stones-tipping.jpg";
+import productMachineStonesField from "@/assets/product-machine-stones-field.jpg";
+import productMachineStonesPallet from "@/assets/product-machine-stones-pallet.jpg";
+import productMachineStonesUnloading from "@/assets/product-machine-stones-unloading.jpg";
+import productDeliveryTrucks from "@/assets/product-delivery-trucks.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -128,7 +132,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Iron Sheets (Gauge 30)",
     desc: "Premium corrugated iron sheets for roofing, sheds, and construction. Strong, durable, and rust-resistant.",
     tag: "Roofing",
-    img: productIronSheets,
+    img: productGalvanizedSheets,
     prices: [
       { label: "Per metre", price: "Ksh 350" },
       { label: "Over 2 metres", price: "Ksh 700" },
@@ -203,16 +207,22 @@ const roofingProducts: Product[] = [
   { name: "Roof Ridges & Accessories", desc: "Matching roof ridges in multiple colours to complete your roofing installation.", tag: "Accessories", img: productRoofRidges },
 ];
 
+const machineStonesProducts: Product[] = [
+  { name: "Machine-Cut Stones (Bulk Delivery)", desc: "Premium machine-cut building stones supplied in bulk. Tipper deliveries direct to your construction site.", tag: "Best Seller", img: productMachineStonesTipping },
+  { name: "Machine-Cut Stones (Yard Stock)", desc: "Large stock of precision machine-cut stones, neatly arranged and ready for immediate dispatch.", tag: "In Stock", img: productMachineStonesField },
+  { name: "Palletised Machine-Cut Stones", desc: "Uniformly cut, high-quality building stones supplied in palletised loads for easy handling.", tag: "Premium", img: productMachineStonesPallet },
+  { name: "Site Offloading Service", desc: "Tipper trucks deliver and offload machine-cut stones directly at your project site across the country.", tag: "Logistics", img: productMachineStonesUnloading },
+  { name: "Countrywide Transport", desc: "Fleet of heavy-duty trucks for fast, reliable countrywide delivery of all building materials.", tag: "Delivery", img: productDeliveryTrucks },
+];
+
 const tileProducts: Product[] = [
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
   { name: "Gold Accent Tile", desc: "Stunning white tile with gold and black marble accents. Modern luxury finish.", tag: "Luxury", img: tileGoldMarble },
   { name: "Geometric Floor Tile", desc: "Classic geometric pattern floor tile. Durable and elegant for living spaces.", tag: "Classic", img: tileGeometric },
-  { name: "Botanical Tile", desc: "Delicate botanical floral pattern wall tile. Ideal for bathrooms and kitchens.", tag: "New", img: tileFloral2 },
   { name: "Decorative Medallion Tile", desc: "Ornate baroque-style decorative floor tile with gold and marble detailing.", tag: "Luxury", img: decorativeTile },
   { name: "Magnolia Floral Tile", desc: "Stunning 3D-effect magnolia floral wall tile with gold accents. Perfect statement piece.", tag: "Designer", img: tileMagnolia },
-  { name: "Gold Veined Marble Tile", desc: "Premium polished porcelain tile with dramatic gold and black veining on white marble.", tag: "Premium", img: tileGoldMarble2 },
   { name: "Installed Medallion Showcase", desc: "Luxury baroque medallion floor tile installation — true craftsmanship for elegant interiors.", tag: "Showcase", img: tileMedallionInstalled },
 ];
 
@@ -275,6 +285,11 @@ const Products = () => (
       <SectionHeader subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {steelAndFencingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
+      <SectionHeader subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {machineStonesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
       <SectionHeader subtitle="Site Essentials" title="Tools & Accessories" />
