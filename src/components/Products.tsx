@@ -21,7 +21,12 @@ import pavingDriveway from "@/assets/product-paving-driveway.jpg";
 import productDpcRolls from "@/assets/product-dpc-rolls.jpg";
 import productIronSheets from "@/assets/product-iron-sheets.jpg";
 import productBarbedWire from "@/assets/product-barbed-wire.jpg";
+import productBrcMesh from "@/assets/product-brc-mesh.jpg";
 import productPolythenePaper from "@/assets/product-polythene-paper.jpg";
+import productWaterDrumsBlue from "@/assets/product-water-drums-blue.jpg";
+import productWaterTanksIbc from "@/assets/product-water-tanks-ibc.jpg";
+import productWaterDrumsWarehouse from "@/assets/product-water-drums-warehouse.jpg";
+import productWaterDrumsJerrycans from "@/assets/product-water-drums-jerrycans.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -50,7 +55,7 @@ const steelAndFencingProducts: Product[] = [
     name: "BRC Wire Mesh",
     desc: "Strong reinforcement wire mesh for slabs, foundations, and concrete works. Multiple gauges available.",
     tag: "Reinforcement",
-    img: productBarbedWire,
+    img: productBrcMesh,
     prices: [
       { label: "A66 (3mm)", price: "Ksh 3,500 – 10,000" },
       { label: "A65 (4mm) Standard", price: "Ksh 13,000" },
