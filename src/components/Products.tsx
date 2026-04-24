@@ -267,6 +267,11 @@ const Products = () => (
         {blockProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
+      <SectionHeader subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {roofingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
       <SectionHeader subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {steelAndFencingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
