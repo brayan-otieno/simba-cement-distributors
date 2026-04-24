@@ -2,16 +2,14 @@ import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 
 const testimonials = [
-  { name: "James Kamau", role: "Site Foreman, KamCon Builders", text: "Simba Cement has been our go-to distributor for over 3 years. Consistent stock availability and timely deliveries keep our projects on schedule.", rating: 5 },
-  { name: "Grace Wanjiku", role: "Project Manager, Apex Developers", text: "We switched to ordering through Simba Cement last year and their service is remarkable. Great prices and exceptional customer support.", rating: 5 },
-  { name: "Peter Odhiambo", role: "Contractor, Lakeview Construction", text: "Reliable supply and competitive pricing. They understand what large-scale construction projects need from a distributor.", rating: 5 },
-  { name: "Sarah Muthoni", role: "Architect, Urban Space Designs", text: "I recommend Simba Cement to all my clients. Their product range covers everything from cement to tiles and finishing materials.", rating: 5 },
-  { name: "David Njoroge", role: "Managing Director, DNJ Contractors", text: "Their delivery service in Nakuru and Nairobi is unmatched. We've never experienced a shortage on any of our sites.", rating: 5 },
-  { name: "Amina Hassan", role: "Quantity Surveyor, BuildRight Ltd", text: "Competitive distributor pricing without compromising on genuine products. They help us stay within budget on every project.", rating: 4 },
-  { name: "Michael Otieno", role: "Civil Engineer, Bridge & Road Works", text: "For infrastructure projects, you need a supplier you can count on. Simba Cement delivers that reliability with every order.", rating: 5 },
-  { name: "Lucy Chebet", role: "Homeowner, Nakuru", text: "Built my dream home sourcing all materials through Simba Cement. From blocks to tiles, everything was genuine and top quality!", rating: 5 },
-  { name: "John Mwangi", role: "Hardware Store Owner, Nairobi", text: "As a retailer, I stock from Simba Cement because they offer the best distributor prices and my customers trust the products.", rating: 4 },
-  { name: "Elizabeth Akinyi", role: "Property Developer, Sunrise Estates", text: "We've completed 12 residential projects ordering through Simba Cement. Consistent quality and always on-time delivery.", rating: 5 },
+  { name: "Rehema Akinyi", role: "Homeowner, Homa Bay", text: "Sourced all my building materials through this distributor. Genuine cement, blocks and roofing tiles delivered straight to my site in Homa Bay.", rating: 5 },
+  { name: "Slyvia Wangare", role: "Contractor, Murang'a", text: "Their distributor prices on cement and steel saved my project a lot. Delivery to Murang'a was prompt and the team is very professional.", rating: 5 },
+  { name: "Benson Ogaki", role: "Builder, Kisii", text: "I order BRC mesh and round bars regularly. Stock is always available and the pricing beats most suppliers in Kisii town.", rating: 5 },
+  { name: "Felister Moraa", role: "Project Manager, Nyamira", text: "Reliable supply of roofing sheets and water tanks. They've been my trusted distributor for every site I run in Nyamira.", rating: 5 },
+  { name: "Hassan Muhammed", role: "Hardware Owner, Kisauni", text: "As a retailer in Kisauni, I get the best wholesale prices here. Genuine products that keep my customers coming back.", rating: 5 },
+  { name: "James Semo", role: "Civil Engineer, Nairobi", text: "From cement to building steel, this is my go-to distributor in Nairobi. Consistent quality and competitive pricing on every order.", rating: 5 },
+  { name: "Titus Mugutian", role: "Developer, Kajiado", text: "Built two rental units with materials supplied from here. Tiles, roofing and chainlink fencing all delivered to Kajiado on time.", rating: 4 },
+  { name: "Juma Otieno", role: "Contractor, Kisumu", text: "Best distributor I've worked with in Kisumu. Their team understands construction timelines and never disappoints on delivery.", rating: 5 },
 ];
 
 const Testimonials = () => {
