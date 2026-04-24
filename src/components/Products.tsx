@@ -27,6 +27,16 @@ import productWaterDrumsBlue from "@/assets/product-water-drums-blue.jpg";
 import productWaterTanksIbc from "@/assets/product-water-tanks-ibc.jpg";
 import productWaterDrumsWarehouse from "@/assets/product-water-drums-warehouse.jpg";
 import productWaterDrumsJerrycans from "@/assets/product-water-drums-jerrycans.jpg";
+import productIbcTote from "@/assets/product-ibc-tote.jpg";
+import productSimbaTanks from "@/assets/product-simba-tanks.jpg";
+import productWaterTanksYard from "@/assets/product-water-tanks-yard.jpg";
+import productSepticTanks from "@/assets/product-septic-tanks.jpg";
+import productRoofRidges from "@/assets/product-roof-ridges.jpg";
+import productStoneCoatedTiles from "@/assets/product-stone-coated-tiles.jpg";
+import productBlueRoofTiles from "@/assets/product-blue-roof-tiles.jpg";
+import productBrownRoofTiles from "@/assets/product-brown-roof-tiles.jpg";
+import productGreenRoofTiles from "@/assets/product-green-roof-tiles.jpg";
+import productCharcoalRoofTiles from "@/assets/product-charcoal-roof-tiles.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
