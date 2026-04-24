@@ -21,7 +21,12 @@ import pavingDriveway from "@/assets/product-paving-driveway.jpg";
 import productDpcRolls from "@/assets/product-dpc-rolls.jpg";
 import productIronSheets from "@/assets/product-iron-sheets.jpg";
 import productBarbedWire from "@/assets/product-barbed-wire.jpg";
+import productBrcMesh from "@/assets/product-brc-mesh.jpg";
 import productPolythenePaper from "@/assets/product-polythene-paper.jpg";
+import productWaterDrumsBlue from "@/assets/product-water-drums-blue.jpg";
+import productWaterTanksIbc from "@/assets/product-water-tanks-ibc.jpg";
+import productWaterDrumsWarehouse from "@/assets/product-water-drums-warehouse.jpg";
+import productWaterDrumsJerrycans from "@/assets/product-water-drums-jerrycans.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -50,7 +55,7 @@ const steelAndFencingProducts: Product[] = [
     name: "BRC Wire Mesh",
     desc: "Strong reinforcement wire mesh for slabs, foundations, and concrete works. Multiple gauges available.",
     tag: "Reinforcement",
-    img: productBarbedWire,
+    img: productBrcMesh,
     prices: [
       { label: "A66 (3mm)", price: "Ksh 3,500 – 10,000" },
       { label: "A65 (4mm) Standard", price: "Ksh 13,000" },
@@ -168,6 +173,13 @@ const accessoriesProducts: Product[] = [
   },
 ];
 
+const waterStorageProducts: Product[] = [
+  { name: "Plastic Storage Drums (Blue)", desc: "Heavy-duty blue plastic drums for water, chemicals, and bulk storage on construction sites.", tag: "Storage", img: productWaterDrumsBlue },
+  { name: "IBC Tanks & Drums", desc: "1000L IBC water tanks and assorted colour drums for large-volume site water and liquid storage.", tag: "Bulk", img: productWaterTanksIbc },
+  { name: "Industrial Storage Drums", desc: "Wide stock of industrial-grade plastic drums supplied in bulk for contractors and projects.", tag: "Wholesale", img: productWaterDrumsWarehouse },
+  { name: "Drums & Jerrycans", desc: "Plastic drums and jerrycans in multiple sizes — ideal for water storage, transport, and site use.", tag: "Versatile", img: productWaterDrumsJerrycans },
+];
+
 const tileProducts: Product[] = [
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
@@ -245,6 +257,11 @@ const Products = () => (
       <SectionHeader subtitle="Outdoor Solutions" title="Interlocking Pavers" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
         {pavingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
+      <SectionHeader subtitle="Site Storage" title="Water Tanks & Storage Drums" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {waterStorageProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
       <SectionHeader subtitle="Building Finishes" title="Tiles & Ceramics" />
