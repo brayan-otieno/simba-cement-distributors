@@ -173,7 +173,12 @@ const accessoriesProducts: Product[] = [
   },
 ];
 
-const tileProducts: Product[] = [
+const waterStorageProducts: Product[] = [
+  { name: "Plastic Storage Drums (Blue)", desc: "Heavy-duty blue plastic drums for water, chemicals, and bulk storage on construction sites.", tag: "Storage", img: productWaterDrumsBlue },
+  { name: "IBC Tanks & Drums", desc: "1000L IBC water tanks and assorted colour drums for large-volume site water and liquid storage.", tag: "Bulk", img: productWaterTanksIbc },
+  { name: "Industrial Storage Drums", desc: "Wide stock of industrial-grade plastic drums supplied in bulk for contractors and projects.", tag: "Wholesale", img: productWaterDrumsWarehouse },
+  { name: "Drums & Jerrycans", desc: "Plastic drums and jerrycans in multiple sizes — ideal for water storage, transport, and site use.", tag: "Versatile", img: productWaterDrumsJerrycans },
+];
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
