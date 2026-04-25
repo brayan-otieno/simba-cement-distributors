@@ -46,6 +46,12 @@ import productMachineStonesStack from "@/assets/product-machine-stones-stack.jpg
 import productMachineStonesLaid from "@/assets/product-machine-stones-laid.jpg";
 import productBoxProfileSheets from "@/assets/product-box-profile-sheets.jpg";
 import productSteelRoundBars from "@/assets/product-steel-round-bars.jpg";
+import productDeformedRebar from "@/assets/product-deformed-rebar.jpg";
+import productBlueBoxSheets from "@/assets/product-blue-box-sheets.jpg";
+import productRedBoxSheets from "@/assets/product-red-box-sheets.jpg";
+import productRoofSheetsRidgesMix from "@/assets/product-roof-sheets-ridges-mix.jpg";
+import productTexturedRedSheets from "@/assets/product-textured-red-sheets.jpg";
+import productMatteBrownSheets from "@/assets/product-matte-brown-sheets.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
