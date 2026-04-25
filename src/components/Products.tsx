@@ -52,6 +52,14 @@ import productRedBoxSheets from "@/assets/product-red-box-sheets.jpg";
 import productRoofSheetsRidgesMix from "@/assets/product-roof-sheets-ridges-mix.jpg";
 import productTexturedRedSheets from "@/assets/product-textured-red-sheets.jpg";
 import productMatteBrownSheets from "@/assets/product-matte-brown-sheets.jpg";
+import productNailsMixed from "@/assets/product-nails-mixed.jpg";
+import productRoofingNailsBlue from "@/assets/product-roofing-nails-blue.jpg";
+import productUmbrellaNailsHand from "@/assets/product-umbrella-nails-hand.jpg";
+import productChainlinkTruck from "@/assets/product-chainlink-truck.jpg";
+import productChainlinkRolls from "@/assets/product-chainlink-rolls.jpg";
+import productChainlinkMamba from "@/assets/product-chainlink-mamba.jpg";
+import productBallastQuarry from "@/assets/product-ballast-quarry.jpg";
+import productBallastOnsite from "@/assets/product-ballast-onsite.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -91,15 +99,27 @@ const steelAndFencingProducts: Product[] = [
   },
   {
     name: "Chainlink Fencing (18m)",
-    desc: "Durable chainlink fencing for residential, commercial, and farm perimeter security. Bulk orders available.",
+    desc: "Durable Mamba-brand chainlink fencing for residential, commercial, and farm perimeter security. Bulk orders available.",
     tag: "Fencing",
-    img: productBarbedWire,
+    img: productChainlinkMamba,
     prices: [
       { label: "4ft × 18mts", price: "Ksh 2,000" },
       { label: "5ft × 18mts", price: "Ksh 2,500" },
       { label: "6ft × 18mts", price: "Ksh 3,000" },
       { label: "7ft × 18mts", price: "Ksh 3,500" },
     ],
+  },
+  {
+    name: "Chainlink Rolls (Yard Stock)",
+    desc: "Galvanised chainlink rolls in stock at our yard. Multiple gauges and heights — ready for immediate dispatch.",
+    tag: "In Stock",
+    img: productChainlinkRolls,
+  },
+  {
+    name: "Chainlink Bulk Delivery",
+    desc: "Truckloads of chainlink fencing dispatched countrywide. Reliable bulk supply for fencing contractors and projects.",
+    tag: "Bulk Delivery",
+    img: productChainlinkTruck,
   },
   {
     name: "Barbed Wire (16 Gauge)",
@@ -235,6 +255,17 @@ const machineStonesProducts: Product[] = [
   { name: "Quarry-Direct Stone Yard", desc: "Endless rows of freshly cut stones laid out at the quarry — direct sourcing for the best prices and quality.", tag: "Quarry Direct", img: productMachineStonesLaid },
 ];
 
+const nailsProducts: Product[] = [
+  { name: "Construction Nails (Mixed Sizes)", desc: "Strong, durable wire nails in assorted sizes — ideal for carpentry, formwork, and general construction.", tag: "Best Seller", img: productNailsMixed },
+  { name: "Roofing Nails with Washers", desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.", tag: "Roofing", img: productRoofingNailsBlue },
+  { name: "Umbrella Roofing Nails", desc: "Heavy-duty umbrella-head roofing nails for secure fixing of iron sheets to timber purlins.", tag: "Heavy Duty", img: productUmbrellaNailsHand },
+];
+
+const aggregatesProducts: Product[] = [
+  { name: "Quarry Ballast (Direct Source)", desc: "Premium crushed ballast straight from the quarry conveyor. Consistent grading for concrete works.", tag: "Quarry Direct", img: productBallastQuarry },
+  { name: "Ballast Site Delivery", desc: "Bulk ballast tipped and delivered straight to your construction site, anywhere in the country.", tag: "Bulk Delivery", img: productBallastOnsite },
+];
+
 const tileProducts: Product[] = [
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
@@ -310,6 +341,16 @@ const Products = () => (
       <SectionHeader subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {machineStonesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
+      <SectionHeader subtitle="Aggregates" title="Ballast & Quarry Materials" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
+        {aggregatesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
+      <SectionHeader subtitle="Fixings" title="Nails & Fasteners" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {nailsProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
       <SectionHeader subtitle="Site Essentials" title="Tools & Accessories" />
