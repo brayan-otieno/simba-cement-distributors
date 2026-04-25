@@ -68,6 +68,12 @@ import productRoofingNailsPacks from "@/assets/product-roofing-nails-packs.jpg";
 import productBlackRoofingNails from "@/assets/product-black-roofing-nails.jpg";
 import productGreenRoofingNails from "@/assets/product-green-roofing-nails.jpg";
 import productKenruRebar from "@/assets/product-kenru-rebar.jpg";
+import productColorSheetsDisplay from "@/assets/product-color-sheets-display.jpg";
+import productColorSheetsCollage from "@/assets/product-color-sheets-collage.jpg";
+import productGreenWavySheets from "@/assets/product-green-wavy-sheets.jpg";
+import productLilacWavySheets from "@/assets/product-lilac-wavy-sheets.jpg";
+import productDeepGreenBoxSheets from "@/assets/product-deep-green-box-sheets.jpg";
+import productYellowOrangeSheets from "@/assets/product-yellow-orange-sheets.jpg";
 import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.jpg";
 
 type PriceItem = { label: string; price: string };
@@ -253,6 +259,12 @@ const roofingProducts: Product[] = [
   { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
   { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
   { name: "Corrugated Roofing Stack (Red & Galvanised)", desc: "Factory-fresh corrugated metal roofing sheets stacked in red and galvanised finishes. Bulk dispatch ready.", tag: "Factory Stock", img: productCorrugatedRedStack },
+  { name: "Colour Box-Profile Showroom Display", desc: "Full range of box-profile roofing sheets on display — red, yellow, blue, and green finishes. Walk in and pick your colour.", tag: "Showroom", img: productColorSheetsDisplay },
+  { name: "Multi-Colour Roofing Range", desc: "Wide colour selection of corrugated and box-profile roofing sheets — navy, forest green, red, black, and lime green available.", tag: "Colour Range", img: productColorSheetsCollage },
+  { name: "Green Wavy Corrugated Sheets", desc: "Classic wavy corrugated metal roofing sheets in vibrant green. Lightweight, strong, and easy to install.", tag: "Wavy Profile", img: productGreenWavySheets },
+  { name: "Lilac Wavy Corrugated Sheets", desc: "Stylish lilac/purple wavy corrugated roofing sheets with a glossy finish. Unique colour for standout projects.", tag: "Specialty Colour", img: productLilacWavySheets },
+  { name: "Deep Green Box-Profile Stack", desc: "Premium deep-green box-profile metal roofing sheets — bulk factory stack ready for dispatch.", tag: "Bulk Stock", img: productDeepGreenBoxSheets },
+  { name: "Yellow-Orange Glossy Sheets", desc: "Eye-catching yellow-orange box-profile roofing sheets with a high-gloss finish. Perfect for branded buildings and standout designs.", tag: "Glossy Finish", img: productYellowOrangeSheets },
 ];
 
 const machineStonesProducts: Product[] = [
