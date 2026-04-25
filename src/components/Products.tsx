@@ -52,6 +52,14 @@ import productRedBoxSheets from "@/assets/product-red-box-sheets.jpg";
 import productRoofSheetsRidgesMix from "@/assets/product-roof-sheets-ridges-mix.jpg";
 import productTexturedRedSheets from "@/assets/product-textured-red-sheets.jpg";
 import productMatteBrownSheets from "@/assets/product-matte-brown-sheets.jpg";
+import productNailsMixed from "@/assets/product-nails-mixed.jpg";
+import productRoofingNailsBlue from "@/assets/product-roofing-nails-blue.jpg";
+import productUmbrellaNailsHand from "@/assets/product-umbrella-nails-hand.jpg";
+import productChainlinkTruck from "@/assets/product-chainlink-truck.jpg";
+import productChainlinkRolls from "@/assets/product-chainlink-rolls.jpg";
+import productChainlinkMamba from "@/assets/product-chainlink-mamba.jpg";
+import productBallastQuarry from "@/assets/product-ballast-quarry.jpg";
+import productBallastOnsite from "@/assets/product-ballast-onsite.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
