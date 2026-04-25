@@ -343,6 +343,16 @@ const Products = () => (
         {machineStonesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
       </div>
 
+      <SectionHeader subtitle="Aggregates" title="Ballast & Quarry Materials" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
+        {aggregatesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
+      <SectionHeader subtitle="Fixings" title="Nails & Fasteners" />
+      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {nailsProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      </div>
+
       <SectionHeader subtitle="Site Essentials" title="Tools & Accessories" />
       <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {accessoriesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
