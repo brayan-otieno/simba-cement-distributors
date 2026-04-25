@@ -46,6 +46,12 @@ import productMachineStonesStack from "@/assets/product-machine-stones-stack.jpg
 import productMachineStonesLaid from "@/assets/product-machine-stones-laid.jpg";
 import productBoxProfileSheets from "@/assets/product-box-profile-sheets.jpg";
 import productSteelRoundBars from "@/assets/product-steel-round-bars.jpg";
+import productDeformedRebar from "@/assets/product-deformed-rebar.jpg";
+import productBlueBoxSheets from "@/assets/product-blue-box-sheets.jpg";
+import productRedBoxSheets from "@/assets/product-red-box-sheets.jpg";
+import productRoofSheetsRidgesMix from "@/assets/product-roof-sheets-ridges-mix.jpg";
+import productTexturedRedSheets from "@/assets/product-textured-red-sheets.jpg";
+import productMatteBrownSheets from "@/assets/product-matte-brown-sheets.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -123,7 +129,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Building Steel (12 metres)",
     desc: "High-tensile deformed steel reinforcement bars for slabs, columns, and beams.",
     tag: "Reinforcement",
-    img: productIronSheets,
+    img: productDeformedRebar,
     prices: [
       { label: "D8", price: "Ksh 450" },
       { label: "D10", price: "Ksh 750" },
@@ -211,6 +217,11 @@ const roofingProducts: Product[] = [
   { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
   { name: "Roof Ridges & Accessories", desc: "Matching roof ridges in multiple colours to complete your roofing installation.", tag: "Accessories", img: productRoofRidges },
   { name: "Box-Profile Roofing Sheets", desc: "Heavy-duty galvanised box-profile metal roofing sheets. Strong, modern, and ideal for residential and commercial projects.", tag: "Industrial", img: productBoxProfileSheets },
+  { name: "Blue Box-Profile Sheets", desc: "Glossy blue box-profile metal roofing sheets. Vibrant, weather-resistant, and ideal for modern homes and commercial buildings.", tag: "Colour", img: productBlueBoxSheets },
+  { name: "Red Box-Profile Sheets", desc: "Bold red box-profile roofing sheets straight from the factory. Pre-painted, long-lasting, and ready for installation.", tag: "Factory Direct", img: productRedBoxSheets },
+  { name: "Textured Red Roofing Sheets", desc: "Premium textured tile-profile sheets in a rich red finish. Stone-grain texture for an elegant, durable roof.", tag: "Textured", img: productTexturedRedSheets },
+  { name: "Matte Brown Roofing Sheets", desc: "Sleek matte brown box-profile sheets with a granular finish. Modern aesthetic with superior weather resistance.", tag: "Matte Finish", img: productMatteBrownSheets },
+  { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
 ];
 
 const machineStonesProducts: Product[] = [
