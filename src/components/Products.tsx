@@ -158,7 +158,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Building Steel (12 metres)",
     desc: "High-tensile deformed steel reinforcement bars for slabs, columns, and beams.",
     tag: "Reinforcement",
-    img: productDeformedRebar,
+    img: productKenruRebar,
     prices: [
       { label: "D8", price: "Ksh 450" },
       { label: "D10", price: "Ksh 750" },
@@ -251,6 +251,8 @@ const roofingProducts: Product[] = [
   { name: "Textured Red Roofing Sheets", desc: "Premium textured tile-profile sheets in a rich red finish. Stone-grain texture for an elegant, durable roof.", tag: "Textured", img: productTexturedRedSheets },
   { name: "Matte Brown Roofing Sheets", desc: "Sleek matte brown box-profile sheets with a granular finish. Modern aesthetic with superior weather resistance.", tag: "Matte Finish", img: productMatteBrownSheets },
   { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
+  { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
+  { name: "Corrugated Roofing Stack (Red & Galvanised)", desc: "Factory-fresh corrugated metal roofing sheets stacked in red and galvanised finishes. Bulk dispatch ready.", tag: "Factory Stock", img: productCorrugatedRedStack },
 ];
 
 const machineStonesProducts: Product[] = [
@@ -268,6 +270,12 @@ const nailsProducts: Product[] = [
   { name: "Construction Nails (Mixed Sizes)", desc: "Strong, durable wire nails in assorted sizes — ideal for carpentry, formwork, and general construction.", tag: "Best Seller", img: productNailsMixed },
   { name: "Roofing Nails with Washers", desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.", tag: "Roofing", img: productRoofingNailsBlue },
   { name: "Umbrella Roofing Nails", desc: "Heavy-duty umbrella-head roofing nails for secure fixing of iron sheets to timber purlins.", tag: "Heavy Duty", img: productUmbrellaNailsHand },
+  { name: "Red-Head Roofing Nails (Bulk)", desc: "Bulk supply of red-capped roofing nails with rubber washers. Colour-matched for red roofing sheets.", tag: "Bulk", img: productRedRoofingNailsBulk },
+  { name: "Black-Head Roofing Nails", desc: "Galvanised roofing nails with black rubber-coated heads. Ideal for charcoal and dark-finish roofing sheets.", tag: "Colour Match", img: productBlackRoofingNails },
+  { name: "Green-Head Roofing Nails", desc: "Roofing nails with green-coated rubber heads — perfect colour match for green tile and box-profile sheets.", tag: "Colour Match", img: productGreenRoofingNails },
+  { name: "Pre-Packed Roofing Nails", desc: "Roofing nails neatly pre-packed in retail-ready bags. Available in blue, green, and brown head colours.", tag: "Retail Pack", img: productRoofingNailsPacks },
+  { name: "Rubber Washer Caps (Mixed Colours)", desc: "Assorted colour rubber washer caps for roofing nails — red, brown, blue, green, and charcoal.", tag: "Accessories", img: productWasherCapsMixed },
+  { name: "Maroon Rubber Washer Caps", desc: "Bulk maroon rubber washer caps for roofing nails. Weather-sealing replacements and spares.", tag: "Spares", img: productWasherCapsMaroon },
 ];
 
 const aggregatesProducts: Product[] = [
