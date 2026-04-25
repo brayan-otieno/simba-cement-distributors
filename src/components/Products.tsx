@@ -41,6 +41,11 @@ import productMachineStonesField from "@/assets/product-machine-stones-field.jpg
 import productMachineStonesPallet from "@/assets/product-machine-stones-pallet.jpg";
 import productMachineStonesUnloading from "@/assets/product-machine-stones-unloading.jpg";
 import productDeliveryTrucks from "@/assets/product-delivery-trucks.jpg";
+import productMachineStonesCrate from "@/assets/product-machine-stones-crate.jpg";
+import productMachineStonesStack from "@/assets/product-machine-stones-stack.jpg";
+import productMachineStonesLaid from "@/assets/product-machine-stones-laid.jpg";
+import productBoxProfileSheets from "@/assets/product-box-profile-sheets.jpg";
+import productSteelRoundBars from "@/assets/product-steel-round-bars.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -105,7 +110,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Round Bars",
     desc: "Smooth mild steel round bars for general construction, gates, grills, and metalwork.",
     tag: "Steel",
-    img: productIronSheets,
+    img: productSteelRoundBars,
     prices: [
       { label: "R16", price: "Ksh 1,800" },
       { label: "R12", price: "Ksh 950" },
@@ -205,6 +210,7 @@ const roofingProducts: Product[] = [
   { name: "Green Tile-Profile Sheets", desc: "Tile-profile roofing sheets in green finish. Strong, lightweight, and corrosion-resistant.", tag: "Colour", img: productGreenRoofTiles },
   { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
   { name: "Roof Ridges & Accessories", desc: "Matching roof ridges in multiple colours to complete your roofing installation.", tag: "Accessories", img: productRoofRidges },
+  { name: "Box-Profile Roofing Sheets", desc: "Heavy-duty galvanised box-profile metal roofing sheets. Strong, modern, and ideal for residential and commercial projects.", tag: "Industrial", img: productBoxProfileSheets },
 ];
 
 const machineStonesProducts: Product[] = [
@@ -213,6 +219,9 @@ const machineStonesProducts: Product[] = [
   { name: "Palletised Machine-Cut Stones", desc: "Uniformly cut, high-quality building stones supplied in palletised loads for easy handling.", tag: "Premium", img: productMachineStonesPallet },
   { name: "Site Offloading Service", desc: "Tipper trucks deliver and offload machine-cut stones directly at your project site across the country.", tag: "Logistics", img: productMachineStonesUnloading },
   { name: "Countrywide Transport", desc: "Fleet of heavy-duty trucks for fast, reliable countrywide delivery of all building materials.", tag: "Delivery", img: productDeliveryTrucks },
+  { name: "Crated Machine-Cut Stones", desc: "Tightly packed, top-grade machine-cut stones in timber crates — uniform sizing and consistent finish for premium builds.", tag: "Top Grade", img: productMachineStonesCrate },
+  { name: "Stacked Stone Inventory", desc: "Massive stacks of precision-cut building stones, drying and ready for dispatch from our quarry partners.", tag: "Bulk Stock", img: productMachineStonesStack },
+  { name: "Quarry-Direct Stone Yard", desc: "Endless rows of freshly cut stones laid out at the quarry — direct sourcing for the best prices and quality.", tag: "Quarry Direct", img: productMachineStonesLaid },
 ];
 
 const tileProducts: Product[] = [
