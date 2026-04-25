@@ -243,7 +243,16 @@ const machineStonesProducts: Product[] = [
   { name: "Quarry-Direct Stone Yard", desc: "Endless rows of freshly cut stones laid out at the quarry — direct sourcing for the best prices and quality.", tag: "Quarry Direct", img: productMachineStonesLaid },
 ];
 
-const tileProducts: Product[] = [
+const nailsProducts: Product[] = [
+  { name: "Construction Nails (Mixed Sizes)", desc: "Strong, durable wire nails in assorted sizes — ideal for carpentry, formwork, and general construction.", tag: "Best Seller", img: productNailsMixed },
+  { name: "Roofing Nails with Washers", desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.", tag: "Roofing", img: productRoofingNailsBlue },
+  { name: "Umbrella Roofing Nails", desc: "Heavy-duty umbrella-head roofing nails for secure fixing of iron sheets to timber purlins.", tag: "Heavy Duty", img: productUmbrellaNailsHand },
+];
+
+const aggregatesProducts: Product[] = [
+  { name: "Quarry Ballast (Direct Source)", desc: "Premium crushed ballast straight from the quarry conveyor. Consistent grading for concrete works.", tag: "Quarry Direct", img: productBallastQuarry },
+  { name: "Ballast Site Delivery", desc: "Bulk ballast tipped and delivered straight to your construction site, anywhere in the country.", tag: "Bulk Delivery", img: productBallastOnsite },
+];
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
