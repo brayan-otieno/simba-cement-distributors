@@ -60,6 +60,15 @@ import productChainlinkRolls from "@/assets/product-chainlink-rolls.jpg";
 import productChainlinkMamba from "@/assets/product-chainlink-mamba.jpg";
 import productBallastQuarry from "@/assets/product-ballast-quarry.jpg";
 import productBallastOnsite from "@/assets/product-ballast-onsite.jpg";
+import productGreenSteelCoil from "@/assets/product-green-steel-coil.jpg";
+import productWasherCapsMixed from "@/assets/product-washer-caps-mixed.jpg";
+import productWasherCapsMaroon from "@/assets/product-washer-caps-maroon.jpg";
+import productRedRoofingNailsBulk from "@/assets/product-red-roofing-nails-bulk.jpg";
+import productRoofingNailsPacks from "@/assets/product-roofing-nails-packs.jpg";
+import productBlackRoofingNails from "@/assets/product-black-roofing-nails.jpg";
+import productGreenRoofingNails from "@/assets/product-green-roofing-nails.jpg";
+import productKenruRebar from "@/assets/product-kenru-rebar.jpg";
+import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.jpg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
