@@ -309,7 +309,15 @@ const tileProducts: Product[] = [
 const ProductCard = ({ p }: { p: Product }) => (
   <div className="group flex flex-col overflow-hidden rounded-lg border bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
     <div className="h-56 overflow-hidden bg-concrete">
-      <img src={p.img} alt={p.name} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+      <img
+        src={p.img}
+        alt={p.name}
+        loading="lazy"
+        decoding="async"
+        width={800}
+        height={600}
+        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
     </div>
     <div className="flex flex-1 flex-col p-6">
       <span className="mb-2 inline-block self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{p.tag}</span>

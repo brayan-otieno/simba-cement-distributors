@@ -2,7 +2,15 @@ import heroBg from "@/assets/hero-bg.webp";
 
 const Hero = () => (
   <section id="home" className="relative flex min-h-[85vh] items-center">
-    <img src={heroBg} alt="Cement plant" className="absolute inset-0 h-full w-full object-cover" width={1920} height={1080} />
+    <img
+      src={heroBg}
+      alt="Cement plant"
+      width={1920}
+      height={1080}
+      fetchPriority="high"
+      decoding="async"
+      className="absolute inset-0 h-full w-full object-cover"
+    />
     <div className="hero-overlay absolute inset-0" />
     <div className="container relative z-10 py-20">
       <p className="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-primary">
