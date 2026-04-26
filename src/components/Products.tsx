@@ -75,6 +75,9 @@ import productLilacWavySheets from "@/assets/product-lilac-wavy-sheets.webp";
 import productDeepGreenBoxSheets from "@/assets/product-deep-green-box-sheets.webp";
 import productYellowOrangeSheets from "@/assets/product-yellow-orange-sheets.webp";
 import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.webp";
+import productWheelbarrow from "@/assets/product-wheelbarrow.webp";
+import productSpades from "@/assets/product-spades.webp";
+import productIronSheetsGauge30 from "@/assets/product-iron-sheets-gauge30.webp";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
