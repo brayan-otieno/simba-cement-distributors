@@ -217,7 +217,7 @@ const accessoriesProducts: Product[] = [
     name: "Spades",
     desc: "Strong, durable spades for digging, mixing, and general construction site work.",
     tag: "Tools",
-    img: productIronSheets,
+    img: productSpades,
     prices: [
       { label: "Imported", price: "Ksh 750" },
       { label: "Local", price: "Ksh 580" },
@@ -227,7 +227,7 @@ const accessoriesProducts: Product[] = [
     name: "Wheelbarrows",
     desc: "Heavy-duty wheelbarrows for transporting materials on construction sites. Multiple sizes available.",
     tag: "Tools",
-    img: productIronSheets,
+    img: productWheelbarrow,
     prices: [
       { label: "Small", price: "Ksh 2,500" },
       { label: "Medium", price: "Ksh 4,200" },
