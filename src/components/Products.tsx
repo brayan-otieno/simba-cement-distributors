@@ -309,6 +309,8 @@ const tileProducts: Product[] = [
   { name: "Installed Medallion Showcase", desc: "Luxury baroque medallion floor tile installation — true craftsmanship for elegant interiors.", tag: "Showcase", img: tileMedallionInstalled },
 ];
 
+import AddToCartControl from "@/components/cart/AddToCartControl";
+
 const ProductCard = ({ p }: { p: Product }) => (
   <div className="group flex flex-col overflow-hidden rounded-lg border bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
     <div className="h-56 overflow-hidden bg-concrete">
@@ -336,13 +338,14 @@ const ProductCard = ({ p }: { p: Product }) => (
           ))}
         </ul>
       )}
+      <AddToCartControl name={p.name} img={p.img} prices={p.prices} />
       <a
         href={`https://wa.me/254731030404?text=${encodeURIComponent(`I would like to order ${p.name}`)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+        className="mt-3 text-center text-xs font-semibold text-primary transition-colors hover:text-primary/80"
       >
-        Order Now →
+        Or order via WhatsApp →
       </a>
     </div>
   </div>
