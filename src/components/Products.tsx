@@ -1,80 +1,80 @@
-import productBag from "@/assets/product-cement-bag.jpg";
-import productTrust from "@/assets/product-cement-trust.jpg";
-import product325r from "@/assets/product-cement-325r.jpg";
-import productFactory from "@/assets/product-factory.jpg";
-import tileBlueMarble from "@/assets/tile-blue-marble.jpg";
-import tileWhiteMarble from "@/assets/tile-white-marble.jpg";
-import tileFloral from "@/assets/tile-floral.jpg";
-import tileGoldMarble from "@/assets/tile-gold-marble.jpg";
-import tileGeometric from "@/assets/tile-geometric.jpg";
-import tileMagnolia from "@/assets/tile-magnolia.jpg";
-import tileMedallionInstalled from "@/assets/tile-medallion-installed.jpg";
-import blocksStack from "@/assets/product-blocks-stack.jpg";
-import blocksYard from "@/assets/product-blocks-yard.jpg";
-import roofTiles from "@/assets/product-roof-tiles.jpg";
-import buildingBlocks from "@/assets/product-building-blocks.jpg";
-import pavingCompound from "@/assets/product-paving-compound.jpg";
-import decorativeTile from "@/assets/product-decorative-tile.jpg";
-import pavingDriveway from "@/assets/product-paving-driveway.jpg";
-import productDpcRolls from "@/assets/product-dpc-rolls.jpg";
-import productIronSheets from "@/assets/product-iron-sheets.jpg";
-import productBarbedWire from "@/assets/product-barbed-wire.jpg";
-import productBrcMesh from "@/assets/product-brc-mesh.jpg";
-import productPolythenePaper from "@/assets/product-polythene-paper.jpg";
-import productWaterDrumsBlue from "@/assets/product-water-drums-blue.jpg";
-import productWaterTanksIbc from "@/assets/product-water-tanks-ibc.jpg";
-import productWaterDrumsWarehouse from "@/assets/product-water-drums-warehouse.jpg";
-import productWaterDrumsJerrycans from "@/assets/product-water-drums-jerrycans.jpg";
-import productIbcTote from "@/assets/product-ibc-tote.jpg";
-import productSimbaTanks from "@/assets/product-simba-tanks.jpg";
-import productWaterTanksYard from "@/assets/product-water-tanks-yard.jpg";
-import productSepticTanks from "@/assets/product-septic-tanks.jpg";
-import productRoofRidges from "@/assets/product-roof-ridges.jpg";
-import productStoneCoatedTiles from "@/assets/product-stone-coated-tiles.jpg";
-import productBlueRoofTiles from "@/assets/product-blue-roof-tiles.jpg";
-import productBrownRoofTiles from "@/assets/product-brown-roof-tiles.jpg";
-import productGreenRoofTiles from "@/assets/product-green-roof-tiles.jpg";
-import productCharcoalRoofTiles from "@/assets/product-charcoal-roof-tiles.jpg";
-import productGalvanizedSheets from "@/assets/product-galvanized-sheets.jpg";
-import productMachineStonesTipping from "@/assets/product-machine-stones-tipping.jpg";
-import productMachineStonesField from "@/assets/product-machine-stones-field.jpg";
-import productMachineStonesPallet from "@/assets/product-machine-stones-pallet.jpg";
-import productMachineStonesUnloading from "@/assets/product-machine-stones-unloading.jpg";
-import productDeliveryTrucks from "@/assets/product-delivery-trucks.jpg";
-import productMachineStonesCrate from "@/assets/product-machine-stones-crate.jpg";
-import productMachineStonesStack from "@/assets/product-machine-stones-stack.jpg";
-import productMachineStonesLaid from "@/assets/product-machine-stones-laid.jpg";
-import productBoxProfileSheets from "@/assets/product-box-profile-sheets.jpg";
-import productSteelRoundBars from "@/assets/product-steel-round-bars.jpg";
-import productDeformedRebar from "@/assets/product-deformed-rebar.jpg";
-import productBlueBoxSheets from "@/assets/product-blue-box-sheets.jpg";
-import productRedBoxSheets from "@/assets/product-red-box-sheets.jpg";
-import productRoofSheetsRidgesMix from "@/assets/product-roof-sheets-ridges-mix.jpg";
-import productTexturedRedSheets from "@/assets/product-textured-red-sheets.jpg";
-import productMatteBrownSheets from "@/assets/product-matte-brown-sheets.jpg";
-import productNailsMixed from "@/assets/product-nails-mixed.jpg";
-import productRoofingNailsBlue from "@/assets/product-roofing-nails-blue.jpg";
-import productUmbrellaNailsHand from "@/assets/product-umbrella-nails-hand.jpg";
-import productChainlinkTruck from "@/assets/product-chainlink-truck.jpg";
-import productChainlinkRolls from "@/assets/product-chainlink-rolls.jpg";
-import productChainlinkMamba from "@/assets/product-chainlink-mamba.jpg";
-import productBallastQuarry from "@/assets/product-ballast-quarry.jpg";
-import productBallastOnsite from "@/assets/product-ballast-onsite.jpg";
-import productGreenSteelCoil from "@/assets/product-green-steel-coil.jpg";
-import productWasherCapsMixed from "@/assets/product-washer-caps-mixed.jpg";
-import productWasherCapsMaroon from "@/assets/product-washer-caps-maroon.jpg";
-import productRedRoofingNailsBulk from "@/assets/product-red-roofing-nails-bulk.jpg";
-import productRoofingNailsPacks from "@/assets/product-roofing-nails-packs.jpg";
-import productBlackRoofingNails from "@/assets/product-black-roofing-nails.jpg";
-import productGreenRoofingNails from "@/assets/product-green-roofing-nails.jpg";
-import productKenruRebar from "@/assets/product-kenru-rebar.jpg";
-import productColorSheetsDisplay from "@/assets/product-color-sheets-display.jpg";
-import productColorSheetsCollage from "@/assets/product-color-sheets-collage.jpg";
-import productGreenWavySheets from "@/assets/product-green-wavy-sheets.jpg";
-import productLilacWavySheets from "@/assets/product-lilac-wavy-sheets.jpg";
-import productDeepGreenBoxSheets from "@/assets/product-deep-green-box-sheets.jpg";
-import productYellowOrangeSheets from "@/assets/product-yellow-orange-sheets.jpg";
-import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.jpg";
+import productBag from "@/assets/product-cement-bag.webp";
+import productTrust from "@/assets/product-cement-trust.webp";
+import product325r from "@/assets/product-cement-325r.webp";
+import productFactory from "@/assets/product-factory.webp";
+import tileBlueMarble from "@/assets/tile-blue-marble.webp";
+import tileWhiteMarble from "@/assets/tile-white-marble.webp";
+import tileFloral from "@/assets/tile-floral.webp";
+import tileGoldMarble from "@/assets/tile-gold-marble.webp";
+import tileGeometric from "@/assets/tile-geometric.webp";
+import tileMagnolia from "@/assets/tile-magnolia.webp";
+import tileMedallionInstalled from "@/assets/tile-medallion-installed.webp";
+import blocksStack from "@/assets/product-blocks-stack.webp";
+import blocksYard from "@/assets/product-blocks-yard.webp";
+import roofTiles from "@/assets/product-roof-tiles.webp";
+import buildingBlocks from "@/assets/product-building-blocks.webp";
+import pavingCompound from "@/assets/product-paving-compound.webp";
+import decorativeTile from "@/assets/product-decorative-tile.webp";
+import pavingDriveway from "@/assets/product-paving-driveway.webp";
+import productDpcRolls from "@/assets/product-dpc-rolls.webp";
+import productIronSheets from "@/assets/product-iron-sheets.webp";
+import productBarbedWire from "@/assets/product-barbed-wire.webp";
+import productBrcMesh from "@/assets/product-brc-mesh.webp";
+import productPolythenePaper from "@/assets/product-polythene-paper.webp";
+import productWaterDrumsBlue from "@/assets/product-water-drums-blue.webp";
+import productWaterTanksIbc from "@/assets/product-water-tanks-ibc.webp";
+import productWaterDrumsWarehouse from "@/assets/product-water-drums-warehouse.webp";
+import productWaterDrumsJerrycans from "@/assets/product-water-drums-jerrycans.webp";
+import productIbcTote from "@/assets/product-ibc-tote.webp";
+import productSimbaTanks from "@/assets/product-simba-tanks.webp";
+import productWaterTanksYard from "@/assets/product-water-tanks-yard.webp";
+import productSepticTanks from "@/assets/product-septic-tanks.webp";
+import productRoofRidges from "@/assets/product-roof-ridges.webp";
+import productStoneCoatedTiles from "@/assets/product-stone-coated-tiles.webp";
+import productBlueRoofTiles from "@/assets/product-blue-roof-tiles.webp";
+import productBrownRoofTiles from "@/assets/product-brown-roof-tiles.webp";
+import productGreenRoofTiles from "@/assets/product-green-roof-tiles.webp";
+import productCharcoalRoofTiles from "@/assets/product-charcoal-roof-tiles.webp";
+import productGalvanizedSheets from "@/assets/product-galvanized-sheets.webp";
+import productMachineStonesTipping from "@/assets/product-machine-stones-tipping.webp";
+import productMachineStonesField from "@/assets/product-machine-stones-field.webp";
+import productMachineStonesPallet from "@/assets/product-machine-stones-pallet.webp";
+import productMachineStonesUnloading from "@/assets/product-machine-stones-unloading.webp";
+import productDeliveryTrucks from "@/assets/product-delivery-trucks.webp";
+import productMachineStonesCrate from "@/assets/product-machine-stones-crate.webp";
+import productMachineStonesStack from "@/assets/product-machine-stones-stack.webp";
+import productMachineStonesLaid from "@/assets/product-machine-stones-laid.webp";
+import productBoxProfileSheets from "@/assets/product-box-profile-sheets.webp";
+import productSteelRoundBars from "@/assets/product-steel-round-bars.webp";
+import productDeformedRebar from "@/assets/product-deformed-rebar.webp";
+import productBlueBoxSheets from "@/assets/product-blue-box-sheets.webp";
+import productRedBoxSheets from "@/assets/product-red-box-sheets.webp";
+import productRoofSheetsRidgesMix from "@/assets/product-roof-sheets-ridges-mix.webp";
+import productTexturedRedSheets from "@/assets/product-textured-red-sheets.webp";
+import productMatteBrownSheets from "@/assets/product-matte-brown-sheets.webp";
+import productNailsMixed from "@/assets/product-nails-mixed.webp";
+import productRoofingNailsBlue from "@/assets/product-roofing-nails-blue.webp";
+import productUmbrellaNailsHand from "@/assets/product-umbrella-nails-hand.webp";
+import productChainlinkTruck from "@/assets/product-chainlink-truck.webp";
+import productChainlinkRolls from "@/assets/product-chainlink-rolls.webp";
+import productChainlinkMamba from "@/assets/product-chainlink-mamba.webp";
+import productBallastQuarry from "@/assets/product-ballast-quarry.webp";
+import productBallastOnsite from "@/assets/product-ballast-onsite.webp";
+import productGreenSteelCoil from "@/assets/product-green-steel-coil.webp";
+import productWasherCapsMixed from "@/assets/product-washer-caps-mixed.webp";
+import productWasherCapsMaroon from "@/assets/product-washer-caps-maroon.webp";
+import productRedRoofingNailsBulk from "@/assets/product-red-roofing-nails-bulk.webp";
+import productRoofingNailsPacks from "@/assets/product-roofing-nails-packs.webp";
+import productBlackRoofingNails from "@/assets/product-black-roofing-nails.webp";
+import productGreenRoofingNails from "@/assets/product-green-roofing-nails.webp";
+import productKenruRebar from "@/assets/product-kenru-rebar.webp";
+import productColorSheetsDisplay from "@/assets/product-color-sheets-display.webp";
+import productColorSheetsCollage from "@/assets/product-color-sheets-collage.webp";
+import productGreenWavySheets from "@/assets/product-green-wavy-sheets.webp";
+import productLilacWavySheets from "@/assets/product-lilac-wavy-sheets.webp";
+import productDeepGreenBoxSheets from "@/assets/product-deep-green-box-sheets.webp";
+import productYellowOrangeSheets from "@/assets/product-yellow-orange-sheets.webp";
+import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.webp";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -309,7 +309,15 @@ const tileProducts: Product[] = [
 const ProductCard = ({ p }: { p: Product }) => (
   <div className="group flex flex-col overflow-hidden rounded-lg border bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
     <div className="h-56 overflow-hidden bg-concrete">
-      <img src={p.img} alt={p.name} className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+      <img
+        src={p.img}
+        alt={p.name}
+        loading="lazy"
+        decoding="async"
+        width={800}
+        height={600}
+        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+      />
     </div>
     <div className="flex flex-1 flex-col p-6">
       <span className="mb-2 inline-block self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{p.tag}</span>

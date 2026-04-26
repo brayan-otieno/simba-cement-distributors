@@ -1,5 +1,5 @@
 import { Truck, Building2, Users, MapPin } from "lucide-react";
-import cementTruck from "@/assets/cement-truck.jpg";
+import cementTruck from "@/assets/cement-truck.webp";
 
 const stats = [
   { icon: Truck, value: "15,000+", label: "Deliveries Completed" },

@@ -1,4 +1,4 @@
-import cementBags from "@/assets/cement-bags.jpg";
+import cementBags from "@/assets/cement-bags.webp";
 
 const About = () => (
   <section id="about" className="bg-concrete py-20">
