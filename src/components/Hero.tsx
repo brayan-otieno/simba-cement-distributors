@@ -14,14 +14,14 @@ const Hero = () => (
     <div className="hero-overlay absolute inset-0" />
     <div className="container relative z-10 py-20">
       <p className="mb-4 font-heading text-sm uppercase tracking-[0.3em] text-primary">
-        Your Trusted Construction Supplier
+        Cement & Building Materials Supplier in Kenya
       </p>
       <h1 className="mb-6 max-w-3xl font-heading text-5xl font-bold uppercase leading-tight text-accent-foreground md:text-7xl">
-        Quality Building<br />
-        <span className="text-primary">Materials Delivered</span>
+        Trusted Cement Supplier<br />
+        <span className="text-primary">in Nairobi & Nakuru</span>
       </h1>
-      <p className="mb-8 max-w-xl text-lg text-accent-foreground/80">
-        Authorised distributor of premium cement, blocks, tiles & building materials in Nakuru and Nairobi. Fast delivery, competitive prices, trusted by contractors.
+      <p className="mb-8 max-w-2xl text-lg text-accent-foreground/80">
+        Authorised distributor of certified cement, blocks, tiles, steel and roofing materials across Kenya. Enjoy reliable countrywide delivery, wholesale pricing and contractor-grade quality — trusted by builders in Nairobi, Nakuru and beyond.
       </p>
       <div className="flex flex-wrap gap-4">
         <a href="https://wa.me/254731030404" target="_blank" rel="noopener noreferrer" className="glow-cyan rounded bg-primary px-8 py-3.5 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">
