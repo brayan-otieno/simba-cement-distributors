@@ -181,7 +181,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Iron Sheets (Gauge 30)",
     desc: "Premium corrugated iron sheets for roofing, sheds, and construction. Strong, durable, and rust-resistant.",
     tag: "Roofing",
-    img: productGalvanizedSheets,
+    img: productIronSheetsGauge30,
     prices: [
       { label: "Per metre", price: "Ksh 350" },
       { label: "Over 2 metres", price: "Ksh 700" },
