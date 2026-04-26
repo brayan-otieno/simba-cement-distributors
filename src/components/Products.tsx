@@ -75,6 +75,9 @@ import productLilacWavySheets from "@/assets/product-lilac-wavy-sheets.webp";
 import productDeepGreenBoxSheets from "@/assets/product-deep-green-box-sheets.webp";
 import productYellowOrangeSheets from "@/assets/product-yellow-orange-sheets.webp";
 import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.webp";
+import productWheelbarrow from "@/assets/product-wheelbarrow.webp";
+import productSpades from "@/assets/product-spades.webp";
+import productIronSheetsGauge30 from "@/assets/product-iron-sheets-gauge30.webp";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
@@ -178,7 +181,7 @@ const steelAndFencingProducts: Product[] = [
     name: "Iron Sheets (Gauge 30)",
     desc: "Premium corrugated iron sheets for roofing, sheds, and construction. Strong, durable, and rust-resistant.",
     tag: "Roofing",
-    img: productGalvanizedSheets,
+    img: productIronSheetsGauge30,
     prices: [
       { label: "Per metre", price: "Ksh 350" },
       { label: "Over 2 metres", price: "Ksh 700" },
@@ -214,7 +217,7 @@ const accessoriesProducts: Product[] = [
     name: "Spades",
     desc: "Strong, durable spades for digging, mixing, and general construction site work.",
     tag: "Tools",
-    img: productIronSheets,
+    img: productSpades,
     prices: [
       { label: "Imported", price: "Ksh 750" },
       { label: "Local", price: "Ksh 580" },
@@ -224,7 +227,7 @@ const accessoriesProducts: Product[] = [
     name: "Wheelbarrows",
     desc: "Heavy-duty wheelbarrows for transporting materials on construction sites. Multiple sizes available.",
     tag: "Tools",
-    img: productIronSheets,
+    img: productWheelbarrow,
     prices: [
       { label: "Small", price: "Ksh 2,500" },
       { label: "Medium", price: "Ksh 4,200" },
