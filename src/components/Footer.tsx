@@ -23,10 +23,12 @@ const Footer = () => (
         <div>
           <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">We Distribute</h4>
           <ul className="space-y-2 text-sm text-accent-foreground/70">
-            <li>Cement (various brands)</li>
-            <li>Blocks & Building Materials</li>
-            <li>Tiles & Ceramics</li>
-            <li>Interlocking Pavers</li>
+            <li><a href="#products" className="transition-colors hover:text-primary">Cement (various brands)</a></li>
+            <li><a href="#products" className="transition-colors hover:text-primary">Blocks & Building Materials</a></li>
+            <li><a href="#products" className="transition-colors hover:text-primary">Roofing Sheets & Tiles</a></li>
+            <li><a href="#products" className="transition-colors hover:text-primary">Steel & Reinforcement Bars</a></li>
+            <li><a href="#products" className="transition-colors hover:text-primary">Interlocking Pavers</a></li>
+            <li><a href="#services" className="transition-colors hover:text-primary">Countrywide Delivery</a></li>
           </ul>
         </div>
         <div>
