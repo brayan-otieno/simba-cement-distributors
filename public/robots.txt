@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-Sitemap: /sitemap.xml
+Sitemap: https://simbacement.co.ke/sitemap.xml
