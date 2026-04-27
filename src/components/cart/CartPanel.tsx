@@ -210,9 +210,9 @@ const CartPanel = () => {
               <Button
                 onClick={handleCheckout}
                 disabled={checkingOut}
-                className="flex-[2]"
+                className="flex-[2] gap-2 bg-[#25D366] text-white hover:bg-[#1ebe57]"
               >
-                {checkingOut ? "Processing…" : "Checkout"}
+                {checkingOut ? "Opening WhatsApp…" : "Order via WhatsApp"}
               </Button>
             </div>
           </footer>
