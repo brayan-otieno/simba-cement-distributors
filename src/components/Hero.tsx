@@ -19,7 +19,7 @@ const Hero = () => (
       </p>
       <h1 className="mb-6 max-w-3xl font-heading text-5xl font-bold uppercase leading-tight text-accent-foreground md:text-7xl">
         Trusted Cement Supplier<br />
-        <span className="text-primary">in Nairobi & Nakuru</span>
+        <span className="text-primary">Delivery Countrywide</span>
       </h1>
       <p className="mb-8 max-w-2xl text-lg text-accent-foreground/80">
         Authorised distributor of certified cement, blocks, tiles, steel and roofing materials across Kenya. Enjoy reliable countrywide delivery, wholesale pricing and contractor-grade quality — trusted by builders in Nairobi, Nakuru and beyond.
