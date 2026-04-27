@@ -49,7 +49,12 @@ const CartPanel = () => {
 
     const message = encodeURIComponent(lines.join("\n"));
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
-    window.open(url, "_blank", "noopener,noreferrer");
+    // Use anchor click instead of window.open to keep bfcache eligibility
+    const a = document.createElement("a");
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.click();
 
     toast.success("Opening WhatsApp", {
       description: `Sending your order of ${itemCount} item${itemCount === 1 ? "" : "s"} to our team.`,

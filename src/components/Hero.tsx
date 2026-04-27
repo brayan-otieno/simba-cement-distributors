@@ -4,9 +4,10 @@ const Hero = () => (
   <section id="home" className="relative flex min-h-[85vh] items-center">
     <img
       src={heroBg}
-      alt="Cement plant"
-      width={1920}
-      height={1080}
+      alt="Construction site with cement bags and building materials in Kenya"
+      width={1600}
+      height={900}
+      sizes="100vw"
       fetchPriority="high"
       decoding="async"
       className="absolute inset-0 h-full w-full object-cover"
