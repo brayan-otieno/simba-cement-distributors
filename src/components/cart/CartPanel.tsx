@@ -7,6 +7,7 @@ import { toast } from "sonner";
 const CartPanel = () => {
   const { items, isOpen, closeCart, removeItem, updateQty, clearCart, subtotal, tax, total, itemCount } = useCart();
   const [checkingOut, setCheckingOut] = useState(false);
+  const WHATSAPP_NUMBER = "254731030404";
 
   // Lock body scroll when open
   useEffect(() => {
@@ -20,15 +21,41 @@ const CartPanel = () => {
   }, [isOpen]);
 
   const handleCheckout = () => {
+    if (items.length === 0) return;
     setCheckingOut(true);
-    setTimeout(() => {
-      setCheckingOut(false);
-      toast.success("Order placed!", {
-        description: `Simulated checkout for ${itemCount} item${itemCount === 1 ? "" : "s"}. Our team will confirm shortly.`,
-      });
-      clearCart();
-      closeCart();
-    }, 1200);
+
+    const lines: string[] = [];
+    lines.push("*New Order — Simba Cement Hardware*");
+    lines.push("");
+    items.forEach((item, idx) => {
+      const variant = item.variant ? ` (${item.variant})` : "";
+      const priceText =
+        item.unitPrice > 0
+          ? `${formatKsh(item.unitPrice)} × ${item.quantity} = ${formatKsh(item.unitPrice * item.quantity)}`
+          : `${item.quantity} × Request Quote`;
+      lines.push(`${idx + 1}. ${item.name}${variant}`);
+      lines.push(`   ${priceText}`);
+    });
+    lines.push("");
+    lines.push(`Subtotal: ${formatKsh(subtotal)}`);
+    lines.push(`VAT (16%): ${formatKsh(tax)}`);
+    lines.push(`*Total: ${formatKsh(total)}*`);
+    if (items.some((i) => i.unitPrice === 0)) {
+      lines.push("");
+      lines.push("_Note: Some items are quote-only and not included in the total._");
+    }
+    lines.push("");
+    lines.push("Please confirm availability, delivery and final pricing. Thank you!");
+
+    const message = encodeURIComponent(lines.join("\n"));
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+
+    toast.success("Opening WhatsApp", {
+      description: `Sending your order of ${itemCount} item${itemCount === 1 ? "" : "s"} to our team.`,
+    });
+    setCheckingOut(false);
+    closeCart();
   };
 
   return (
@@ -183,9 +210,9 @@ const CartPanel = () => {
               <Button
                 onClick={handleCheckout}
                 disabled={checkingOut}
-                className="flex-[2]"
+                className="flex-[2] gap-2 bg-[#25D366] text-white hover:bg-[#1ebe57]"
               >
-                {checkingOut ? "Processing…" : "Checkout"}
+                {checkingOut ? "Opening WhatsApp…" : "Order via WhatsApp"}
               </Button>
             </div>
           </footer>
