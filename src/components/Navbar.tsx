@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-background shadow-sm">
       <div className="container flex items-center justify-between py-4">
         <a href="#" className="flex items-center gap-2">
-          <img src={logo} alt="Simba Cement" width={160} height={48} decoding="async" className="h-12 w-auto" />
+          <img src={logo} alt="Simba Cement Hardware logo" width={96} height={48} decoding="async" fetchPriority="high" className="h-12 w-auto" />
         </a>
         <ul className="hidden gap-8 md:flex">
           {navLinks.map((l) => (
