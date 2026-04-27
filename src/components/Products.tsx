@@ -345,7 +345,7 @@ const ProductCard = ({ p }: { p: Product }) => (
         rel="noopener noreferrer"
         className="mt-3 text-center text-xs font-semibold text-primary transition-colors hover:text-primary/80"
       >
-        Or order via WhatsApp →
+        Order →
       </a>
     </div>
   </div>
