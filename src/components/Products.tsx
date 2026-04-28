@@ -83,9 +83,27 @@ type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
 
 const cementProducts: Product[] = [
-  { name: "Cement 32.5R (50kg)", desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.", tag: "Best Seller", img: productBag },
+  {
+    name: "Cement 32.5R (50kg)",
+    desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.",
+    tag: "Best Seller",
+    img: productBag,
+    prices: [
+      { label: "Per bag", price: "Ksh 650" },
+      { label: "35+ bags", price: "Ksh 580" },
+    ],
+  },
   { name: "Cement & Power Range", desc: "Full range of quality cement products available — we distribute multiple trusted brands.", tag: "Popular", img: productTrust },
-  { name: "PPC 32.5R (50kg)", desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.", tag: "Premium", img: product325r },
+  {
+    name: "PPC 32.5R (50kg)",
+    desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.",
+    tag: "Premium",
+    img: product325r,
+    prices: [
+      { label: "Per bag", price: "Ksh 650" },
+      { label: "35+ bags", price: "Ksh 580" },
+    ],
+  },
   { name: "Bulk Cement Supply", desc: "Large-quantity cement supply for commercial and industrial projects. Competitive distributor pricing.", tag: "Industrial", img: productFactory },
 ];
 
