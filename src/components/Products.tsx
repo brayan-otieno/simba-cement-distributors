@@ -423,6 +423,29 @@ const aggregatesProducts: Product[] = [
 ];
 
 const tileProducts: Product[] = [
+  {
+    name: "Floor Tiles",
+    desc: "Premium ceramic and porcelain floor tiles in multiple sizes. Durable finish for living areas, bedrooms, and commercial spaces.",
+    tag: "Floor",
+    img: tileGeometric,
+    prices: [
+      { label: "30×30 (17 pcs/box)", price: "Ksh 760" },
+      { label: "40×40 (12 pcs/box)", price: "Ksh 840" },
+      { label: "50×50 (8 pcs/box)", price: "Ksh 1,550" },
+      { label: "60×60 (4 pcs/box)", price: "Ksh 2,550" },
+    ],
+  },
+  {
+    name: "Wall Tiles",
+    desc: "Stylish wall tiles for kitchens, bathrooms, and feature walls. Wide range of designs and finishes.",
+    tag: "Wall",
+    img: tileFloral,
+    prices: [
+      { label: "20×30 (25 pcs/box)", price: "Ksh 1,080" },
+      { label: "25×40 (15 pcs/box)", price: "Ksh 1,150" },
+      { label: "30×60 (8 pcs/box)", price: "Ksh 1,500" },
+    ],
+  },
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
