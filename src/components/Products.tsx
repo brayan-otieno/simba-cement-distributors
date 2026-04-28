@@ -83,9 +83,27 @@ type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
 
 const cementProducts: Product[] = [
-  { name: "Cement 32.5R (50kg)", desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.", tag: "Best Seller", img: productBag },
+  {
+    name: "Cement 32.5R (50kg)",
+    desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.",
+    tag: "Best Seller",
+    img: productBag,
+    prices: [
+      { label: "Per bag", price: "Ksh 650" },
+      { label: "35+ bags", price: "Ksh 580" },
+    ],
+  },
   { name: "Cement & Power Range", desc: "Full range of quality cement products available — we distribute multiple trusted brands.", tag: "Popular", img: productTrust },
-  { name: "PPC 32.5R (50kg)", desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.", tag: "Premium", img: product325r },
+  {
+    name: "PPC 32.5R (50kg)",
+    desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.",
+    tag: "Premium",
+    img: product325r,
+    prices: [
+      { label: "Per bag", price: "Ksh 650" },
+      { label: "35+ bags", price: "Ksh 580" },
+    ],
+  },
   { name: "Bulk Cement Supply", desc: "Large-quantity cement supply for commercial and industrial projects. Competitive distributor pricing.", tag: "Industrial", img: productFactory },
 ];
 
@@ -178,15 +196,121 @@ const steelAndFencingProducts: Product[] = [
     ],
   },
   {
-    name: "Iron Sheets (Gauge 30)",
-    desc: "Premium corrugated iron sheets for roofing, sheds, and construction. Strong, durable, and rust-resistant.",
+    name: "Corrugated Ordinary Mabati (Gauge 30)",
+    desc: "Standard corrugated ordinary iron roofing sheets, gauge 30. Strong, lightweight, and rust-resistant.",
     tag: "Roofing",
     img: productIronSheetsGauge30,
     prices: [
       { label: "Per metre", price: "Ksh 350" },
-      { label: "Over 2 metres", price: "Ksh 700" },
-      { label: "Over 2.5 metres", price: "Ksh 850" },
-      { label: "Over 3 metres", price: "Ksh 1,050" },
+      { label: "2m sheet", price: "Ksh 700" },
+      { label: "2.5m sheet", price: "Ksh 875" },
+      { label: "3m sheet", price: "Ksh 1,050" },
+    ],
+  },
+  {
+    name: "Corrugated Ordinary Mabati (Gauge 28)",
+    desc: "Heavier-duty corrugated ordinary mabati, gauge 28. Stronger gauge for long-lasting roofing.",
+    tag: "Heavy Duty",
+    img: productCorrugatedRedStack,
+    prices: [
+      { label: "Per metre", price: "Ksh 400" },
+      { label: "2m sheet", price: "Ksh 800" },
+      { label: "2.5m sheet", price: "Ksh 1,000" },
+      { label: "3m sheet", price: "Ksh 1,200" },
+    ],
+  },
+  {
+    name: "Versatile Tile-Profile Mabati (Gauge 30)",
+    desc: "Premium versatile tile-profile roofing sheets, gauge 30. Stylish, durable, and modern.",
+    tag: "Premium",
+    img: productTexturedRedSheets,
+    prices: [
+      { label: "Per metre", price: "Ksh 600" },
+      { label: "2m sheet", price: "Ksh 1,200" },
+      { label: "2.5m sheet", price: "Ksh 1,500" },
+      { label: "3m sheet", price: "Ksh 1,800" },
+    ],
+  },
+  {
+    name: "Versatile Tile-Profile Mabati (Gauge 28)",
+    desc: "Heavier versatile tile-profile mabati, gauge 28. Superior strength with elegant tile finish.",
+    tag: "Premium",
+    img: productMatteBrownSheets,
+    prices: [
+      { label: "Per metre", price: "Ksh 700" },
+      { label: "2m sheet", price: "Ksh 1,400" },
+      { label: "2.5m sheet", price: "Ksh 1,750" },
+      { label: "3m sheet", price: "Ksh 2,100" },
+    ],
+  },
+  {
+    name: "Box-Profile Covermax Mabati (Gauge 30)",
+    desc: "Modern box-profile Covermax roofing sheets, gauge 30. Bold ribs and reliable weather sealing.",
+    tag: "Box Profile",
+    img: productBoxProfileSheets,
+    prices: [
+      { label: "Per metre", price: "Ksh 400" },
+      { label: "2m sheet", price: "Ksh 800" },
+      { label: "2.5m sheet", price: "Ksh 1,000" },
+      { label: "3m sheet", price: "Ksh 1,200" },
+    ],
+  },
+  {
+    name: "Box-Profile Covermax Mabati (Gauge 28)",
+    desc: "Heavy-duty box-profile Covermax mabati, gauge 28. Premium thickness for commercial and residential roofs.",
+    tag: "Heavy Duty",
+    img: productBlueBoxSheets,
+    prices: [
+      { label: "Per metre", price: "Ksh 500" },
+      { label: "2m sheet", price: "Ksh 1,000" },
+      { label: "2.5m sheet", price: "Ksh 1,250" },
+      { label: "3m sheet", price: "Ksh 1,500" },
+    ],
+  },
+  {
+    name: "Box Profile Reject Mabati (Gauge 30)",
+    desc: "Affordable reject box-profile mabati, gauge 30. Great for sheds, stores, and budget projects.",
+    tag: "Budget",
+    img: productRedBoxSheets,
+    prices: [
+      { label: "2m sheet", price: "Ksh 400" },
+      { label: "2.5m sheet", price: "Ksh 500" },
+      { label: "3m sheet", price: "Ksh 600" },
+    ],
+  },
+  {
+    name: "Ordinary Dumuzas Reject (Gauge 30)",
+    desc: "Reject ordinary dumuzas mabati, gauge 30. Pocket-friendly roofing for outhouses and temporary structures.",
+    tag: "Budget",
+    img: productIronSheets,
+    prices: [
+      { label: "2m sheet", price: "Ksh 300" },
+      { label: "2.5m sheet", price: "Ksh 375" },
+      { label: "3m sheet", price: "Ksh 450" },
+    ],
+  },
+  {
+    name: "Corrugated Dumuzas Reject (Gauge 30)",
+    desc: "Reject corrugated dumuzas mabati, gauge 30. Affordable corrugated roofing in standard lengths.",
+    tag: "Budget",
+    img: productCorrugatedRedStack,
+    prices: [
+      { label: "1m sheet", price: "Ksh 180" },
+      { label: "2m sheet", price: "Ksh 360" },
+      { label: "2.5m sheet", price: "Ksh 450" },
+      { label: "3m sheet", price: "Ksh 540" },
+    ],
+  },
+  {
+    name: "Dumuzas Ordinary Mabati (Gauge 30)",
+    desc: "Standard ordinary dumuzas mabati, gauge 30. Just Ksh 300 per metre. Free delivery countrywide on orders over 20 sheets.",
+    tag: "Free Delivery 20+",
+    img: productIronSheetsGauge30,
+    prices: [
+      { label: "Per metre", price: "Ksh 300" },
+      { label: "2m sheet", price: "Ksh 600" },
+      { label: "2.5m sheet", price: "Ksh 750" },
+      { label: "3m sheet", price: "Ksh 900" },
     ],
   },
   {
@@ -299,6 +423,29 @@ const aggregatesProducts: Product[] = [
 ];
 
 const tileProducts: Product[] = [
+  {
+    name: "Floor Tiles",
+    desc: "Premium ceramic and porcelain floor tiles in multiple sizes. Durable finish for living areas, bedrooms, and commercial spaces.",
+    tag: "Floor",
+    img: tileGeometric,
+    prices: [
+      { label: "30×30 (17 pcs/box)", price: "Ksh 760" },
+      { label: "40×40 (12 pcs/box)", price: "Ksh 840" },
+      { label: "50×50 (8 pcs/box)", price: "Ksh 1,550" },
+      { label: "60×60 (4 pcs/box)", price: "Ksh 2,550" },
+    ],
+  },
+  {
+    name: "Wall Tiles",
+    desc: "Stylish wall tiles for kitchens, bathrooms, and feature walls. Wide range of designs and finishes.",
+    tag: "Wall",
+    img: tileFloral,
+    prices: [
+      { label: "20×30 (25 pcs/box)", price: "Ksh 1,080" },
+      { label: "25×40 (15 pcs/box)", price: "Ksh 1,150" },
+      { label: "30×60 (8 pcs/box)", price: "Ksh 1,500" },
+    ],
+  },
   { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
   { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
   { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
