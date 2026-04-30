@@ -361,17 +361,82 @@ const accessoriesProducts: Product[] = [
 ];
 
 const waterStorageProducts: Product[] = [
-  { name: "Simba Plastic Water Tanks", desc: "Premium Simba plastic water tanks in 1000L, 3000L, 5000L and 10,000L capacities. Durable, UV-resistant, and ideal for homes and projects.", tag: "Best Seller", img: productSimbaTanks },
+  {
+    name: "Simba Plastic Water Tanks (3 Layers)",
+    desc: "Premium 3-layer Simba plastic water tanks. Durable, UV-resistant, ideal for homes and projects. Multiple capacities available.",
+    tag: "Best Seller",
+    img: productSimbaTanks,
+    prices: [
+      { label: "1,000 L", price: "Ksh 4,500" },
+      { label: "2,000 L", price: "Ksh 10,500" },
+      { label: "3,000 L", price: "Ksh 14,500" },
+      { label: "4,000 L", price: "Ksh 18,500" },
+      { label: "5,000 L", price: "Ksh 24,500" },
+      { label: "6,000 L", price: "Ksh 27,500" },
+      { label: "8,000 L", price: "Ksh 32,500" },
+      { label: "10,000 L", price: "Ksh 45,500" },
+      { label: "16,000 L", price: "Ksh 98,500" },
+      { label: "20,000 L", price: "Ksh 147,500" },
+      { label: "24,000 L", price: "Ksh 192,500" },
+    ],
+  },
   { name: "Bulk Water Tank Stock", desc: "Wide range of black and green water storage tanks available in multiple sizes. Direct distributor pricing on bulk orders.", tag: "Wholesale", img: productWaterTanksYard },
   { name: "Septic & Underground Tanks", desc: "Heavy-duty septic and underground storage tanks in green, orange, and black. Engineered for long-lasting underground installation.", tag: "Septic", img: productSepticTanks },
-  { name: "IBC Tote Tank (1000L)", desc: "Caged IBC tote tank for water, chemicals, and bulk liquid storage. Robust steel cage with reliable outlet valve.", tag: "Industrial", img: productIbcTote },
-  { name: "Plastic Storage Drums (Blue)", desc: "Heavy-duty blue plastic drums for water, chemicals, and bulk storage on construction sites.", tag: "Storage", img: productWaterDrumsBlue },
+  {
+    name: "IBC Tote Tanks",
+    desc: "Caged IBC tote tanks for water, chemicals, and bulk liquid storage. Robust steel cage with reliable outlet valve.",
+    tag: "Industrial",
+    img: productIbcTote,
+    prices: [
+      { label: "500 L", price: "Ksh 2,100" },
+      { label: "1,000 L", price: "Ksh 3,600" },
+      { label: "1,500 L", price: "Ksh 4,800" },
+      { label: "2,000 L", price: "Ksh 5,900" },
+    ],
+  },
+  {
+    name: "HDPE Drums & Jerricans",
+    desc: "Heavy-duty HDPE drums and jerricans for water, chemicals, and bulk storage. Multiple sizes available.",
+    tag: "Storage",
+    img: productWaterDrumsBlue,
+    prices: [
+      { label: "30 L Jerrican", price: "Ksh 100" },
+      { label: "200 L Drum", price: "Ksh 1,000" },
+      { label: "210 L Drum", price: "Ksh 1,250" },
+      { label: "250 L Drum", price: "Ksh 1,500" },
+      { label: "310 L Drum", price: "Ksh 2,000" },
+    ],
+  },
   { name: "Mixed IBC & Drums", desc: "Assorted IBC tanks and coloured drums for large-volume site water and liquid storage.", tag: "Bulk", img: productWaterTanksIbc },
   { name: "Industrial Storage Drums", desc: "Wide stock of industrial-grade plastic drums supplied in bulk for contractors and projects.", tag: "Wholesale", img: productWaterDrumsWarehouse },
   { name: "Drums & Jerrycans", desc: "Plastic drums and jerrycans in multiple sizes — ideal for water storage, transport, and site use.", tag: "Versatile", img: productWaterDrumsJerrycans },
 ];
 
 const roofingProducts: Product[] = [
+  {
+    name: "Plain Sheets (50 Metres)",
+    desc: "Galvanised plain (flat) metal sheets supplied in 50-metre rolls. Ideal for gutters, flashings, and custom fabrication.",
+    tag: "Flat Sheet",
+    img: productGalvanizedSheets,
+    prices: [
+      { label: "50m × Gauge 30", price: "Ksh 18,000" },
+      { label: "50m × Gauge 32", price: "Ksh 16,000" },
+    ],
+  },
+  {
+    name: "Tactile Stone-Coated Steel Roof Tile",
+    desc: "Premium 2-tone Shingle profile stone-coated steel roofing tile in CafeSand finish. Elegant, durable, and weather-resistant.",
+    tag: "Premium",
+    img: productStoneCoatedTiles,
+    prices: [{ label: "Per tile", price: "Ksh 680" }],
+  },
+  {
+    name: "Tactile Stone-Coated Ridge Cap (Verde)",
+    desc: "Matching stone-coated ridge cap in Verde finish. Completes a professional stone-coated roof installation.",
+    tag: "Ridge Cap",
+    img: productRoofRidges,
+    prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
+  },
   { name: "Stone-Coated Roof Tiles", desc: "Premium stone-coated metal roofing tiles. Stylish, durable, and weather-resistant — perfect for modern homes.", tag: "Premium", img: productStoneCoatedTiles },
   { name: "Charcoal Roof Tiles", desc: "Elegant charcoal-finish profiled roofing sheets. Long-lasting and modern aesthetic.", tag: "Modern", img: productCharcoalRoofTiles },
   { name: "Brown Tile-Profile Sheets", desc: "Tile-profile metal roofing sheets in rich brown finish. Durable and easy to install.", tag: "Popular", img: productBrownRoofTiles },
@@ -407,7 +472,16 @@ const machineStonesProducts: Product[] = [
 
 const nailsProducts: Product[] = [
   { name: "Construction Nails (Mixed Sizes)", desc: "Strong, durable wire nails in assorted sizes — ideal for carpentry, formwork, and general construction.", tag: "Best Seller", img: productNailsMixed },
-  { name: "Roofing Nails with Washers", desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.", tag: "Roofing", img: productRoofingNailsBlue },
+  {
+    name: "Roofing Nails with Washers",
+    desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.",
+    tag: "Roofing",
+    img: productRoofingNailsBlue,
+    prices: [
+      { label: "Per 1 Kg", price: "Ksh 180" },
+      { label: "Per 50 Kg", price: "Ksh 6,500" },
+    ],
+  },
   { name: "Umbrella Roofing Nails", desc: "Heavy-duty umbrella-head roofing nails for secure fixing of iron sheets to timber purlins.", tag: "Heavy Duty", img: productUmbrellaNailsHand },
   { name: "Red-Head Roofing Nails (Bulk)", desc: "Bulk supply of red-capped roofing nails with rubber washers. Colour-matched for red roofing sheets.", tag: "Bulk", img: productRedRoofingNailsBulk },
   { name: "Black-Head Roofing Nails", desc: "Galvanised roofing nails with black rubber-coated heads. Ideal for charcoal and dark-finish roofing sheets.", tag: "Colour Match", img: productBlackRoofingNails },
