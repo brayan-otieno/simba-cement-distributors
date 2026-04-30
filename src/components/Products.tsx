@@ -413,6 +413,30 @@ const waterStorageProducts: Product[] = [
 ];
 
 const roofingProducts: Product[] = [
+  {
+    name: "Plain Sheets (50 Metres)",
+    desc: "Galvanised plain (flat) metal sheets supplied in 50-metre rolls. Ideal for gutters, flashings, and custom fabrication.",
+    tag: "Flat Sheet",
+    img: productGalvanizedSheets,
+    prices: [
+      { label: "50m × Gauge 30", price: "Ksh 18,000" },
+      { label: "50m × Gauge 32", price: "Ksh 16,000" },
+    ],
+  },
+  {
+    name: "Tactile Stone-Coated Steel Roof Tile",
+    desc: "Premium 2-tone Shingle profile stone-coated steel roofing tile in CafeSand finish. Elegant, durable, and weather-resistant.",
+    tag: "Premium",
+    img: productStoneCoatedTiles,
+    prices: [{ label: "Per tile", price: "Ksh 680" }],
+  },
+  {
+    name: "Tactile Stone-Coated Ridge Cap (Verde)",
+    desc: "Matching stone-coated ridge cap in Verde finish. Completes a professional stone-coated roof installation.",
+    tag: "Ridge Cap",
+    img: productRoofRidges,
+    prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
+  },
   { name: "Stone-Coated Roof Tiles", desc: "Premium stone-coated metal roofing tiles. Stylish, durable, and weather-resistant — perfect for modern homes.", tag: "Premium", img: productStoneCoatedTiles },
   { name: "Charcoal Roof Tiles", desc: "Elegant charcoal-finish profiled roofing sheets. Long-lasting and modern aesthetic.", tag: "Modern", img: productCharcoalRoofTiles },
   { name: "Brown Tile-Profile Sheets", desc: "Tile-profile metal roofing sheets in rich brown finish. Durable and easy to install.", tag: "Popular", img: productBrownRoofTiles },
