@@ -408,12 +408,12 @@ const roofingProducts: Product[] = [
     img: productRoofRidges,
     prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
   },
-  { name: "Stone-Coated Roof Tiles", desc: "Premium stone-coated metal roofing tiles. Stylish, durable, and weather-resistant — perfect for modern homes.", tag: "Premium", img: productStoneCoatedTiles },
+  
   { name: "Charcoal Roof Tiles", desc: "Elegant charcoal-finish profiled roofing sheets. Long-lasting and modern aesthetic.", tag: "Modern", img: productCharcoalRoofTiles },
   { name: "Brown Tile-Profile Sheets", desc: "Tile-profile metal roofing sheets in rich brown finish. Durable and easy to install.", tag: "Popular", img: productBrownRoofTiles },
   { name: "Green Tile-Profile Sheets", desc: "Tile-profile roofing sheets in green finish. Strong, lightweight, and corrosion-resistant.", tag: "Colour", img: productGreenRoofTiles },
   { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
-  { name: "Roof Ridges & Accessories", desc: "Matching roof ridges in multiple colours to complete your roofing installation.", tag: "Accessories", img: productRoofRidges },
+  
   { name: "Box-Profile Roofing Sheets", desc: "Heavy-duty galvanised box-profile metal roofing sheets. Strong, modern, and ideal for residential and commercial projects.", tag: "Industrial", img: productBoxProfileSheets },
   { name: "Blue Box-Profile Sheets", desc: "Glossy blue box-profile metal roofing sheets. Vibrant, weather-resistant, and ideal for modern homes and commercial buildings.", tag: "Colour", img: productBlueBoxSheets },
   { name: "Red Box-Profile Sheets", desc: "Bold red box-profile roofing sheets straight from the factory. Pre-painted, long-lasting, and ready for installation.", tag: "Factory Direct", img: productRedBoxSheets },
@@ -421,7 +421,7 @@ const roofingProducts: Product[] = [
   { name: "Matte Brown Roofing Sheets", desc: "Sleek matte brown box-profile sheets with a granular finish. Modern aesthetic with superior weather resistance.", tag: "Matte Finish", img: productMatteBrownSheets },
   { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
   { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
-  { name: "Corrugated Roofing Stack (Red & Galvanised)", desc: "Factory-fresh corrugated metal roofing sheets stacked in red and galvanised finishes. Bulk dispatch ready.", tag: "Factory Stock", img: productCorrugatedRedStack },
+  
   { name: "Colour Box-Profile Showroom Display", desc: "Full range of box-profile roofing sheets on display — red, yellow, blue, and green finishes. Walk in and pick your colour.", tag: "Showroom", img: productColorSheetsDisplay },
   { name: "Multi-Colour Roofing Range", desc: "Wide colour selection of corrugated and box-profile roofing sheets — navy, forest green, red, black, and lime green available.", tag: "Colour Range", img: productColorSheetsCollage },
   { name: "Green Wavy Corrugated Sheets", desc: "Classic wavy corrugated metal roofing sheets in vibrant green. Lightweight, strong, and easy to install.", tag: "Wavy Profile", img: productGreenWavySheets },
