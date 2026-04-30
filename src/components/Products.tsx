@@ -5,7 +5,9 @@ import productFactory from "@/assets/product-factory.webp";
 import tileBlueMarble from "@/assets/tile-blue-marble.webp";
 import tileWhiteMarble from "@/assets/tile-white-marble.webp";
 import tileFloral from "@/assets/tile-floral.webp";
+import tileFloral2 from "@/assets/tile-floral-2.webp";
 import tileGoldMarble from "@/assets/tile-gold-marble.webp";
+import tileGoldMarble2 from "@/assets/tile-gold-marble-2.webp";
 import tileGeometric from "@/assets/tile-geometric.webp";
 import tileMagnolia from "@/assets/tile-magnolia.webp";
 import tileMedallionInstalled from "@/assets/tile-medallion-installed.webp";
@@ -289,37 +291,6 @@ const steelAndFencingProducts: Product[] = [
       { label: "3m sheet", price: "Ksh 450" },
     ],
   },
-  {
-    name: "Corrugated Dumuzas Reject (Gauge 30)",
-    desc: "Reject corrugated dumuzas mabati, gauge 30. Affordable corrugated roofing in standard lengths.",
-    tag: "Budget",
-    img: productCorrugatedRedStack,
-    prices: [
-      { label: "1m sheet", price: "Ksh 180" },
-      { label: "2m sheet", price: "Ksh 360" },
-      { label: "2.5m sheet", price: "Ksh 450" },
-      { label: "3m sheet", price: "Ksh 540" },
-    ],
-  },
-  {
-    name: "Dumuzas Ordinary Mabati (Gauge 30)",
-    desc: "Standard ordinary dumuzas mabati, gauge 30. Just Ksh 300 per metre. Free delivery countrywide on orders over 20 sheets.",
-    tag: "Free Delivery 20+",
-    img: productIronSheetsGauge30,
-    prices: [
-      { label: "Per metre", price: "Ksh 300" },
-      { label: "2m sheet", price: "Ksh 600" },
-      { label: "2.5m sheet", price: "Ksh 750" },
-      { label: "3m sheet", price: "Ksh 900" },
-    ],
-  },
-  {
-    name: "Binding Wire",
-    desc: "Soft annealed binding wire for tying reinforcement bars on construction sites.",
-    tag: "Essential",
-    img: productBarbedWire,
-    prices: [{ label: "Per roll", price: "Ksh 2,500" }],
-  },
 ];
 
 const accessoriesProducts: Product[] = [
@@ -437,20 +408,16 @@ const roofingProducts: Product[] = [
     img: productRoofRidges,
     prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
   },
-  { name: "Stone-Coated Roof Tiles", desc: "Premium stone-coated metal roofing tiles. Stylish, durable, and weather-resistant — perfect for modern homes.", tag: "Premium", img: productStoneCoatedTiles },
+  
   { name: "Charcoal Roof Tiles", desc: "Elegant charcoal-finish profiled roofing sheets. Long-lasting and modern aesthetic.", tag: "Modern", img: productCharcoalRoofTiles },
   { name: "Brown Tile-Profile Sheets", desc: "Tile-profile metal roofing sheets in rich brown finish. Durable and easy to install.", tag: "Popular", img: productBrownRoofTiles },
   { name: "Green Tile-Profile Sheets", desc: "Tile-profile roofing sheets in green finish. Strong, lightweight, and corrosion-resistant.", tag: "Colour", img: productGreenRoofTiles },
   { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
-  { name: "Roof Ridges & Accessories", desc: "Matching roof ridges in multiple colours to complete your roofing installation.", tag: "Accessories", img: productRoofRidges },
-  { name: "Box-Profile Roofing Sheets", desc: "Heavy-duty galvanised box-profile metal roofing sheets. Strong, modern, and ideal for residential and commercial projects.", tag: "Industrial", img: productBoxProfileSheets },
-  { name: "Blue Box-Profile Sheets", desc: "Glossy blue box-profile metal roofing sheets. Vibrant, weather-resistant, and ideal for modern homes and commercial buildings.", tag: "Colour", img: productBlueBoxSheets },
-  { name: "Red Box-Profile Sheets", desc: "Bold red box-profile roofing sheets straight from the factory. Pre-painted, long-lasting, and ready for installation.", tag: "Factory Direct", img: productRedBoxSheets },
-  { name: "Textured Red Roofing Sheets", desc: "Premium textured tile-profile sheets in a rich red finish. Stone-grain texture for an elegant, durable roof.", tag: "Textured", img: productTexturedRedSheets },
-  { name: "Matte Brown Roofing Sheets", desc: "Sleek matte brown box-profile sheets with a granular finish. Modern aesthetic with superior weather resistance.", tag: "Matte Finish", img: productMatteBrownSheets },
+  
+  
   { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
   { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
-  { name: "Corrugated Roofing Stack (Red & Galvanised)", desc: "Factory-fresh corrugated metal roofing sheets stacked in red and galvanised finishes. Bulk dispatch ready.", tag: "Factory Stock", img: productCorrugatedRedStack },
+  
   { name: "Colour Box-Profile Showroom Display", desc: "Full range of box-profile roofing sheets on display — red, yellow, blue, and green finishes. Walk in and pick your colour.", tag: "Showroom", img: productColorSheetsDisplay },
   { name: "Multi-Colour Roofing Range", desc: "Wide colour selection of corrugated and box-profile roofing sheets — navy, forest green, red, black, and lime green available.", tag: "Colour Range", img: productColorSheetsCollage },
   { name: "Green Wavy Corrugated Sheets", desc: "Classic wavy corrugated metal roofing sheets in vibrant green. Lightweight, strong, and easy to install.", tag: "Wavy Profile", img: productGreenWavySheets },
@@ -501,7 +468,7 @@ const tileProducts: Product[] = [
     name: "Floor Tiles",
     desc: "Premium ceramic and porcelain floor tiles in multiple sizes. Durable finish for living areas, bedrooms, and commercial spaces.",
     tag: "Floor",
-    img: tileGeometric,
+    img: tileGoldMarble2,
     prices: [
       { label: "30×30 (17 pcs/box)", price: "Ksh 760" },
       { label: "40×40 (12 pcs/box)", price: "Ksh 840" },
@@ -513,7 +480,7 @@ const tileProducts: Product[] = [
     name: "Wall Tiles",
     desc: "Stylish wall tiles for kitchens, bathrooms, and feature walls. Wide range of designs and finishes.",
     tag: "Wall",
-    img: tileFloral,
+    img: tileFloral2,
     prices: [
       { label: "20×30 (25 pcs/box)", price: "Ksh 1,080" },
       { label: "25×40 (15 pcs/box)", price: "Ksh 1,150" },
