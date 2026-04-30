@@ -472,7 +472,7 @@ const tileProducts: Product[] = [
     name: "Floor Tiles",
     desc: "Premium ceramic and porcelain floor tiles in multiple sizes. Durable finish for living areas, bedrooms, and commercial spaces.",
     tag: "Floor",
-    img: tileGeometric,
+    img: tileGoldMarble2,
     prices: [
       { label: "30×30 (17 pcs/box)", price: "Ksh 760" },
       { label: "40×40 (12 pcs/box)", price: "Ksh 840" },
@@ -484,7 +484,7 @@ const tileProducts: Product[] = [
     name: "Wall Tiles",
     desc: "Stylish wall tiles for kitchens, bathrooms, and feature walls. Wide range of designs and finishes.",
     tag: "Wall",
-    img: tileFloral,
+    img: tileFloral2,
     prices: [
       { label: "20×30 (25 pcs/box)", price: "Ksh 1,080" },
       { label: "25×40 (15 pcs/box)", price: "Ksh 1,150" },
