@@ -472,7 +472,16 @@ const machineStonesProducts: Product[] = [
 
 const nailsProducts: Product[] = [
   { name: "Construction Nails (Mixed Sizes)", desc: "Strong, durable wire nails in assorted sizes — ideal for carpentry, formwork, and general construction.", tag: "Best Seller", img: productNailsMixed },
-  { name: "Roofing Nails with Washers", desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.", tag: "Roofing", img: productRoofingNailsBlue },
+  {
+    name: "Roofing Nails with Washers",
+    desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.",
+    tag: "Roofing",
+    img: productRoofingNailsBlue,
+    prices: [
+      { label: "Per 1 Kg", price: "Ksh 180" },
+      { label: "Per 50 Kg", price: "Ksh 6,500" },
+    ],
+  },
   { name: "Umbrella Roofing Nails", desc: "Heavy-duty umbrella-head roofing nails for secure fixing of iron sheets to timber purlins.", tag: "Heavy Duty", img: productUmbrellaNailsHand },
   { name: "Red-Head Roofing Nails (Bulk)", desc: "Bulk supply of red-capped roofing nails with rubber washers. Colour-matched for red roofing sheets.", tag: "Bulk", img: productRedRoofingNailsBulk },
   { name: "Black-Head Roofing Nails", desc: "Galvanised roofing nails with black rubber-coated heads. Ideal for charcoal and dark-finish roofing sheets.", tag: "Colour Match", img: productBlackRoofingNails },
