@@ -291,37 +291,6 @@ const steelAndFencingProducts: Product[] = [
       { label: "3m sheet", price: "Ksh 450" },
     ],
   },
-  {
-    name: "Corrugated Dumuzas Reject (Gauge 30)",
-    desc: "Reject corrugated dumuzas mabati, gauge 30. Affordable corrugated roofing in standard lengths.",
-    tag: "Budget",
-    img: productCorrugatedRedStack,
-    prices: [
-      { label: "1m sheet", price: "Ksh 180" },
-      { label: "2m sheet", price: "Ksh 360" },
-      { label: "2.5m sheet", price: "Ksh 450" },
-      { label: "3m sheet", price: "Ksh 540" },
-    ],
-  },
-  {
-    name: "Dumuzas Ordinary Mabati (Gauge 30)",
-    desc: "Standard ordinary dumuzas mabati, gauge 30. Just Ksh 300 per metre. Free delivery countrywide on orders over 20 sheets.",
-    tag: "Free Delivery 20+",
-    img: productIronSheetsGauge30,
-    prices: [
-      { label: "Per metre", price: "Ksh 300" },
-      { label: "2m sheet", price: "Ksh 600" },
-      { label: "2.5m sheet", price: "Ksh 750" },
-      { label: "3m sheet", price: "Ksh 900" },
-    ],
-  },
-  {
-    name: "Binding Wire",
-    desc: "Soft annealed binding wire for tying reinforcement bars on construction sites.",
-    tag: "Essential",
-    img: productBarbedWire,
-    prices: [{ label: "Per roll", price: "Ksh 2,500" }],
-  },
 ];
 
 const accessoriesProducts: Product[] = [
