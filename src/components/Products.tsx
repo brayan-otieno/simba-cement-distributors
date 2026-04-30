@@ -414,11 +414,7 @@ const roofingProducts: Product[] = [
   { name: "Green Tile-Profile Sheets", desc: "Tile-profile roofing sheets in green finish. Strong, lightweight, and corrosion-resistant.", tag: "Colour", img: productGreenRoofTiles },
   { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
   
-  { name: "Box-Profile Roofing Sheets", desc: "Heavy-duty galvanised box-profile metal roofing sheets. Strong, modern, and ideal for residential and commercial projects.", tag: "Industrial", img: productBoxProfileSheets },
-  { name: "Blue Box-Profile Sheets", desc: "Glossy blue box-profile metal roofing sheets. Vibrant, weather-resistant, and ideal for modern homes and commercial buildings.", tag: "Colour", img: productBlueBoxSheets },
-  { name: "Red Box-Profile Sheets", desc: "Bold red box-profile roofing sheets straight from the factory. Pre-painted, long-lasting, and ready for installation.", tag: "Factory Direct", img: productRedBoxSheets },
-  { name: "Textured Red Roofing Sheets", desc: "Premium textured tile-profile sheets in a rich red finish. Stone-grain texture for an elegant, durable roof.", tag: "Textured", img: productTexturedRedSheets },
-  { name: "Matte Brown Roofing Sheets", desc: "Sleek matte brown box-profile sheets with a granular finish. Modern aesthetic with superior weather resistance.", tag: "Matte Finish", img: productMatteBrownSheets },
+  
   { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
   { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
   
