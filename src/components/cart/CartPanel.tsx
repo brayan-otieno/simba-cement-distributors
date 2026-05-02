@@ -5,7 +5,7 @@ import { useCart, formatKsh } from "@/context/CartContext";
 import { toast } from "sonner";
 
 const CartPanel = () => {
-  const { items, isOpen, closeCart, removeItem, updateQty, clearCart, subtotal, tax, total, itemCount } = useCart();
+  const { items, isOpen, highlightId, closeCart, removeItem, updateQty, clearCart, subtotal, tax, total, itemCount } = useCart();
   const [checkingOut, setCheckingOut] = useState(false);
   const WHATSAPP_NUMBER = "254731030404";
 
@@ -119,7 +119,9 @@ const CartPanel = () => {
               {items.map((item) => (
                 <li
                   key={item.id}
-                  className="flex gap-3 rounded-lg border bg-card p-3 shadow-sm animate-fade-in"
+                  className={`flex gap-3 rounded-lg border bg-card p-3 shadow-sm animate-fade-in transition-all duration-300 ${
+                    highlightId === item.id ? "border-primary ring-2 ring-primary/40 bg-primary/5" : ""
+                  }`}
                 >
                   <img
                     src={item.img}
