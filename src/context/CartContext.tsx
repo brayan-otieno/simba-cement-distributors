@@ -14,7 +14,8 @@ export type CartItem = {
 type CartContextValue = {
   items: CartItem[];
   isOpen: boolean;
-  openCart: () => void;
+  highlightId: string | null;
+  openCart: (highlightId?: string) => void;
   closeCart: () => void;
   toggleCart: () => void;
   addItem: (item: Omit<CartItem, "quantity">, qty?: number) => void;
@@ -41,6 +42,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     }
   });
   const [isOpen, setIsOpen] = useState(false);
+  const [highlightId, setHighlightId] = useState<string | null>(null);
 
   useEffect(() => {
     try {
@@ -50,7 +52,13 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [items]);
 
-  const openCart = useCallback(() => setIsOpen(true), []);
+  const openCart = useCallback((id?: string) => {
+    setIsOpen(true);
+    if (id) {
+      setHighlightId(id);
+      window.setTimeout(() => setHighlightId(null), 2200);
+    }
+  }, []);
   const closeCart = useCallback(() => setIsOpen(false), []);
   const toggleCart = useCallback(() => setIsOpen((v) => !v), []);
 
@@ -92,6 +100,7 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
   const value: CartContextValue = {
     items,
     isOpen,
+    highlightId,
     openCart,
     closeCart,
     toggleCart,
