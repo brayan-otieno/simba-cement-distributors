@@ -486,29 +486,87 @@ const tileProducts: Product[] = [
   { name: "Installed Medallion Showcase", desc: "Luxury baroque medallion floor tile installation — true craftsmanship for elegant interiors.", tag: "Showcase", img: tileMedallionInstalled },
 ];
 
+import { useEffect, useState } from "react";
 import AddToCartControl from "@/components/cart/AddToCartControl";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, FileText, MessageCircle, Phone } from "lucide-react";
+import { CheckCircle2, ChevronLeft, ChevronRight, FileText, MessageCircle, Phone } from "lucide-react";
+
+const ProductImage = ({ images, alt }: { images: string[]; alt: string }) => {
+  const [idx, setIdx] = useState(0);
+  const multi = images.length > 1;
+
+  useEffect(() => {
+    if (!multi) return;
+    const t = setInterval(() => setIdx((i) => (i + 1) % images.length), 3000);
+    return () => clearInterval(t);
+  }, [multi, images.length]);
+
+  const go = (n: number) => setIdx((n + images.length) % images.length);
+
+  return (
+    <div className="group/slide relative h-full w-full overflow-hidden">
+      {images.map((src, i) => (
+        <img
+          key={src + i}
+          src={src}
+          alt={alt}
+          loading="lazy"
+          decoding="async"
+          width={800}
+          height={600}
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-in-out ${
+            i === idx ? "opacity-100" : "opacity-0"
+          }`}
+        />
+      ))}
+      {multi && (
+        <>
+          <button
+            type="button"
+            aria-label="Previous image"
+            onClick={(e) => { e.preventDefault(); go(idx - 1); }}
+            className="absolute left-2 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/30 bg-white/20 p-1.5 text-white opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-white/40 group-hover/slide:opacity-100"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            aria-label="Next image"
+            onClick={(e) => { e.preventDefault(); go(idx + 1); }}
+            className="absolute right-2 top-1/2 z-10 -translate-y-1/2 rounded-full border border-white/30 bg-white/20 p-1.5 text-white opacity-0 backdrop-blur-md transition-all duration-300 hover:bg-white/40 group-hover/slide:opacity-100"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+          <div className="absolute bottom-2 left-1/2 z-10 flex -translate-x-1/2 gap-1.5">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`Go to image ${i + 1}`}
+                onClick={(e) => { e.preventDefault(); go(i); }}
+                className={`h-1.5 rounded-full transition-all duration-300 ${
+                  i === idx ? "w-5 bg-white" : "w-1.5 bg-white/50 hover:bg-white/80"
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
 const ProductCard = ({ p }: { p: Product }) => (
   <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card product-card-shadow transition-all duration-300 hover:-translate-y-1 hover:product-card-shadow-hover hover:border-primary/40">
     {/* Image */}
     <div className="relative h-52 overflow-hidden bg-concrete">
-      <img
-        src={p.img}
-        alt={p.name}
-        loading="lazy"
-        decoding="async"
-        width={800}
-        height={600}
-        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-      />
+      <ProductImage images={p.images && p.images.length > 0 ? p.images : [p.img]} alt={p.name} />
       {/* Tag badge - top left */}
-      <span className="absolute left-3 top-3 inline-flex items-center rounded-md bg-primary px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-primary-foreground shadow-md">
+      <span className="pointer-events-none absolute left-3 top-3 z-20 inline-flex items-center rounded-md bg-primary px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-primary-foreground shadow-md">
         {p.tag}
       </span>
       {/* Availability badge - top right */}
-      <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-md bg-white/95 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-emerald-700 shadow-md backdrop-blur">
+      <span className="pointer-events-none absolute right-3 top-3 z-20 inline-flex items-center gap-1 rounded-md bg-white/95 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-emerald-700 shadow-md backdrop-blur">
         <CheckCircle2 className="h-3 w-3" />
         In Stock
       </span>
