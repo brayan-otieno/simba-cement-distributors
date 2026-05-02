@@ -498,10 +498,13 @@ const tileProducts: Product[] = [
 ];
 
 import AddToCartControl from "@/components/cart/AddToCartControl";
+import { Button } from "@/components/ui/button";
+import { CheckCircle2, FileText, MessageCircle, Phone } from "lucide-react";
 
 const ProductCard = ({ p }: { p: Product }) => (
-  <div className="group flex flex-col overflow-hidden rounded-lg border bg-card transition-all hover:-translate-y-1 hover:shadow-lg">
-    <div className="h-56 overflow-hidden bg-concrete">
+  <article className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-card product-card-shadow transition-all duration-300 hover:-translate-y-1 hover:product-card-shadow-hover hover:border-primary/40">
+    {/* Image */}
+    <div className="relative h-52 overflow-hidden bg-concrete">
       <img
         src={p.img}
         alt={p.name}
@@ -509,100 +512,167 @@ const ProductCard = ({ p }: { p: Product }) => (
         decoding="async"
         width={800}
         height={600}
-        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
       />
+      {/* Tag badge - top left */}
+      <span className="absolute left-3 top-3 inline-flex items-center rounded-md bg-primary px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-primary-foreground shadow-md">
+        {p.tag}
+      </span>
+      {/* Availability badge - top right */}
+      <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-md bg-white/95 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-emerald-700 shadow-md backdrop-blur">
+        <CheckCircle2 className="h-3 w-3" />
+        In Stock
+      </span>
     </div>
-    <div className="flex flex-1 flex-col p-6">
-      <span className="mb-2 inline-block self-start rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">{p.tag}</span>
-      <h3 className="mb-2 font-heading text-xl font-bold uppercase text-accent">{p.name}</h3>
-      <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
-      {p.prices && (
-        <ul className="mb-4 space-y-1.5 rounded-md bg-muted/50 p-3 text-sm">
-          {p.prices.map((pr) => (
-            <li key={pr.label} className="flex items-center justify-between gap-2">
-              <span className="text-muted-foreground">{pr.label}</span>
-              <span className="font-semibold text-accent">{pr.price}</span>
-            </li>
-          ))}
-        </ul>
+
+    {/* Content */}
+    <div className="flex flex-1 flex-col p-5">
+      <h3 className="mb-1.5 font-heading text-lg font-bold uppercase leading-tight text-accent line-clamp-2">
+        {p.name}
+      </h3>
+      <p className="mb-3 text-xs leading-relaxed text-muted-foreground line-clamp-2">{p.desc}</p>
+
+      {p.prices ? (
+        <div className="mb-4">
+          <div className="mb-1.5 flex items-baseline justify-between border-b border-border/60 pb-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">From</span>
+            <span className="font-heading text-2xl font-bold text-primary tabular-nums">
+              {p.prices[0].price}
+            </span>
+          </div>
+          <ul className="max-h-24 space-y-0.5 overflow-y-auto text-xs">
+            {p.prices.map((pr) => (
+              <li key={pr.label} className="flex items-center justify-between gap-2 py-0.5">
+                <span className="truncate text-muted-foreground">{pr.label}</span>
+                <span className="flex-shrink-0 font-semibold text-accent tabular-nums">{pr.price}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <div className="mb-4 rounded-md border border-dashed border-primary/30 bg-primary/5 px-3 py-2 text-center">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-primary">Request Quote</span>
+        </div>
       )}
+
       <AddToCartControl name={p.name} img={p.img} prices={p.prices} />
-      <a
-        href={`https://wa.me/254731030404?text=${encodeURIComponent(`I would like to order ${p.name}`)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-3 text-center text-xs font-semibold text-primary transition-colors hover:text-primary/80"
-      >
-        Order →
-      </a>
     </div>
-  </div>
+  </article>
 );
 
 const SectionHeader = ({ subtitle, title }: { subtitle: string; title: string }) => (
-  <div className="mb-12 text-center">
-    <p className="mb-2 font-heading text-sm uppercase tracking-[0.2em] text-primary">{subtitle}</p>
+  <div className="mb-10 text-center">
+    <div className="mb-3 inline-flex items-center gap-2">
+      <span className="h-px w-8 bg-primary" />
+      <p className="font-heading text-xs font-bold uppercase tracking-[0.25em] text-primary">{subtitle}</p>
+      <span className="h-px w-8 bg-primary" />
+    </div>
     <h2 className="font-heading text-3xl font-bold uppercase text-accent md:text-4xl">{title}</h2>
   </div>
 );
 
+const ProductsCTA = () => (
+  <div className="mt-20 overflow-hidden rounded-2xl bg-navy-grid relative">
+    <div className="absolute inset-0 bg-gradient-to-br from-accent/95 via-accent/90 to-accent/80" />
+    <div className="relative px-6 py-12 text-center md:px-12 md:py-16">
+      <p className="mb-3 font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
+        Bulk & Trade Orders
+      </p>
+      <h2 className="mx-auto mb-4 max-w-3xl font-heading text-3xl font-bold uppercase text-white md:text-5xl">
+        Need Bulk Construction Supplies?
+      </h2>
+      <p className="mx-auto mb-8 max-w-2xl text-sm text-white/80 md:text-base">
+        Get distributor pricing on cement, steel, roofing, water tanks and more. Countrywide delivery from our yard direct to your site.
+      </p>
+      <div className="flex flex-wrap items-center justify-center gap-3">
+        <Button
+          asChild
+          size="lg"
+          className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg glow-cyan"
+        >
+          <a href="#contact">
+            <FileText className="h-5 w-5" />
+            Request Quotation
+          </a>
+        </Button>
+        <Button
+          asChild
+          size="lg"
+          className="gap-2 bg-[#25D366] text-white hover:bg-[#1ebe57] shadow-lg"
+        >
+          <a
+            href="https://wa.me/254731030404?text=Hello%20Simba%20Cement%2C%20I%20would%20like%20a%20bulk%20quotation."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MessageCircle className="h-5 w-5" />
+            WhatsApp Order
+          </a>
+        </Button>
+        <Button
+          asChild
+          size="lg"
+          variant="outline"
+          className="gap-2 border-white/40 bg-transparent text-white hover:bg-white hover:text-accent"
+        >
+          <a href="tel:+254731030404">
+            <Phone className="h-5 w-5" />
+            Call Now
+          </a>
+        </Button>
+      </div>
+    </div>
+  </div>
+);
+
+const ProductSection = ({
+  subtitle,
+  title,
+  products,
+  cols = "lg:grid-cols-3 xl:grid-cols-4",
+}: {
+  subtitle: string;
+  title: string;
+  products: Product[];
+  cols?: string;
+}) => (
+  <div className="mb-20">
+    <SectionHeader subtitle={subtitle} title={title} />
+    <div className={`grid gap-5 sm:grid-cols-2 ${cols}`}>
+      {products.map((p) => <ProductCard key={p.name} p={p} />)}
+    </div>
+  </div>
+);
+
 const Products = () => (
-  <section id="products" className="bg-background py-20">
+  <section id="products" className="bg-concrete-texture py-20">
     <div className="container">
-      <SectionHeader subtitle="We Distribute" title="Cement Products" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {cementProducts.map((p) => <ProductCard key={p.name} p={p} />)}
+      {/* Section intro */}
+      <div className="mb-16 text-center">
+        <p className="mb-3 font-heading text-xs font-bold uppercase tracking-[0.3em] text-primary">
+          Our Catalogue
+        </p>
+        <h2 className="mb-4 font-heading text-4xl font-bold uppercase text-accent md:text-5xl">
+          Premium Construction Materials
+        </h2>
+        <p className="mx-auto max-w-2xl text-base text-muted-foreground">
+          Browse our full range — add items to your cart and order in seconds via WhatsApp. Distributor pricing, countrywide delivery.
+        </p>
       </div>
 
-      <SectionHeader subtitle="Structural Materials" title="Blocks & Building Materials" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {blockProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
+      <ProductSection subtitle="We Distribute" title="Cement Products" products={cementProducts} />
+      <ProductSection subtitle="Structural Materials" title="Blocks & Building Materials" products={blockProducts} />
+      <ProductSection subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" products={roofingProducts} cols="lg:grid-cols-3" />
+      <ProductSection subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" products={steelAndFencingProducts} />
+      <ProductSection subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" products={machineStonesProducts} cols="lg:grid-cols-3" />
+      <ProductSection subtitle="Aggregates" title="Ballast & Quarry Materials" products={aggregatesProducts} cols="lg:grid-cols-2 max-w-3xl mx-auto" />
+      <ProductSection subtitle="Fixings" title="Nails & Fasteners" products={nailsProducts} cols="lg:grid-cols-3" />
+      <ProductSection subtitle="Site Essentials" title="Tools & Accessories" products={accessoriesProducts} />
+      <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-2 max-w-3xl mx-auto" />
+      <ProductSection subtitle="Site Storage" title="Water Tanks & Storage Drums" products={waterStorageProducts} />
+      <ProductSection subtitle="Building Finishes" title="Tiles & Ceramics" products={tileProducts} />
 
-      <SectionHeader subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {roofingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {steelAndFencingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {machineStonesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Aggregates" title="Ballast & Quarry Materials" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
-        {aggregatesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Fixings" title="Nails & Fasteners" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {nailsProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Site Essentials" title="Tools & Accessories" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {accessoriesProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Outdoor Solutions" title="Interlocking Pavers" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 max-w-3xl mx-auto">
-        {pavingProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Site Storage" title="Water Tanks & Storage Drums" />
-      <div className="mb-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        {waterStorageProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
-
-      <SectionHeader subtitle="Building Finishes" title="Tiles & Ceramics" />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {tileProducts.map((p) => <ProductCard key={p.name} p={p} />)}
-      </div>
+      <ProductsCTA />
     </div>
   </section>
 );
