@@ -75,4 +75,26 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  /* Subtle concrete texture for industrial backgrounds */
+  .bg-concrete-texture {
+    background-color: hsl(var(--concrete));
+    background-image:
+      radial-gradient(hsla(205, 94%, 15%, 0.04) 1px, transparent 1px),
+      radial-gradient(hsla(205, 94%, 15%, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px, 16px 16px;
+    background-position: 0 0, 12px 12px;
+  }
+  .bg-navy-grid {
+    background-color: hsl(var(--navy));
+    background-image:
+      linear-gradient(hsla(197, 91%, 55%, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, hsla(197, 91%, 55%, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .product-card-shadow {
+    box-shadow: 0 1px 2px hsla(205, 94%, 15%, 0.04), 0 4px 16px hsla(205, 94%, 15%, 0.06);
+  }
+  .product-card-shadow-hover {
+    box-shadow: 0 8px 24px hsla(197, 91%, 55%, 0.15), 0 4px 12px hsla(205, 94%, 15%, 0.1);
+  }
 }
