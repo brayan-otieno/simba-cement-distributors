@@ -82,7 +82,7 @@ import productSpades from "@/assets/product-spades.webp";
 import productIronSheetsGauge30 from "@/assets/product-iron-sheets-gauge30.webp";
 
 type PriceItem = { label: string; price: string };
-type Product = { name: string; desc: string; tag: string; img: string; prices?: PriceItem[] };
+type Product = { name: string; desc: string; tag: string; img: string; images?: string[]; prices?: PriceItem[] };
 
 const cementProducts: Product[] = [
   {
@@ -140,24 +140,13 @@ const steelAndFencingProducts: Product[] = [
     desc: "Durable Mamba-brand chainlink fencing for residential, commercial, and farm perimeter security. Bulk orders available.",
     tag: "Fencing",
     img: productChainlinkMamba,
+    images: [productChainlinkMamba, productChainlinkRolls, productChainlinkTruck],
     prices: [
       { label: "4ft × 18mts", price: "Ksh 2,000" },
       { label: "5ft × 18mts", price: "Ksh 2,500" },
       { label: "6ft × 18mts", price: "Ksh 3,000" },
       { label: "7ft × 18mts", price: "Ksh 3,500" },
     ],
-  },
-  {
-    name: "Chainlink Rolls (Yard Stock)",
-    desc: "Galvanised chainlink rolls in stock at our yard. Multiple gauges and heights — ready for immediate dispatch.",
-    tag: "In Stock",
-    img: productChainlinkRolls,
-  },
-  {
-    name: "Chainlink Bulk Delivery",
-    desc: "Truckloads of chainlink fencing dispatched countrywide. Reliable bulk supply for fencing contractors and projects.",
-    tag: "Bulk Delivery",
-    img: productChainlinkTruck,
   },
   {
     name: "Barbed Wire (16 Gauge)",
