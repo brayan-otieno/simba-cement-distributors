@@ -95,30 +95,31 @@ const cementProducts: Product[] = [
       { label: "35+ bags", price: "Ksh 580" },
     ],
   },
-  { name: "Cement & Power Range", desc: "Full range of quality cement products available — we distribute multiple trusted brands.", tag: "Popular", img: productTrust },
   {
-    name: "PPC 32.5R (50kg)",
-    desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.",
+    name: "Cement 42.5N",
+    desc: "High-quality Portland cement conforming to KS EAS 18-1 standards. Always in stock for serious construction work.",
     tag: "Premium",
-    img: product325r,
+    img: productTrust,
+    images: [productTrust, product325r, productFactory],
     prices: [
       { label: "Per bag", price: "Ksh 650" },
       { label: "35+ bags", price: "Ksh 580" },
     ],
   },
-  { name: "Bulk Cement Supply", desc: "Large-quantity cement supply for commercial and industrial projects. Competitive distributor pricing.", tag: "Industrial", img: productFactory },
-];
-
-const blockProducts: Product[] = [
-  { name: "Concrete Blocks (6-inch)", desc: "Heavy-duty hollow concrete blocks for load-bearing walls. Bundled and ready for delivery.", tag: "Best Seller", img: blocksStack },
-  { name: "Concrete Blocks (Bulk)", desc: "Large stock of quality concrete blocks for commercial and residential projects.", tag: "Bulk", img: blocksYard },
-  { name: "Building Blocks (Solid)", desc: "Solid concrete blocks ideal for foundations, retaining walls, and heavy construction.", tag: "Heavy Duty", img: buildingBlocks },
-  { name: "Roofing Tiles & Accessories", desc: "Durable roofing tiles in multiple colours and styles. We supply complete roofing solutions.", tag: "Roofing", img: roofTiles },
 ];
 
 const pavingProducts: Product[] = [
-  { name: "Interlocking Pavers - Compound", desc: "Professional interlocking pavers for compounds, parking areas, and driveways.", tag: "Popular", img: pavingCompound },
-  { name: "Interlocking Pavers - Driveway", desc: "Elegant paving solutions for driveways and walkways with durable interlocking blocks.", tag: "Premium", img: pavingDriveway },
+  {
+    name: "Interlocking Pavers - Compound",
+    desc: "Cabro paving blocks for compounds, parking areas, and driveways. Types available: 60mm Grey rectangular and Red rectangular cabros. Standard rectangular block: 50pcs per m². Zigzag/uni-packers: 40–42 per m².",
+    tag: "Popular",
+    img: pavingCompound,
+    images: [pavingCompound, pavingDriveway, blocksStack, blocksYard, buildingBlocks, roofTiles],
+    prices: [
+      { label: "Per m² (from)", price: "Ksh 400" },
+      { label: "Per m² (up to)", price: "Ksh 790" },
+    ],
+  },
 ];
 
 const steelAndFencingProducts: Product[] = [
