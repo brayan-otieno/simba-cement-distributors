@@ -382,6 +382,8 @@ const mabatiRoofingProducts: Product[] = [
     ],
   },
 ];
+
+const accessoriesProducts: Product[] = [
   {
     name: "Polythene Paper (1 Roll)",
     desc: "Heavy-duty 20kg polythene paper roll for damp proofing and construction protection.",
