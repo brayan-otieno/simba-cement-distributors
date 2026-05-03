@@ -388,14 +388,14 @@ const accessoriesProducts: Product[] = [
     name: "Polythene Paper (1 Roll)",
     desc: "Heavy-duty 20kg polythene paper roll for damp proofing and construction protection.",
     tag: "Damp Proof",
-    img: productPolythenePaper,
+    img: productDpcRolls,
     prices: [{ label: "1 Roll (20kgs)", price: "Ksh 1,400" }],
   },
   {
     name: "DPC Roll (10m × 1m)",
     desc: "Damp Proof Course roll for preventing rising damp in walls and foundations.",
     tag: "Damp Proof",
-    img: productDpcRolls,
+    img: productPolythenePaper,
     prices: [{ label: "1 Roll (10m × 1m)", price: "Ksh 2,100" }],
   },
   {
