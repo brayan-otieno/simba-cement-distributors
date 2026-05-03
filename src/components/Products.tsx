@@ -95,30 +95,31 @@ const cementProducts: Product[] = [
       { label: "35+ bags", price: "Ksh 580" },
     ],
   },
-  { name: "Cement & Power Range", desc: "Full range of quality cement products available — we distribute multiple trusted brands.", tag: "Popular", img: productTrust },
   {
-    name: "PPC 32.5R (50kg)",
-    desc: "High-quality Portland Pozzolana Cement conforming to KS EAS 18-1 standards. Always in stock.",
+    name: "Cement 42.5N",
+    desc: "High-quality Portland cement conforming to KS EAS 18-1 standards. Always in stock for serious construction work.",
     tag: "Premium",
-    img: product325r,
+    img: productTrust,
+    images: [productTrust, product325r, productFactory],
     prices: [
       { label: "Per bag", price: "Ksh 650" },
       { label: "35+ bags", price: "Ksh 580" },
     ],
   },
-  { name: "Bulk Cement Supply", desc: "Large-quantity cement supply for commercial and industrial projects. Competitive distributor pricing.", tag: "Industrial", img: productFactory },
-];
-
-const blockProducts: Product[] = [
-  { name: "Concrete Blocks (6-inch)", desc: "Heavy-duty hollow concrete blocks for load-bearing walls. Bundled and ready for delivery.", tag: "Best Seller", img: blocksStack },
-  { name: "Concrete Blocks (Bulk)", desc: "Large stock of quality concrete blocks for commercial and residential projects.", tag: "Bulk", img: blocksYard },
-  { name: "Building Blocks (Solid)", desc: "Solid concrete blocks ideal for foundations, retaining walls, and heavy construction.", tag: "Heavy Duty", img: buildingBlocks },
-  { name: "Roofing Tiles & Accessories", desc: "Durable roofing tiles in multiple colours and styles. We supply complete roofing solutions.", tag: "Roofing", img: roofTiles },
 ];
 
 const pavingProducts: Product[] = [
-  { name: "Interlocking Pavers - Compound", desc: "Professional interlocking pavers for compounds, parking areas, and driveways.", tag: "Popular", img: pavingCompound },
-  { name: "Interlocking Pavers - Driveway", desc: "Elegant paving solutions for driveways and walkways with durable interlocking blocks.", tag: "Premium", img: pavingDriveway },
+  {
+    name: "Interlocking Pavers - Compound",
+    desc: "Cabro paving blocks for compounds, parking areas, and driveways. Types available: 60mm Grey rectangular and Red rectangular cabros. Standard rectangular block: 50pcs per m². Zigzag/uni-packers: 40–42 per m².",
+    tag: "Popular",
+    img: pavingCompound,
+    images: [pavingCompound, pavingDriveway, blocksStack, blocksYard, buildingBlocks, roofTiles],
+    prices: [
+      { label: "Per m² (from)", price: "Ksh 400" },
+      { label: "Per m² (up to)", price: "Ksh 790" },
+    ],
+  },
 ];
 
 const steelAndFencingProducts: Product[] = [
@@ -282,19 +283,119 @@ const steelAndFencingProducts: Product[] = [
   },
 ];
 
+const mabatiRoofingProducts: Product[] = [
+  {
+    name: "Corrugated Ordinary Mabati (Gauge 28 & 30)",
+    desc: "Standard corrugated ordinary iron roofing sheets in both gauges. Strong, lightweight, and rust-resistant.",
+    tag: "Roofing",
+    img: productIronSheetsGauge30,
+    images: [
+      productIronSheetsGauge30,
+      productCorrugatedRedStack,
+      productColorSheetsDisplay,
+      productColorSheetsCollage,
+      productGreenWavySheets,
+      productLilacWavySheets,
+      productDeepGreenBoxSheets,
+      productYellowOrangeSheets,
+    ],
+    prices: [
+      { label: "G30 — Per metre", price: "Ksh 350" },
+      { label: "G30 — 2m sheet", price: "Ksh 700" },
+      { label: "G30 — 2.5m sheet", price: "Ksh 875" },
+      { label: "G30 — 3m sheet", price: "Ksh 1,050" },
+      { label: "G28 — Per metre", price: "Ksh 400" },
+      { label: "G28 — 2m sheet", price: "Ksh 800" },
+      { label: "G28 — 2.5m sheet", price: "Ksh 1,000" },
+      { label: "G28 — 3m sheet", price: "Ksh 1,200" },
+    ],
+  },
+  {
+    name: "Versatile Tile-Profile Mabati (Gauge 28 & 30)",
+    desc: "Premium versatile tile-profile roofing sheets in both gauges. Stylish, durable, and modern.",
+    tag: "Premium",
+    img: productTexturedRedSheets,
+    prices: [
+      { label: "G30 — Per metre", price: "Ksh 600" },
+      { label: "G30 — 2m sheet", price: "Ksh 1,200" },
+      { label: "G30 — 2.5m sheet", price: "Ksh 1,500" },
+      { label: "G30 — 3m sheet", price: "Ksh 1,800" },
+      { label: "G28 — Per metre", price: "Ksh 700" },
+      { label: "G28 — 2m sheet", price: "Ksh 1,400" },
+      { label: "G28 — 2.5m sheet", price: "Ksh 1,750" },
+      { label: "G28 — 3m sheet", price: "Ksh 2,100" },
+    ],
+  },
+  {
+    name: "Box Profile Covermax Gauge (28 & 30)",
+    desc: "Modern box-profile Covermax roofing sheets in both gauges. Bold ribs and reliable weather sealing.",
+    tag: "Box Profile",
+    img: productBoxProfileSheets,
+    images: [productBoxProfileSheets, productBlueBoxSheets, productRedBoxSheets],
+    prices: [
+      { label: "G30 — Per metre", price: "Ksh 400" },
+      { label: "G30 — 2m sheet", price: "Ksh 800" },
+      { label: "G30 — 2.5m sheet", price: "Ksh 1,000" },
+      { label: "G30 — 3m sheet", price: "Ksh 1,200" },
+      { label: "G28 — Per metre", price: "Ksh 500" },
+      { label: "G28 — 2m sheet", price: "Ksh 1,000" },
+      { label: "G28 — 2.5m sheet", price: "Ksh 1,250" },
+      { label: "G28 — 3m sheet", price: "Ksh 1,500" },
+    ],
+  },
+  {
+    name: "Ordinary Dumuzas Reject (Gauge 30)",
+    desc: "Reject ordinary dumuzas mabati, gauge 30. Pocket-friendly roofing for outhouses and temporary structures.",
+    tag: "Budget",
+    img: productGreenWavySheets,
+    prices: [
+      { label: "2m sheet", price: "Ksh 400" },
+      { label: "2.5m sheet", price: "Ksh 500" },
+      { label: "3m sheet", price: "Ksh 600" },
+    ],
+  },
+  {
+    name: "Dumuzas Ordinary Gauge 30",
+    desc: "Mabati now available! Just Ksh 300 per meter. Free delivery countrywide on orders over 20 sheets!",
+    tag: "Offer",
+    img: productIronSheets,
+    prices: [
+      { label: "Per metre", price: "Ksh 300" },
+      { label: "2M", price: "Ksh 600" },
+      { label: "2.5M", price: "Ksh 750" },
+      { label: "3M", price: "Ksh 900" },
+    ],
+  },
+  {
+    name: "Reject Mabati",
+    desc: "Ordinary Dumuzas G.30 and Corrugated Dumuzas G.30 reject mabati — affordable roofing in multiple lengths.",
+    tag: "Budget",
+    img: productRedBoxSheets,
+    prices: [
+      { label: "Ordinary Dumuzas G.30 — 3m", price: "Ksh 450" },
+      { label: "Ordinary Dumuzas G.30 — 2.5m", price: "Ksh 375" },
+      { label: "Ordinary Dumuzas G.30 — 2m", price: "Ksh 300" },
+      { label: "Corrugated Dumuzas G.30 — 3m", price: "Ksh 540" },
+      { label: "Corrugated Dumuzas G.30 — 2.5m", price: "Ksh 450" },
+      { label: "Corrugated Dumuzas G.30 — 2m", price: "Ksh 360" },
+      { label: "Corrugated Dumuzas G.30 — 1m", price: "Ksh 180" },
+    ],
+  },
+];
+
 const accessoriesProducts: Product[] = [
   {
     name: "Polythene Paper (1 Roll)",
     desc: "Heavy-duty 20kg polythene paper roll for damp proofing and construction protection.",
     tag: "Damp Proof",
-    img: productPolythenePaper,
+    img: productDpcRolls,
     prices: [{ label: "1 Roll (20kgs)", price: "Ksh 1,400" }],
   },
   {
     name: "DPC Roll (10m × 1m)",
     desc: "Damp Proof Course roll for preventing rising damp in walls and foundations.",
     tag: "Damp Proof",
-    img: productDpcRolls,
+    img: productPolythenePaper,
     prices: [{ label: "1 Roll (10m × 1m)", price: "Ksh 2,100" }],
   },
   {
@@ -322,10 +423,11 @@ const accessoriesProducts: Product[] = [
 
 const waterStorageProducts: Product[] = [
   {
-    name: "Simba Plastic Water Tanks (3 Layers)",
-    desc: "Premium 3-layer Simba plastic water tanks. Durable, UV-resistant, ideal for homes and projects. Multiple capacities available.",
+    name: "Water Tanks (3layers)",
+    desc: "Premium 3-layer plastic water tanks. Durable, UV-resistant, ideal for homes and projects. Multiple capacities available.",
     tag: "Best Seller",
     img: productSimbaTanks,
+    images: [productSimbaTanks, productWaterTanksYard, productSepticTanks],
     prices: [
       { label: "1,000 L", price: "Ksh 4,500" },
       { label: "2,000 L", price: "Ksh 10,500" },
@@ -340,13 +442,12 @@ const waterStorageProducts: Product[] = [
       { label: "24,000 L", price: "Ksh 192,500" },
     ],
   },
-  { name: "Bulk Water Tank Stock", desc: "Wide range of black and green water storage tanks available in multiple sizes. Direct distributor pricing on bulk orders.", tag: "Wholesale", img: productWaterTanksYard },
-  { name: "Septic & Underground Tanks", desc: "Heavy-duty septic and underground storage tanks in green, orange, and black. Engineered for long-lasting underground installation.", tag: "Septic", img: productSepticTanks },
   {
-    name: "IBC Tote Tanks",
+    name: "IBC Tanks",
     desc: "Caged IBC tote tanks for water, chemicals, and bulk liquid storage. Robust steel cage with reliable outlet valve.",
     tag: "Industrial",
     img: productIbcTote,
+    images: [productIbcTote, productWaterTanksIbc],
     prices: [
       { label: "500 L", price: "Ksh 2,100" },
       { label: "1,000 L", price: "Ksh 3,600" },
@@ -355,10 +456,11 @@ const waterStorageProducts: Product[] = [
     ],
   },
   {
-    name: "HDPE Drums & Jerricans",
+    name: "HDPE Drums",
     desc: "Heavy-duty HDPE drums and jerricans for water, chemicals, and bulk storage. Multiple sizes available.",
     tag: "Storage",
     img: productWaterDrumsBlue,
+    images: [productWaterDrumsBlue, productWaterDrumsWarehouse, productWaterDrumsJerrycans],
     prices: [
       { label: "30 L Jerrican", price: "Ksh 100" },
       { label: "200 L Drum", price: "Ksh 1,000" },
@@ -367,9 +469,6 @@ const waterStorageProducts: Product[] = [
       { label: "310 L Drum", price: "Ksh 2,000" },
     ],
   },
-  { name: "Mixed IBC & Drums", desc: "Assorted IBC tanks and coloured drums for large-volume site water and liquid storage.", tag: "Bulk", img: productWaterTanksIbc },
-  { name: "Industrial Storage Drums", desc: "Wide stock of industrial-grade plastic drums supplied in bulk for contractors and projects.", tag: "Wholesale", img: productWaterDrumsWarehouse },
-  { name: "Drums & Jerrycans", desc: "Plastic drums and jerrycans in multiple sizes — ideal for water storage, transport, and site use.", tag: "Versatile", img: productWaterDrumsJerrycans },
 ];
 
 const roofingProducts: Product[] = [
@@ -395,56 +494,70 @@ const roofingProducts: Product[] = [
     desc: "Matching stone-coated ridge cap in Verde finish. Completes a professional stone-coated roof installation.",
     tag: "Ridge Cap",
     img: productRoofRidges,
+    images: [
+      productRoofRidges,
+      productBrownRoofTiles,
+      productGreenRoofTiles,
+      productBlueRoofTiles,
+      productRoofSheetsRidgesMix,
+      productCharcoalRoofTiles,
+    ],
     prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
   },
-  
-  { name: "Charcoal Roof Tiles", desc: "Elegant charcoal-finish profiled roofing sheets. Long-lasting and modern aesthetic.", tag: "Modern", img: productCharcoalRoofTiles },
-  { name: "Brown Tile-Profile Sheets", desc: "Tile-profile metal roofing sheets in rich brown finish. Durable and easy to install.", tag: "Popular", img: productBrownRoofTiles },
-  { name: "Green Tile-Profile Sheets", desc: "Tile-profile roofing sheets in green finish. Strong, lightweight, and corrosion-resistant.", tag: "Colour", img: productGreenRoofTiles },
-  { name: "Blue Tile-Profile Sheets", desc: "Vibrant blue tile-profile metal roofing sheets. Standard and custom lengths available.", tag: "Colour", img: productBlueRoofTiles },
-  
-  
-  { name: "Roof Sheets & Curved Ridges", desc: "Complete roofing showcase — coloured tile-profile sheets paired with matching curved ridge caps for a finished look.", tag: "Showcase", img: productRoofSheetsRidgesMix },
   { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
-  
-  { name: "Colour Box-Profile Showroom Display", desc: "Full range of box-profile roofing sheets on display — red, yellow, blue, and green finishes. Walk in and pick your colour.", tag: "Showroom", img: productColorSheetsDisplay },
-  { name: "Multi-Colour Roofing Range", desc: "Wide colour selection of corrugated and box-profile roofing sheets — navy, forest green, red, black, and lime green available.", tag: "Colour Range", img: productColorSheetsCollage },
-  { name: "Green Wavy Corrugated Sheets", desc: "Classic wavy corrugated metal roofing sheets in vibrant green. Lightweight, strong, and easy to install.", tag: "Wavy Profile", img: productGreenWavySheets },
-  { name: "Lilac Wavy Corrugated Sheets", desc: "Stylish lilac/purple wavy corrugated roofing sheets with a glossy finish. Unique colour for standout projects.", tag: "Specialty Colour", img: productLilacWavySheets },
-  { name: "Deep Green Box-Profile Stack", desc: "Premium deep-green box-profile metal roofing sheets — bulk factory stack ready for dispatch.", tag: "Bulk Stock", img: productDeepGreenBoxSheets },
-  { name: "Yellow-Orange Glossy Sheets", desc: "Eye-catching yellow-orange box-profile roofing sheets with a high-gloss finish. Perfect for branded buildings and standout designs.", tag: "Glossy Finish", img: productYellowOrangeSheets },
+  ...mabatiRoofingProducts,
 ];
 
 const machineStonesProducts: Product[] = [
-  { name: "Machine-Cut Stones (Bulk Delivery)", desc: "Premium machine-cut building stones supplied in bulk. Tipper deliveries direct to your construction site.", tag: "Best Seller", img: productMachineStonesTipping },
-  { name: "Machine-Cut Stones (Yard Stock)", desc: "Large stock of precision machine-cut stones, neatly arranged and ready for immediate dispatch.", tag: "In Stock", img: productMachineStonesField },
-  { name: "Palletised Machine-Cut Stones", desc: "Uniformly cut, high-quality building stones supplied in palletised loads for easy handling.", tag: "Premium", img: productMachineStonesPallet },
-  { name: "Site Offloading Service", desc: "Tipper trucks deliver and offload machine-cut stones directly at your project site across the country.", tag: "Logistics", img: productMachineStonesUnloading },
-  { name: "Countrywide Transport", desc: "Fleet of heavy-duty trucks for fast, reliable countrywide delivery of all building materials.", tag: "Delivery", img: productDeliveryTrucks },
-  { name: "Crated Machine-Cut Stones", desc: "Tightly packed, top-grade machine-cut stones in timber crates — uniform sizing and consistent finish for premium builds.", tag: "Top Grade", img: productMachineStonesCrate },
-  { name: "Stacked Stone Inventory", desc: "Massive stacks of precision-cut building stones, drying and ready for dispatch from our quarry partners.", tag: "Bulk Stock", img: productMachineStonesStack },
-  { name: "Quarry-Direct Stone Yard", desc: "Endless rows of freshly cut stones laid out at the quarry — direct sourcing for the best prices and quality.", tag: "Quarry Direct", img: productMachineStonesLaid },
+  {
+    name: "Machine-Cut Stones",
+    desc: "🚨 OFFER ALERT – Ndarugo Machine-Cut Stones! ✔️ Strong, durable, perfectly cut – ready for your project! 📏 Size 6×9 – 1,000 pcs @ 28,000/- Quarry Price. 📏 Size 9×9 – 700 pcs @ 21,000/- Quarry Price. Per piece (6×9) @ Ksh 25. 1 bedroom: 1200pcs (Ksh 30,000). 2 bedrooms: 1800pcs (Ksh 45,000). 3 bedrooms: 2500pcs (Ksh 62,500). 4 bedrooms: 3000pcs (Ksh 75,000). 🚛 Countrywide Delivery – Transport cost added depending on your site.",
+    tag: "🚨 Offer",
+    img: productMachineStonesField,
+    images: [
+      productMachineStonesField,
+      productMachineStonesTipping,
+      productMachineStonesPallet,
+      productMachineStonesUnloading,
+      productDeliveryTrucks,
+      productMachineStonesCrate,
+      productMachineStonesStack,
+      productMachineStonesLaid,
+    ],
+    prices: [
+      { label: "Per piece (6×9)", price: "Ksh 25" },
+      { label: "6×9 — 1,000 pcs (Quarry)", price: "Ksh 28,000" },
+      { label: "9×9 — 700 pcs (Quarry)", price: "Ksh 21,000" },
+      { label: "1 Bedroom (1200 pcs)", price: "Ksh 30,000" },
+      { label: "2 Bedrooms (1800 pcs)", price: "Ksh 45,000" },
+      { label: "3 Bedrooms (2500 pcs)", price: "Ksh 62,500" },
+      { label: "4 Bedrooms (3000 pcs)", price: "Ksh 75,000" },
+    ],
+  },
 ];
 
 const nailsProducts: Product[] = [
-  { name: "Construction Nails (Mixed Sizes)", desc: "Strong, durable wire nails in assorted sizes — ideal for carpentry, formwork, and general construction.", tag: "Best Seller", img: productNailsMixed },
   {
-    name: "Roofing Nails with Washers",
-    desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation.",
+    name: "Nails & Rubber washer Caps",
+    desc: "Galvanised roofing nails pre-fitted with rubber washers for leak-proof iron sheet installation. Available in mixed sizes and colour-matched washer caps.",
     tag: "Roofing",
     img: productRoofingNailsBlue,
+    images: [
+      productRoofingNailsBlue,
+      productNailsMixed,
+      productUmbrellaNailsHand,
+      productRedRoofingNailsBulk,
+      productBlackRoofingNails,
+      productGreenRoofingNails,
+      productRoofingNailsPacks,
+      productWasherCapsMixed,
+      productWasherCapsMaroon,
+    ],
     prices: [
       { label: "Per 1 Kg", price: "Ksh 180" },
       { label: "Per 50 Kg", price: "Ksh 6,500" },
     ],
   },
-  { name: "Umbrella Roofing Nails", desc: "Heavy-duty umbrella-head roofing nails for secure fixing of iron sheets to timber purlins.", tag: "Heavy Duty", img: productUmbrellaNailsHand },
-  { name: "Red-Head Roofing Nails (Bulk)", desc: "Bulk supply of red-capped roofing nails with rubber washers. Colour-matched for red roofing sheets.", tag: "Bulk", img: productRedRoofingNailsBulk },
-  { name: "Black-Head Roofing Nails", desc: "Galvanised roofing nails with black rubber-coated heads. Ideal for charcoal and dark-finish roofing sheets.", tag: "Colour Match", img: productBlackRoofingNails },
-  { name: "Green-Head Roofing Nails", desc: "Roofing nails with green-coated rubber heads — perfect colour match for green tile and box-profile sheets.", tag: "Colour Match", img: productGreenRoofingNails },
-  { name: "Pre-Packed Roofing Nails", desc: "Roofing nails neatly pre-packed in retail-ready bags. Available in blue, green, and brown head colours.", tag: "Retail Pack", img: productRoofingNailsPacks },
-  { name: "Rubber Washer Caps (Mixed Colours)", desc: "Assorted colour rubber washer caps for roofing nails — red, brown, blue, green, and charcoal.", tag: "Accessories", img: productWasherCapsMixed },
-  { name: "Maroon Rubber Washer Caps", desc: "Bulk maroon rubber washer caps for roofing nails. Weather-sealing replacements and spares.", tag: "Spares", img: productWasherCapsMaroon },
 ];
 
 const aggregatesProducts: Product[] = [
@@ -470,20 +583,21 @@ const tileProducts: Product[] = [
     desc: "Stylish wall tiles for kitchens, bathrooms, and feature walls. Wide range of designs and finishes.",
     tag: "Wall",
     img: tileFloral2,
+    images: [
+      tileFloral2,
+      tileBlueMarble,
+      tileWhiteMarble,
+      tileFloral,
+      tileGoldMarble,
+      tileMedallionInstalled,
+      tileGeometric,
+    ],
     prices: [
       { label: "20×30 (25 pcs/box)", price: "Ksh 1,080" },
       { label: "25×40 (15 pcs/box)", price: "Ksh 1,150" },
       { label: "30×60 (8 pcs/box)", price: "Ksh 1,500" },
     ],
   },
-  { name: "Blue Marble Tile", desc: "Elegant blue marble ceramic tile with gold veining. Premium finish.", tag: "Premium", img: tileBlueMarble },
-  { name: "White Marble Tile", desc: "Classic white marble porcelain tile with subtle grey and gold accents.", tag: "Popular", img: tileWhiteMarble },
-  { name: "Floral Designer Tile", desc: "Beautiful floral pattern wall tile with golden accents. Perfect for feature walls.", tag: "Designer", img: tileFloral },
-  { name: "Gold Accent Tile", desc: "Stunning white tile with gold and black marble accents. Modern luxury finish.", tag: "Luxury", img: tileGoldMarble },
-  { name: "Geometric Floor Tile", desc: "Classic geometric pattern floor tile. Durable and elegant for living spaces.", tag: "Classic", img: tileGeometric },
-  { name: "Decorative Medallion Tile", desc: "Ornate baroque-style decorative floor tile with gold and marble detailing.", tag: "Luxury", img: decorativeTile },
-  { name: "Magnolia Floral Tile", desc: "Stunning 3D-effect magnolia floral wall tile with gold accents. Perfect statement piece.", tag: "Designer", img: tileMagnolia },
-  { name: "Installed Medallion Showcase", desc: "Luxury baroque medallion floor tile installation — true craftsmanship for elegant interiors.", tag: "Showcase", img: tileMedallionInstalled },
 ];
 
 import { useEffect, useState } from "react";
@@ -708,14 +822,13 @@ const Products = () => (
       </div>
 
       <ProductSection subtitle="We Distribute" title="Cement Products" products={cementProducts} />
-      <ProductSection subtitle="Structural Materials" title="Blocks & Building Materials" products={blockProducts} />
       <ProductSection subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" products={roofingProducts} cols="lg:grid-cols-3" />
       <ProductSection subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" products={steelAndFencingProducts} />
-      <ProductSection subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" products={machineStonesProducts} cols="lg:grid-cols-3" />
+      <ProductSection subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" products={machineStonesProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Aggregates" title="Ballast & Quarry Materials" products={aggregatesProducts} cols="lg:grid-cols-2 max-w-3xl mx-auto" />
-      <ProductSection subtitle="Fixings" title="Nails & Fasteners" products={nailsProducts} cols="lg:grid-cols-3" />
+      <ProductSection subtitle="Fixings" title="Nails & Fasteners" products={nailsProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Site Essentials" title="Tools & Accessories" products={accessoriesProducts} />
-      <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-2 max-w-3xl mx-auto" />
+      <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Site Storage" title="Water Tanks & Storage Drums" products={waterStorageProducts} />
       <ProductSection subtitle="Building Finishes" title="Tiles & Ceramics" products={tileProducts} />
 
