@@ -80,6 +80,14 @@ import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.web
 import productWheelbarrow from "@/assets/product-wheelbarrow.webp";
 import productSpades from "@/assets/product-spades.webp";
 import productIronSheetsGauge30 from "@/assets/product-iron-sheets-gauge30.webp";
+import productBindingWire from "@/assets/product-binding-wire.jpeg";
+import productSpade1 from "@/assets/product-spade-1.jpeg";
+import productSpade2 from "@/assets/product-spade-2.jpeg";
+import productWheelbarrow1 from "@/assets/product-wheelbarrow-1.jpeg";
+import productWheelbarrow2 from "@/assets/product-wheelbarrow-2.jpeg";
+import productWheelbarrow3 from "@/assets/product-wheelbarrow-3.jpeg";
+import productWheelbarrow4 from "@/assets/product-wheelbarrow-4.jpeg";
+import productWheelbarrow5 from "@/assets/product-wheelbarrow-5.jpeg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; images?: string[]; prices?: PriceItem[] };
@@ -90,17 +98,17 @@ const cementProducts: Product[] = [
     desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.",
     tag: "Best Seller",
     img: productBag,
+    images: [productBag, product325r, productFactory],
     prices: [
       { label: "Per bag", price: "Ksh 650" },
       { label: "35+ bags", price: "Ksh 580" },
     ],
   },
   {
-    name: "Cement 42.5N",
+    name: "Cement 42.5N (50kg)",
     desc: "High-quality Portland cement conforming to KS EAS 18-1 standards. Always in stock for serious construction work.",
     tag: "Premium",
     img: productTrust,
-    images: [productTrust, product325r, productFactory],
     prices: [
       { label: "Per bag", price: "Ksh 650" },
       { label: "35+ bags", price: "Ksh 580" },
@@ -124,16 +132,34 @@ const pavingProducts: Product[] = [
 
 const steelAndFencingProducts: Product[] = [
   {
-    name: "BRC Wire Mesh",
-    desc: "Strong reinforcement wire mesh for slabs, foundations, and concrete works. Multiple gauges available.",
-    tag: "Reinforcement",
-    img: productBrcMesh,
+    name: "Barbed Wire (16 Gauge)",
+    desc: "Heavy-duty galvanised barbed wire for secure perimeter fencing. Available in multiple roll lengths.",
+    tag: "Security",
+    img: productBarbedWire,
     prices: [
-      { label: "A66 (3mm)", price: "Ksh 3,500 – 10,000" },
-      { label: "A65 (4mm) Standard", price: "Ksh 13,000" },
-      { label: "A610 (2.5mm)", price: "Ksh 2,800 – 7,500" },
-      { label: "A98 (5mm)", price: "Ksh 13,500 – 20,500" },
-      { label: "A142 (6mm)", price: "Ksh 19,500 – 33,000" },
+      { label: "240 mts", price: "Ksh 1,900" },
+      { label: "480 mts", price: "Ksh 3,400" },
+      { label: "610 mts", price: "Ksh 4,200" },
+    ],
+  },
+  {
+    name: "Binding Wire",
+    desc: "Soft, flexible binding wire for tying steel reinforcement bars on construction sites. Strong, rust-resistant coils.",
+    tag: "Reinforcement",
+    img: productBindingWire,
+    prices: [{ label: "Per roll", price: "Ksh 2,500" }],
+  },
+  {
+    name: "Round Bars",
+    desc: "Smooth mild steel round bars for general construction, gates, grills, and metalwork.",
+    tag: "Steel",
+    img: productSteelRoundBars,
+    prices: [
+      { label: "R16", price: "Ksh 1,800" },
+      { label: "R12", price: "Ksh 950" },
+      { label: "R10", price: "Ksh 600" },
+      { label: "R8", price: "Ksh 300" },
+      { label: "R6", price: "Ksh 140" },
     ],
   },
   {
@@ -150,27 +176,16 @@ const steelAndFencingProducts: Product[] = [
     ],
   },
   {
-    name: "Barbed Wire (16 Gauge)",
-    desc: "Heavy-duty galvanised barbed wire for secure perimeter fencing. Available in multiple roll lengths.",
-    tag: "Security",
-    img: productBarbedWire,
+    name: "BRC Wire Mesh",
+    desc: "Strong reinforcement wire mesh for slabs, foundations, and concrete works. Multiple gauges available.",
+    tag: "Reinforcement",
+    img: productBrcMesh,
     prices: [
-      { label: "240 mts", price: "Ksh 1,900" },
-      { label: "480 mts", price: "Ksh 3,400" },
-      { label: "610 mts", price: "Ksh 4,200" },
-    ],
-  },
-  {
-    name: "Round Bars",
-    desc: "Smooth mild steel round bars for general construction, gates, grills, and metalwork.",
-    tag: "Steel",
-    img: productSteelRoundBars,
-    prices: [
-      { label: "R16", price: "Ksh 1,800" },
-      { label: "R12", price: "Ksh 950" },
-      { label: "R10", price: "Ksh 600" },
-      { label: "R8", price: "Ksh 300" },
-      { label: "R6", price: "Ksh 140" },
+      { label: "A66 (3mm)", price: "Ksh 3,500 – 10,000" },
+      { label: "A65 (4mm) Standard", price: "Ksh 13,000" },
+      { label: "A610 (2.5mm)", price: "Ksh 2,800 – 7,500" },
+      { label: "A98 (5mm)", price: "Ksh 13,500 – 20,500" },
+      { label: "A142 (6mm)", price: "Ksh 19,500 – 33,000" },
     ],
   },
   {
@@ -185,100 +200,6 @@ const steelAndFencingProducts: Product[] = [
       { label: "D16", price: "Ksh 2,050" },
       { label: "D20", price: "Ksh 3,200" },
       { label: "D25", price: "Ksh 5,750" },
-    ],
-  },
-  {
-    name: "Corrugated Ordinary Mabati (Gauge 30)",
-    desc: "Standard corrugated ordinary iron roofing sheets, gauge 30. Strong, lightweight, and rust-resistant.",
-    tag: "Roofing",
-    img: productIronSheetsGauge30,
-    prices: [
-      { label: "Per metre", price: "Ksh 350" },
-      { label: "2m sheet", price: "Ksh 700" },
-      { label: "2.5m sheet", price: "Ksh 875" },
-      { label: "3m sheet", price: "Ksh 1,050" },
-    ],
-  },
-  {
-    name: "Corrugated Ordinary Mabati (Gauge 28)",
-    desc: "Heavier-duty corrugated ordinary mabati, gauge 28. Stronger gauge for long-lasting roofing.",
-    tag: "Heavy Duty",
-    img: productCorrugatedRedStack,
-    prices: [
-      { label: "Per metre", price: "Ksh 400" },
-      { label: "2m sheet", price: "Ksh 800" },
-      { label: "2.5m sheet", price: "Ksh 1,000" },
-      { label: "3m sheet", price: "Ksh 1,200" },
-    ],
-  },
-  {
-    name: "Versatile Tile-Profile Mabati (Gauge 30)",
-    desc: "Premium versatile tile-profile roofing sheets, gauge 30. Stylish, durable, and modern.",
-    tag: "Premium",
-    img: productTexturedRedSheets,
-    prices: [
-      { label: "Per metre", price: "Ksh 600" },
-      { label: "2m sheet", price: "Ksh 1,200" },
-      { label: "2.5m sheet", price: "Ksh 1,500" },
-      { label: "3m sheet", price: "Ksh 1,800" },
-    ],
-  },
-  {
-    name: "Versatile Tile-Profile Mabati (Gauge 28)",
-    desc: "Heavier versatile tile-profile mabati, gauge 28. Superior strength with elegant tile finish.",
-    tag: "Premium",
-    img: productMatteBrownSheets,
-    prices: [
-      { label: "Per metre", price: "Ksh 700" },
-      { label: "2m sheet", price: "Ksh 1,400" },
-      { label: "2.5m sheet", price: "Ksh 1,750" },
-      { label: "3m sheet", price: "Ksh 2,100" },
-    ],
-  },
-  {
-    name: "Box-Profile Covermax Mabati (Gauge 30)",
-    desc: "Modern box-profile Covermax roofing sheets, gauge 30. Bold ribs and reliable weather sealing.",
-    tag: "Box Profile",
-    img: productBoxProfileSheets,
-    prices: [
-      { label: "Per metre", price: "Ksh 400" },
-      { label: "2m sheet", price: "Ksh 800" },
-      { label: "2.5m sheet", price: "Ksh 1,000" },
-      { label: "3m sheet", price: "Ksh 1,200" },
-    ],
-  },
-  {
-    name: "Box-Profile Covermax Mabati (Gauge 28)",
-    desc: "Heavy-duty box-profile Covermax mabati, gauge 28. Premium thickness for commercial and residential roofs.",
-    tag: "Heavy Duty",
-    img: productBlueBoxSheets,
-    prices: [
-      { label: "Per metre", price: "Ksh 500" },
-      { label: "2m sheet", price: "Ksh 1,000" },
-      { label: "2.5m sheet", price: "Ksh 1,250" },
-      { label: "3m sheet", price: "Ksh 1,500" },
-    ],
-  },
-  {
-    name: "Box Profile Reject Mabati (Gauge 30)",
-    desc: "Affordable reject box-profile mabati, gauge 30. Great for sheds, stores, and budget projects.",
-    tag: "Budget",
-    img: productRedBoxSheets,
-    prices: [
-      { label: "2m sheet", price: "Ksh 400" },
-      { label: "2.5m sheet", price: "Ksh 500" },
-      { label: "3m sheet", price: "Ksh 600" },
-    ],
-  },
-  {
-    name: "Ordinary Dumuzas Reject (Gauge 30)",
-    desc: "Reject ordinary dumuzas mabati, gauge 30. Pocket-friendly roofing for outhouses and temporary structures.",
-    tag: "Budget",
-    img: productIronSheets,
-    prices: [
-      { label: "2m sheet", price: "Ksh 300" },
-      { label: "2.5m sheet", price: "Ksh 375" },
-      { label: "3m sheet", price: "Ksh 450" },
     ],
   },
 ];
@@ -358,7 +279,7 @@ const mabatiRoofingProducts: Product[] = [
     name: "Dumuzas Ordinary Gauge 30",
     desc: "Mabati now available! Just Ksh 300 per meter. Free delivery countrywide on orders over 20 sheets!",
     tag: "Offer",
-    img: productIronSheets,
+    img: productBoxProfileSheets,
     prices: [
       { label: "Per metre", price: "Ksh 300" },
       { label: "2M", price: "Ksh 600" },
@@ -402,7 +323,8 @@ const accessoriesProducts: Product[] = [
     name: "Spades",
     desc: "Strong, durable spades for digging, mixing, and general construction site work.",
     tag: "Tools",
-    img: productSpades,
+    img: productSpade2,
+    images: [productSpade2, productSpade1, productSpades],
     prices: [
       { label: "Imported", price: "Ksh 750" },
       { label: "Local", price: "Ksh 580" },
@@ -412,7 +334,15 @@ const accessoriesProducts: Product[] = [
     name: "Wheelbarrows",
     desc: "Heavy-duty wheelbarrows for transporting materials on construction sites. Multiple sizes available.",
     tag: "Tools",
-    img: productWheelbarrow,
+    img: productWheelbarrow1,
+    images: [
+      productWheelbarrow1,
+      productWheelbarrow2,
+      productWheelbarrow3,
+      productWheelbarrow4,
+      productWheelbarrow5,
+      productWheelbarrow,
+    ],
     prices: [
       { label: "Small", price: "Ksh 2,500" },
       { label: "Medium", price: "Ksh 4,200" },
@@ -477,6 +407,7 @@ const roofingProducts: Product[] = [
     desc: "Galvanised plain (flat) metal sheets supplied in 50-metre rolls. Ideal for gutters, flashings, and custom fabrication.",
     tag: "Flat Sheet",
     img: productGalvanizedSheets,
+    images: [productGalvanizedSheets, productGreenSteelCoil],
     prices: [
       { label: "50m × Gauge 30", price: "Ksh 18,000" },
       { label: "50m × Gauge 32", price: "Ksh 16,000" },
@@ -504,7 +435,6 @@ const roofingProducts: Product[] = [
     ],
     prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
   },
-  { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
   ...mabatiRoofingProducts,
 ];
 
@@ -570,7 +500,8 @@ const tileProducts: Product[] = [
     name: "Floor Tiles",
     desc: "Premium ceramic and porcelain floor tiles in multiple sizes. Durable finish for living areas, bedrooms, and commercial spaces.",
     tag: "Floor",
-    img: tileGoldMarble2,
+    img: tileMedallionInstalled,
+    images: [tileMedallionInstalled, tileGeometric],
     prices: [
       { label: "30×30 (17 pcs/box)", price: "Ksh 760" },
       { label: "40×40 (12 pcs/box)", price: "Ksh 840" },
@@ -589,8 +520,7 @@ const tileProducts: Product[] = [
       tileWhiteMarble,
       tileFloral,
       tileGoldMarble,
-      tileMedallionInstalled,
-      tileGeometric,
+      tileGoldMarble2,
     ],
     prices: [
       { label: "20×30 (25 pcs/box)", price: "Ksh 1,080" },
@@ -831,8 +761,6 @@ const Products = () => (
       <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Site Storage" title="Water Tanks & Storage Drums" products={waterStorageProducts} />
       <ProductSection subtitle="Building Finishes" title="Tiles & Ceramics" products={tileProducts} />
-
-      <ProductsCTA />
     </div>
   </section>
 );
