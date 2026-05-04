@@ -88,6 +88,13 @@ import productWheelbarrow2 from "@/assets/product-wheelbarrow-2.jpeg";
 import productWheelbarrow3 from "@/assets/product-wheelbarrow-3.jpeg";
 import productWheelbarrow4 from "@/assets/product-wheelbarrow-4.jpeg";
 import productWheelbarrow5 from "@/assets/product-wheelbarrow-5.jpeg";
+import productQuarryDust1 from "@/assets/product-quarry-dust-1.webp";
+import productHoopIron1 from "@/assets/product-hoop-iron-1.webp";
+import productHoopIron2 from "@/assets/product-hoop-iron-2.webp";
+import productCementSimbaPower425 from "@/assets/product-cement-simba-power-425.webp";
+import productBrcMesh2 from "@/assets/product-brc-mesh-2.webp";
+import productChainlinkExtra from "@/assets/product-chainlink-extra.webp";
+import productBuildingSteelExtra from "@/assets/product-building-steel-extra.webp";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; images?: string[]; prices?: PriceItem[] };
@@ -108,10 +115,11 @@ const cementProducts: Product[] = [
     name: "Cement 42.5N (50kg)",
     desc: "High-quality Portland cement conforming to KS EAS 18-1 standards. Always in stock for serious construction work.",
     tag: "Premium",
-    img: productTrust,
+    img: productCementSimbaPower425,
+    images: [productCementSimbaPower425, productTrust],
     prices: [
-      { label: "Per bag", price: "Ksh 650" },
-      { label: "35+ bags", price: "Ksh 580" },
+      { label: "Per bag", price: "Ksh 750" },
+      { label: "35+ bags", price: "Ksh 680" },
     ],
   },
 ];
@@ -150,6 +158,14 @@ const steelAndFencingProducts: Product[] = [
     prices: [{ label: "Per roll", price: "Ksh 2,500" }],
   },
   {
+    name: "Wallpass / Hoop Iron",
+    desc: "Galvanised hoop iron (wallpass) used for masonry reinforcement, banding walls, and strengthening block work. Sold per roll.",
+    tag: "Reinforcement",
+    img: productHoopIron1,
+    images: [productHoopIron1, productHoopIron2],
+    prices: [{ label: "Per roll", price: "Ksh 3,200" }],
+  },
+  {
     name: "Round Bars",
     desc: "Smooth mild steel round bars for general construction, gates, grills, and metalwork.",
     tag: "Steel",
@@ -167,7 +183,7 @@ const steelAndFencingProducts: Product[] = [
     desc: "Durable Mamba-brand chainlink fencing for residential, commercial, and farm perimeter security. Bulk orders available.",
     tag: "Fencing",
     img: productChainlinkMamba,
-    images: [productChainlinkMamba, productChainlinkRolls, productChainlinkTruck],
+    images: [productChainlinkMamba, productChainlinkRolls, productChainlinkTruck, productChainlinkExtra],
     prices: [
       { label: "4ft × 18mts", price: "Ksh 2,000" },
       { label: "5ft × 18mts", price: "Ksh 2,500" },
@@ -180,6 +196,7 @@ const steelAndFencingProducts: Product[] = [
     desc: "Strong reinforcement wire mesh for slabs, foundations, and concrete works. Multiple gauges available.",
     tag: "Reinforcement",
     img: productBrcMesh,
+    images: [productBrcMesh, productBrcMesh2],
     prices: [
       { label: "A66 (3mm)", price: "Ksh 3,500 – 10,000" },
       { label: "A65 (4mm) Standard", price: "Ksh 13,000" },
@@ -193,6 +210,7 @@ const steelAndFencingProducts: Product[] = [
     desc: "High-tensile deformed steel reinforcement bars for slabs, columns, and beams.",
     tag: "Reinforcement",
     img: productKenruRebar,
+    images: [productKenruRebar, productBuildingSteelExtra],
     prices: [
       { label: "D8", price: "Ksh 450" },
       { label: "D10", price: "Ksh 750" },
@@ -491,8 +509,17 @@ const nailsProducts: Product[] = [
 ];
 
 const aggregatesProducts: Product[] = [
-  { name: "Quarry Ballast (Direct Source)", desc: "Premium crushed ballast straight from the quarry conveyor. Consistent grading for concrete works.", tag: "Quarry Direct", img: productBallastQuarry },
-  { name: "Ballast Site Delivery", desc: "Bulk ballast tipped and delivered straight to your construction site, anywhere in the country.", tag: "Bulk Delivery", img: productBallastOnsite },
+  {
+    name: "Quarry Dust & Ballast",
+    desc: "High-quality quarry dust ideal for construction, concrete production, and road works. Acts as a fine aggregate alternative to sand, enhancing the strength and durability of concrete and mortar mixes. Durable, affordable, and widely used for foundations, paving, and other construction projects.",
+    tag: "Quarry Direct",
+    img: productQuarryDust1,
+    images: [productQuarryDust1, productBallastQuarry, productBallastOnsite],
+    prices: [
+      { label: "17 tonnes (from)", price: "Ksh 25,000" },
+      { label: "17 tonnes (up to)", price: "Ksh 30,000" },
+    ],
+  },
 ];
 
 const tileProducts: Product[] = [
@@ -755,7 +782,7 @@ const Products = () => (
       <ProductSection subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" products={roofingProducts} cols="lg:grid-cols-3" />
       <ProductSection subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" products={steelAndFencingProducts} />
       <ProductSection subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" products={machineStonesProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
-      <ProductSection subtitle="Aggregates" title="Ballast & Quarry Materials" products={aggregatesProducts} cols="lg:grid-cols-2 max-w-3xl mx-auto" />
+      <ProductSection subtitle="Aggregates" title="Ballast & Quarry Materials" products={aggregatesProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Fixings" title="Nails & Fasteners" products={nailsProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Site Essentials" title="Tools & Accessories" products={accessoriesProducts} />
       <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />

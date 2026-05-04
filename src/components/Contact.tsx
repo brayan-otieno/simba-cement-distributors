@@ -55,12 +55,24 @@ const Contact = () => (
             </div>
           </div>
         </div>
-        <form className="space-y-4 rounded-lg bg-card p-8 shadow-md" onSubmit={(e) => e.preventDefault()}>
-          <input type="text" placeholder="Full Name" className="w-full rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
-          <input type="email" placeholder="Email Address" className="w-full rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
-          <input type="text" placeholder="Phone Number" className="w-full rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
-          <textarea placeholder="Your Message" rows={4} className="w-full resize-none rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
-          <button type="submit" className="w-full rounded bg-primary py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">
+        <form className="space-y-4 rounded-lg bg-card p-8 shadow-md" onSubmit={(e) => e.preventDefault()} aria-label="Contact form">
+          <div>
+            <label htmlFor="contact-name" className="sr-only">Full Name</label>
+            <input id="contact-name" name="name" type="text" autoComplete="name" required maxLength={100} placeholder="Full Name" className="w-full rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label htmlFor="contact-email" className="sr-only">Email Address</label>
+            <input id="contact-email" name="email" type="email" autoComplete="email" required maxLength={255} placeholder="Email Address" className="w-full rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label htmlFor="contact-phone" className="sr-only">Phone Number</label>
+            <input id="contact-phone" name="phone" type="tel" autoComplete="tel" maxLength={30} placeholder="Phone Number" className="w-full rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
+          </div>
+          <div>
+            <label htmlFor="contact-message" className="sr-only">Your Message</label>
+            <textarea id="contact-message" name="message" required maxLength={1000} placeholder="Your Message" rows={4} className="w-full resize-none rounded border bg-background px-4 py-3 text-sm text-foreground outline-none focus:border-primary" />
+          </div>
+          <button type="submit" className="min-h-11 w-full rounded bg-primary py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/85">
             Send Message
           </button>
         </form>
