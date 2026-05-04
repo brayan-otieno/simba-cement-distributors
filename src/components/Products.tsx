@@ -88,6 +88,13 @@ import productWheelbarrow2 from "@/assets/product-wheelbarrow-2.jpeg";
 import productWheelbarrow3 from "@/assets/product-wheelbarrow-3.jpeg";
 import productWheelbarrow4 from "@/assets/product-wheelbarrow-4.jpeg";
 import productWheelbarrow5 from "@/assets/product-wheelbarrow-5.jpeg";
+import productQuarryDust1 from "@/assets/product-quarry-dust-1.webp";
+import productHoopIron1 from "@/assets/product-hoop-iron-1.webp";
+import productHoopIron2 from "@/assets/product-hoop-iron-2.webp";
+import productCementSimbaPower425 from "@/assets/product-cement-simba-power-425.webp";
+import productBrcMesh2 from "@/assets/product-brc-mesh-2.webp";
+import productChainlinkExtra from "@/assets/product-chainlink-extra.webp";
+import productBuildingSteelExtra from "@/assets/product-building-steel-extra.webp";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; images?: string[]; prices?: PriceItem[] };
