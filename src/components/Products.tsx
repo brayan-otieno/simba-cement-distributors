@@ -782,7 +782,7 @@ const Products = () => (
       <ProductSection subtitle="Roofing Solutions" title="Roofing Tiles & Sheets" products={roofingProducts} cols="lg:grid-cols-3" />
       <ProductSection subtitle="Steel & Fencing" title="Steel, Mesh & Fencing" products={steelAndFencingProducts} />
       <ProductSection subtitle="Quarry Direct" title="Machine-Cut Stones & Delivery" products={machineStonesProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
-      <ProductSection subtitle="Aggregates" title="Ballast & Quarry Materials" products={aggregatesProducts} cols="lg:grid-cols-2 max-w-3xl mx-auto" />
+      <ProductSection subtitle="Aggregates" title="Ballast & Quarry Materials" products={aggregatesProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Fixings" title="Nails & Fasteners" products={nailsProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Site Essentials" title="Tools & Accessories" products={accessoriesProducts} />
       <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
