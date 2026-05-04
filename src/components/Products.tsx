@@ -80,6 +80,14 @@ import productCorrugatedRedStack from "@/assets/product-corrugated-red-stack.web
 import productWheelbarrow from "@/assets/product-wheelbarrow.webp";
 import productSpades from "@/assets/product-spades.webp";
 import productIronSheetsGauge30 from "@/assets/product-iron-sheets-gauge30.webp";
+import productBindingWire from "@/assets/product-binding-wire.jpeg";
+import productSpade1 from "@/assets/product-spade-1.jpeg";
+import productSpade2 from "@/assets/product-spade-2.jpeg";
+import productWheelbarrow1 from "@/assets/product-wheelbarrow-1.jpeg";
+import productWheelbarrow2 from "@/assets/product-wheelbarrow-2.jpeg";
+import productWheelbarrow3 from "@/assets/product-wheelbarrow-3.jpeg";
+import productWheelbarrow4 from "@/assets/product-wheelbarrow-4.jpeg";
+import productWheelbarrow5 from "@/assets/product-wheelbarrow-5.jpeg";
 
 type PriceItem = { label: string; price: string };
 type Product = { name: string; desc: string; tag: string; img: string; images?: string[]; prices?: PriceItem[] };
