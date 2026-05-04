@@ -398,6 +398,7 @@ const roofingProducts: Product[] = [
     desc: "Galvanised plain (flat) metal sheets supplied in 50-metre rolls. Ideal for gutters, flashings, and custom fabrication.",
     tag: "Flat Sheet",
     img: productGalvanizedSheets,
+    images: [productGalvanizedSheets, productGreenSteelCoil],
     prices: [
       { label: "50m × Gauge 30", price: "Ksh 18,000" },
       { label: "50m × Gauge 32", price: "Ksh 16,000" },
@@ -425,7 +426,6 @@ const roofingProducts: Product[] = [
     ],
     prices: [{ label: "Per ridge cap", price: "Ksh 800" }],
   },
-  { name: "Pre-Painted Steel Coils", desc: "Factory-grade pre-painted galvanised steel coils — raw material for premium roofing sheet production. Bulk supply available.", tag: "Wholesale", img: productGreenSteelCoil },
   ...mabatiRoofingProducts,
 ];
 
