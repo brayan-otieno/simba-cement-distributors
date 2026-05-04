@@ -221,6 +221,8 @@ const steelAndFencingProducts: Product[] = [
     ],
   },
 ];
+
+const mabatiRoofingProducts: Product[] = [
   {
     name: "Corrugated Ordinary Mabati (Gauge 28 & 30)",
     desc: "Standard corrugated ordinary iron roofing sheets in both gauges. Strong, lightweight, and rust-resistant.",
