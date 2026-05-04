@@ -98,17 +98,17 @@ const cementProducts: Product[] = [
     desc: "Portland Pozzolana Cement ideal for plastering, block work, and finishing. We stock all leading brands.",
     tag: "Best Seller",
     img: productBag,
+    images: [productBag, product325r, productFactory],
     prices: [
       { label: "Per bag", price: "Ksh 650" },
       { label: "35+ bags", price: "Ksh 580" },
     ],
   },
   {
-    name: "Cement 42.5N",
+    name: "Cement 42.5N (50kg)",
     desc: "High-quality Portland cement conforming to KS EAS 18-1 standards. Always in stock for serious construction work.",
     tag: "Premium",
     img: productTrust,
-    images: [productTrust, product325r, productFactory],
     prices: [
       { label: "Per bag", price: "Ksh 650" },
       { label: "35+ bags", price: "Ksh 580" },
