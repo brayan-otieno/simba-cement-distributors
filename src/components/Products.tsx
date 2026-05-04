@@ -761,8 +761,6 @@ const Products = () => (
       <ProductSection subtitle="Outdoor Solutions" title="Interlocking Pavers" products={pavingProducts} cols="lg:grid-cols-1 max-w-2xl mx-auto" />
       <ProductSection subtitle="Site Storage" title="Water Tanks & Storage Drums" products={waterStorageProducts} />
       <ProductSection subtitle="Building Finishes" title="Tiles & Ceramics" products={tileProducts} />
-
-      <ProductsCTA />
     </div>
   </section>
 );
