@@ -509,8 +509,17 @@ const nailsProducts: Product[] = [
 ];
 
 const aggregatesProducts: Product[] = [
-  { name: "Quarry Ballast (Direct Source)", desc: "Premium crushed ballast straight from the quarry conveyor. Consistent grading for concrete works.", tag: "Quarry Direct", img: productBallastQuarry },
-  { name: "Ballast Site Delivery", desc: "Bulk ballast tipped and delivered straight to your construction site, anywhere in the country.", tag: "Bulk Delivery", img: productBallastOnsite },
+  {
+    name: "Quarry Dust & Ballast",
+    desc: "High-quality quarry dust ideal for construction, concrete production, and road works. Acts as a fine aggregate alternative to sand, enhancing the strength and durability of concrete and mortar mixes. Durable, affordable, and widely used for foundations, paving, and other construction projects.",
+    tag: "Quarry Direct",
+    img: productQuarryDust1,
+    images: [productQuarryDust1, productBallastQuarry, productBallastOnsite],
+    prices: [
+      { label: "17 tonnes (from)", price: "Ksh 25,000" },
+      { label: "17 tonnes (up to)", price: "Ksh 30,000" },
+    ],
+  },
 ];
 
 const tileProducts: Product[] = [
