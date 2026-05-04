@@ -279,7 +279,7 @@ const mabatiRoofingProducts: Product[] = [
     name: "Dumuzas Ordinary Gauge 30",
     desc: "Mabati now available! Just Ksh 300 per meter. Free delivery countrywide on orders over 20 sheets!",
     tag: "Offer",
-    img: productIronSheets,
+    img: productBoxProfileSheets,
     prices: [
       { label: "Per metre", price: "Ksh 300" },
       { label: "2M", price: "Ksh 600" },
