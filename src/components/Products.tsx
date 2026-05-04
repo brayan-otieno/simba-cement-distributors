@@ -158,6 +158,14 @@ const steelAndFencingProducts: Product[] = [
     prices: [{ label: "Per roll", price: "Ksh 2,500" }],
   },
   {
+    name: "Wallpass / Hoop Iron",
+    desc: "Galvanised hoop iron (wallpass) used for masonry reinforcement, banding walls, and strengthening block work. Sold per roll.",
+    tag: "Reinforcement",
+    img: productHoopIron1,
+    images: [productHoopIron1, productHoopIron2],
+    prices: [{ label: "Per roll", price: "Ksh 3,200" }],
+  },
+  {
     name: "Round Bars",
     desc: "Smooth mild steel round bars for general construction, gates, grills, and metalwork.",
     tag: "Steel",
@@ -175,7 +183,7 @@ const steelAndFencingProducts: Product[] = [
     desc: "Durable Mamba-brand chainlink fencing for residential, commercial, and farm perimeter security. Bulk orders available.",
     tag: "Fencing",
     img: productChainlinkMamba,
-    images: [productChainlinkMamba, productChainlinkRolls, productChainlinkTruck],
+    images: [productChainlinkMamba, productChainlinkRolls, productChainlinkTruck, productChainlinkExtra],
     prices: [
       { label: "4ft × 18mts", price: "Ksh 2,000" },
       { label: "5ft × 18mts", price: "Ksh 2,500" },
@@ -188,6 +196,7 @@ const steelAndFencingProducts: Product[] = [
     desc: "Strong reinforcement wire mesh for slabs, foundations, and concrete works. Multiple gauges available.",
     tag: "Reinforcement",
     img: productBrcMesh,
+    images: [productBrcMesh, productBrcMesh2],
     prices: [
       { label: "A66 (3mm)", price: "Ksh 3,500 – 10,000" },
       { label: "A65 (4mm) Standard", price: "Ksh 13,000" },
@@ -201,6 +210,7 @@ const steelAndFencingProducts: Product[] = [
     desc: "High-tensile deformed steel reinforcement bars for slabs, columns, and beams.",
     tag: "Reinforcement",
     img: productKenruRebar,
+    images: [productKenruRebar, productBuildingSteelExtra],
     prices: [
       { label: "D8", price: "Ksh 450" },
       { label: "D10", price: "Ksh 750" },
@@ -211,8 +221,6 @@ const steelAndFencingProducts: Product[] = [
     ],
   },
 ];
-
-const mabatiRoofingProducts: Product[] = [
   {
     name: "Corrugated Ordinary Mabati (Gauge 28 & 30)",
     desc: "Standard corrugated ordinary iron roofing sheets in both gauges. Strong, lightweight, and rust-resistant.",
