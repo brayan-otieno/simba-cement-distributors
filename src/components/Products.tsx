@@ -115,10 +115,11 @@ const cementProducts: Product[] = [
     name: "Cement 42.5N (50kg)",
     desc: "High-quality Portland cement conforming to KS EAS 18-1 standards. Always in stock for serious construction work.",
     tag: "Premium",
-    img: productTrust,
+    img: productCementSimbaPower425,
+    images: [productCementSimbaPower425, productTrust],
     prices: [
-      { label: "Per bag", price: "Ksh 650" },
-      { label: "35+ bags", price: "Ksh 580" },
+      { label: "Per bag", price: "Ksh 750" },
+      { label: "35+ bags", price: "Ksh 680" },
     ],
   },
 ];
